@@ -1,0 +1,23 @@
+[
+    {
+        "banner": {
+            "mobile": "placeholder.png",
+            "desktop": "placeholder.png"
+        },
+
+        "vorstellung": {
+            "img": "placeholder.png",
+            "text": "text"
+        },
+
+        "icons": [
+            {"img":"", "headline": "", "text": ""},
+            {"img":"", "headline": "", "text": ""},
+            {"img":"", "headline": "", "text": ""}
+        ],
+
+        "details": [
+            
+        ]
+    }
+]
