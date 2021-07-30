@@ -1,5 +1,13 @@
 .Content {
 
+    .Headline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
     .Banner {
         img, source {
             width: 100%;
@@ -22,6 +30,13 @@
             @media (orientation: portrait) {
                 margin-bottom: 20px;
             }
+        }
+    }
+
+    .Iconrow {
+        padding-bottom: 1rem;
+        .Icon i {
+            font-size: 70px;
         }
     }
 }

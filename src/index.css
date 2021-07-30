@@ -10,6 +10,13 @@
   }
 }
 
+.Content .Headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .Content .Banner img, .Content .Banner source {
   width: 100%;
   height: 400px;
@@ -34,6 +41,12 @@
   .Content .Vorstellung img {
     margin-bottom: 20px;
   }
+}
+.Content .Iconrow {
+  padding-bottom: 1rem;
+}
+.Content .Iconrow .Icon i {
+  font-size: 70px;
 }
 
 /*# sourceMappingURL=index.css.map */
