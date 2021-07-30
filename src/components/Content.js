@@ -3,6 +3,7 @@ import React from 'react';
 import {Banner} from './Banner.js';
 import {Vorstellung} from './Vorstellung.js';
 import {Iconrow} from './Iconrow.js';
+import {Details} from './Details.js';
 
 
 export class Content extends React.Component {
@@ -14,6 +15,7 @@ export class Content extends React.Component {
                 banner: props.config.banner,
                 vorstellung: props.config.vorstellung,
                 iconrow: props.config.iconrow,
+                details: props.config.details,
             }
         }
     }
@@ -25,6 +27,7 @@ export class Content extends React.Component {
                 <div class='container'>
                     <Vorstellung data={this.state.config.vorstellung} />
                     <Iconrow data={this.state.config.iconrow} />
+                    <Details data={this.state.config.details} />
                 </div>
             </div>
         );

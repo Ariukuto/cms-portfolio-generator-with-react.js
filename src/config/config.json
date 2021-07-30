@@ -18,7 +18,6 @@
                     "url": "#"
                 }
             ]
-
         },
 
 
@@ -38,16 +37,22 @@
             "iconrow": {
                 "headline": "Auf einen Blick",
                 "icons": [
-                    {"name":"bi-emoji-smile", "headline": "Lorem Ipsum", "text": ""},
-                    {"name":"bi-emoji-smile", "headline": "Lorem Ipsum", "text": ""},
-                    {"name":"bi-emoji-smile", "headline": "Lorem Ipsum", "text": ""},
-                    {"name":"bi-emoji-smile", "headline": "Lorem Ipsum", "text": ""}
+                    {"name":"bi-emoji-smile", "headline": "Lorem Ipsum", "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"},
+                    {"name":"bi-emoji-smile", "headline": "Lorem Ipsum", "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"},
+                    {"name":"bi-emoji-smile", "headline": "Lorem Ipsum", "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"},
+                    {"name":"bi-emoji-smile", "headline": "Lorem Ipsum", "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"}
                 ]
             },
     
-            "details": [
-                
-            ],
+            "details": {
+                "headline": "Details",
+                "content": [
+                    {"headline": "Detail 1", "img": "placeholder.png", "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"},
+                    {"headline": "Detail 1", "img": "placeholder.png", "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"},
+                    {"headline": "Detail 1", "img": "placeholder.png", "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"},
+                    {"headline": "Detail 1", "img": "placeholder.png", "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"}
+                ]
+            },
 
             "footer": {
                 "rows": {

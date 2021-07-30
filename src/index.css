@@ -43,6 +43,8 @@
   }
 }
 .Content .Iconrow {
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding-bottom: 1rem;
 }
 .Content .Iconrow .Icon i {
