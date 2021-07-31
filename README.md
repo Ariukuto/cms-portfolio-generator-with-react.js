@@ -1,7 +1,7 @@
 # landingpage-cms-react
 
 ## Beschreibung
-Mit diesem Programm soll es möglich sein eine Landingpage zu gestalten. Aktuell geht dies aber nur über das pflegen der Inhalte (Bilder, Überschriften, Icons, Texte). Dies lässt sich Momentan nur über eine config.json anpassen. In Zukunft wird es ein Backend geben. Hier soll dann die Seite selbst individuell gestaltet werden können. Das Frontend wird mit React.js entwickelt. 
+Mit diesem Programm soll es möglich sein eine Landingpage zu gestalten. Aktuell geht dies aber nur über das pflegen der Inhalte (Bilder, Überschriften, Icons, Texte). Dies lässt sich Momentan nur über eine config.json anpassen. In Zukunft wird es eine Admin Oberfläche geben. Hier soll dann die Seite selbst individuell gestaltet werden können. Das Frontend wird mit React.js entwickelt. 
 
 ## Module
 Aktuell stehen folgende pflegbare Module zur Verfügung:
