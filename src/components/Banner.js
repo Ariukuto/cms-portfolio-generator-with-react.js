@@ -1,4 +1,5 @@
 import React from 'react';
+import {Image} from './Image';
 
 export class Banner extends React.Component {
 
@@ -9,7 +10,6 @@ export class Banner extends React.Component {
             desktop: '',
         }
         this.loadMobileImg(this.props.data.mobile);
-        this.loadDesktopImg(this.props.data.desktop);
     }
 
     loadMobileImg(imageName) {
@@ -20,20 +20,12 @@ export class Banner extends React.Component {
         });
     };
 
-    loadDesktopImg(imageName) {
-        import(`../imgs/${imageName}`).then(image => {
-            this.setState({
-                desktop:image.default
-            });
-        });
-    };
-
     render() {
         return (
             <div className='Banner'>
                  <picture>
                      <source media="(orientation:portrait)" srcSet={this.state.mobile} />
-                     <img src={this.state.desktop} alt="banner" />
+                     <Image img={this.props.data.desktop} />
                  </picture>
             </div> 
          ); 

@@ -36,6 +36,8 @@
 .Content .Vorstellung img {
   width: 100%;
   object-fit: scale-down;
+  object-position: top;
+  height: 447px;
 }
 @media (orientation: portrait) {
   .Content .Vorstellung img {

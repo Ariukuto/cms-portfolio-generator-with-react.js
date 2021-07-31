@@ -6,7 +6,6 @@ export class Details extends React.Component
 {
     constructor(props) {
         super(props);
-        console.log("Details props", props);
         this.state = {
             config: this.props.data
         }

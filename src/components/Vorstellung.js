@@ -1,5 +1,6 @@
 import React from 'react';
 import {Headline} from './Headline.js';
+import {Image} from './Image';
 
 
 export class Vorstellung extends React.Component {
@@ -11,11 +12,6 @@ export class Vorstellung extends React.Component {
             img: '',
             text: this.props.data.text,
         }
-        import(`../imgs/${this.props.data.img}`).then(image => {
-            this.setState({
-                img:image.default
-             });
-        });
     }
 
     render() {
@@ -24,7 +20,7 @@ export class Vorstellung extends React.Component {
                 <Headline text={this.state.headline}/>
                 <div className='row'>
                     <div className='col-md d-flex justify-content-center'>
-                        <img src={this.state.img} alt='' />
+                        <Image img={this.props.data.img} />
                     </div>
                     <div className='col-md d-flex'>
                         {this.state.text}
