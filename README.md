@@ -22,4 +22,5 @@ Aktuell stehen folgende pflegbare Module zur Verfügung:
 6. pflegen der Inhalte unter src/config/config.json
 
 ## Beispielbild
-![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/sample.png?raw=true)
+![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/sample.png?raw=true)
+![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/iconrow.png?raw=true)
