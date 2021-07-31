@@ -1,98 +1,96 @@
-[
-    {
-        "navigation": {
-            "logo": "",
-            "links": [
-                {"name": "Link 1", "url": "#"},
-                {"name": "Link 2", "url": "#"},
-                {"name": "Link 3", "url": "#"}
+{
+    "navigation": {
+        "logo": "",
+        "links": [
+            {"name": "Link 1", "url": "#"},
+            {"name": "Link 2", "url": "#"},
+            {"name": "Link 3", "url": "#"}
+        ]
+    },
+
+
+    "content": {
+        
+        "banner": {
+            "backgroundcolor": "white",
+            "mobile": "placeholder.png",
+            "desktop": "placeholder.png"
+        },
+
+        "vorstellung": {
+            "backgroundcolor": "white",
+            "headline": "Vorstellung",
+            "img": "placeholder.png",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        },
+
+        "iconrow": {
+            "backgroundcolor": "white",
+            "headline": "Auf einen Blick",
+            "icons": [
+                {
+                    "name":"bi-emoji-smile",
+                    "headline": "Thema 1",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+                },
+                {
+                    "name":"bi-wifi",
+                    "headline": "Thema 2",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+                },
+                {
+                    "name":"bi-emoji-smile",
+                    "headline": "Thema 3",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+                },
+                {
+                    "name":"bi-wifi",
+                    "headline": "Thema 4",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+                }
             ]
         },
 
-
-        "content": {
-            
-            "banner": {
-                "backgroundcolor": "white",
-                "mobile": "placeholder.png",
-                "desktop": "placeholder.png"
-            },
-    
-            "vorstellung": {
-                "backgroundcolor": "white",
-                "headline": "Vorstellung",
-                "img": "placeholder.png",
-                "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-            },
-    
-            "iconrow": {
-                "backgroundcolor": "white",
-                "headline": "Auf einen Blick",
-                "icons": [
-                    {
-                        "name":"bi-emoji-smile",
-                        "headline": "Thema 1",
-                        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
-                    },
-                    {
-                        "name":"bi-emoji-smile",
-                        "headline": "Thema 2",
-                        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
-                    },
-                    {
-                        "name":"bi-emoji-smile",
-                        "headline": "Thema 3",
-                        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
-                    },
-                    {
-                        "name":"bi-emoji-smile",
-                        "headline": "Thema 4",
-                        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
-                    }
-                ]
-            },
-    
-            "details": {
-                "backgroundcolor": "white",
-                "headline": "Details",
-                "content": [
-                    {
-                        "headline": "Thema 1", 
-                        "img": "placeholder.png", 
-                        "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                    },
-                    {
-                        "headline": "Thema 2",
-                        "img": "placeholder.png",
-                        "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                    },
-                    {
-                        "headline": "Thema 3",
-                        "img": "placeholder.png",
-                        "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                    },
-                    {
-                        "headline": "Thema 4", 
-                        "img": "placeholder.png", 
-                        "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                    }
-                ]
-            },
-
-            "footer": {
-                "backgroundcolor": "white",
-                "rows": {
-                    "spalte1": [
-                        {"name": "footer Link 1"}
-                    ],
-                    "spalte2": [
-                        {"name": "footer link 2"}
-                    ],
-                    "spalte3": [
-                        {"name": "footer link 3"}
-                    ]
+        "details": {
+            "backgroundcolor": "white",
+            "headline": "Details",
+            "content": [
+                {
+                    "headline": "Thema 1", 
+                    "img": "placeholder.png", 
+                    "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                },
+                {
+                    "headline": "Thema 2",
+                    "img": "placeholder.png",
+                    "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                },
+                {
+                    "headline": "Thema 3",
+                    "img": "placeholder.png",
+                    "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                },
+                {
+                    "headline": "Thema 4", 
+                    "img": "placeholder.png", 
+                    "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
                 }
+            ]
+        },
+
+        "footer": {
+            "backgroundcolor": "white",
+            "rows": {
+                "spalte1": [
+                    {"name": "footer Link 1"}
+                ],
+                "spalte2": [
+                    {"name": "footer link 2"}
+                ],
+                "spalte3": [
+                    {"name": "footer link 3"}
+                ]
             }
         }
     }
-]
+}
