@@ -21,4 +21,4 @@ Aktuell stehen folgende pflegbare Module zur Verfügung:
 5. npm start oder npm build
 6. pflegen der Inhalte unter src/config/config.json
 
-![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/src/imgs/placeholder.png?raw=true)
+![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/sample.png?raw=true)
