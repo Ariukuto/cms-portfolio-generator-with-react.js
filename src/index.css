@@ -53,6 +53,8 @@
 .Content .Details {
   margin-top: 50px;
   margin-bottom: 50px;
+  line-height: 2;
+  text-align: justify;
 }
 .Content .Details .row {
   padding-top: 1rem;
@@ -60,6 +62,17 @@
 }
 .Content .Details img {
   width: 100%;
+  margin-bottom: 20px;
+}
+@media (orientation: portrait) {
+  .Content .Details .column-picture {
+    order: 1;
+  }
+}
+@media (orientation: portrait) {
+  .Content .Details .column-text {
+    order: 2;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

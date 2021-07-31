@@ -45,12 +45,27 @@
     .Details {
         margin-top: 50px;
         margin-bottom: 50px;
+        line-height: 2;
+        text-align: justify;
         .row {
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
         img {
             width: 100%;
+            margin-bottom: 20px;
+        }
+        // Sorgt dafür, dass in der mobilen Ansicht, zuerst das Bild und dann der Text angezeigt wird
+        .column-picture {
+            @media (orientation: portrait) {
+                order: 1;    
+            }
+        }
+        // Sorgt dafür, dass in der mobilen Ansicht, zuerst das Bild und dann der Text angezeigt wird
+        .column-text {
+            @media (orientation: portrait) {
+                order: 2;    
+            }
         }
 
     }

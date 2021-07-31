@@ -21,10 +21,10 @@ export class Details extends React.Component
                     if(rest === 0) {
                         return(
                             <div key={index} className='row'>
-                                <div className='col-sm'>
+                                <div className='col-sm column-picture'>
                                     <Image img={content.img} />
                                 </div>
-                                <div className='col-sm'>
+                                <div className='col-sm column-text'>
                                     <h4>{content.headline}</h4>
                                     {content.text}
                                 </div>
@@ -33,11 +33,11 @@ export class Details extends React.Component
                     } else {
                         return(
                             <div key={index} className='row'>
-                                <div className='col-sm'>
+                                <div className='col-sm column-text'>
                                     <h4>{content.headline}</h4>
                                     {content.text}
                                 </div>
-                                <div className='col-sm'>
+                                <div className='col-sm column-picture'>
                                     <Image img={content.img} /> 
                                 </div>
                             </div>
