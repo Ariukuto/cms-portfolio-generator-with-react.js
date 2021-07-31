@@ -4,8 +4,6 @@ import {Content} from './Content.js';
 import {Footer} from './Footer.js';
 
 
-
-
 export class App extends React.Component {
   render() {
     return (

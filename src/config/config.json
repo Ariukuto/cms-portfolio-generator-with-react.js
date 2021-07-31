@@ -29,22 +29,22 @@
             "headline": "Auf einen Blick",
             "icons": [
                 {
-                    "name":"bi-emoji-smile",
+                    "name": "fas fa-subway",
                     "headline": "Thema 1",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 },
                 {
-                    "name":"bi-wifi",
+                    "name": "fas fa-wifi",
                     "headline": "Thema 2",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 },
                 {
-                    "name":"bi-emoji-smile",
+                    "name": "fas fa-leaf",
                     "headline": "Thema 3",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 },
                 {
-                    "name":"bi-wifi",
+                    "name":"fas fa-charging-station",
                     "headline": "Thema 4",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 }

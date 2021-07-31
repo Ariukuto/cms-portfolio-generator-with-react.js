@@ -25,7 +25,7 @@ export class Iconrow extends React.Component {
                                     <div className='headline'>
                                         <strong>{icon.headline}</strong>
                                     </div>
-                                    <div>
+                                    <div className='text' >
                                         {icon.text}
                                     </div>
                                 </div>

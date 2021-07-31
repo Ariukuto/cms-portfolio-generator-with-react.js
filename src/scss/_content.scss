@@ -31,6 +31,7 @@
             height: 447px;
             @media (orientation: portrait) {
                 margin-bottom: 20px;
+                height: unset;
             }
         }
     }
@@ -41,6 +42,14 @@
         padding-bottom: 1rem;
         .Icon i {
             font-size: 70px;
+            padding: 2rem;
+        }
+        .text {
+            // text-align: justify;
+            line-height: 2;
+            @media (orientation: portrait) {
+                margin-bottom: 50px;
+            }
         }
     }
 

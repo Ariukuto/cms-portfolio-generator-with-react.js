@@ -42,6 +42,7 @@
 @media (orientation: portrait) {
   .Content .Vorstellung img {
     margin-bottom: 20px;
+    height: unset;
   }
 }
 .Content .Iconrow {
@@ -51,6 +52,15 @@
 }
 .Content .Iconrow .Icon i {
   font-size: 70px;
+  padding: 2rem;
+}
+.Content .Iconrow .text {
+  line-height: 2;
+}
+@media (orientation: portrait) {
+  .Content .Iconrow .text {
+    margin-bottom: 50px;
+  }
 }
 .Content .Details {
   margin-top: 50px;
