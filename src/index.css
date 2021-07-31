@@ -50,5 +50,16 @@
 .Content .Iconrow .Icon i {
   font-size: 70px;
 }
+.Content .Details {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.Content .Details .row {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.Content .Details img {
+  width: 100%;
+}
 
 /*# sourceMappingURL=index.css.map */

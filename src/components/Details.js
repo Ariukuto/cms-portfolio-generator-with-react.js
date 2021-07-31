@@ -25,6 +25,7 @@ export class Details extends React.Component
                                     <Image img={content.img} />
                                 </div>
                                 <div className='col-sm'>
+                                    <h4>{content.headline}</h4>
                                     {content.text}
                                 </div>
                             </div>
@@ -33,6 +34,7 @@ export class Details extends React.Component
                         return(
                             <div key={index} className='row'>
                                 <div className='col-sm'>
+                                    <h4>{content.headline}</h4>
                                     {content.text}
                                 </div>
                                 <div className='col-sm'>
