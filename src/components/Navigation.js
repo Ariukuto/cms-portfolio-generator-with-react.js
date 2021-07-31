@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../imgs/logo.png';
+import { Image } from './Image';
 
 /**
  * @name Navigation
@@ -22,7 +22,7 @@ export class Navigation extends React.Component {
     
                         {/* logo */}
                         <a className="navbar-brand" href="#">
-                            <img src={logo} className='logo' alt="logo" />
+                            {this.state.config.logo !== "" ? <Image img={this.state.config.logo}/> : 'LOGO' }
                         </a>
     
                         {/* mobile burger menu */}

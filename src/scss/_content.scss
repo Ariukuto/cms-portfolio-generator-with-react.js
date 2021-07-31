@@ -27,6 +27,8 @@
         img {
             width: 100%;
             object-fit: scale-down;
+            object-position: top;
+            height: 447px;
             @media (orientation: portrait) {
                 margin-bottom: 20px;
             }

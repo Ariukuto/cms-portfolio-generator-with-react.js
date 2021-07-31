@@ -23,7 +23,7 @@ export class Vorstellung extends React.Component {
             <div className="Vorstellung">
                 <Headline text={this.state.headline}/>
                 <div className='row'>
-                    <div className='col-md d-flex justify-content-center align-items-center'>
+                    <div className='col-md d-flex justify-content-center'>
                         <img src={this.state.img} alt='' />
                     </div>
                     <div className='col-md d-flex'>

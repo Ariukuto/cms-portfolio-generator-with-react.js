@@ -23,12 +23,19 @@ export class Content extends React.Component {
     render() {
         return (
             <div className='Content border'>
+                
                 <Banner data={this.state.config.banner} />
+
                 <div class='container'>
                     <Vorstellung data={this.state.config.vorstellung} />
-                    <Iconrow data={this.state.config.iconrow} />
+                </div>
+
+                <Iconrow data={this.state.config.iconrow} />
+
+                <div className='container'>
                     <Details data={this.state.config.details} />
                 </div>
+
             </div>
         );
     }
