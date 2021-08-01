@@ -20,7 +20,7 @@ Aktuell stehen folgende pflegbare Module zur Verfügung:
 **icons**  
 Momentan werden folgende Icon Anbieter unterstützt:
 + Bootstrap Icons
-+ Fontawesome Icons Free
++ Font Awesome Icons Free
 Weitere werden folgen...
 
 
