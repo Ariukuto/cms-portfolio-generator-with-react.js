@@ -22,7 +22,7 @@ export class Content extends React.Component {
 
     render() {
         return (
-            <div className='Content border'>
+            <div className='Content'>
                 
                 <Banner data={this.state.config.banner} />
 

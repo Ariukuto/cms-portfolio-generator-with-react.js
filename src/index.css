@@ -87,4 +87,12 @@
   }
 }
 
+.Footer {
+  padding: 1rem;
+  text-decoration: none;
+}
+.Footer h6 {
+  font-size: 20px;
+}
+
 /*# sourceMappingURL=index.css.map */
