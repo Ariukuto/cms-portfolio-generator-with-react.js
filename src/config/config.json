@@ -30,16 +30,19 @@
             "headline": "Auf einen Blick",
             "fields": [
                 {
-                    "icon": {
-                        "name": "fas fa-subway",
+                    "grafik": {
+                        "is_icon": false,
+                        "name": "placeholder.png",
                         "color": "red",
-                        "size": "70px"
+                        "size": "130px",
+                        "abstand_unten": "4px"
                     },
                     "headline": "Thema 1",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 },
                 {   
-                    "icon": {
+                    "grafik": {
+                        "is_icon": true,
                         "name": "fas fa-wifi",
                         "color": "lightblue",
                         "size": "70px"
@@ -48,7 +51,8 @@
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 },
                 {
-                    "icon": {
+                    "grafik": {
+                        "is_icon": true,
                         "name": "fas fa-leaf",
                         "color": "lightgreen",
                         "size": "70px"
@@ -57,7 +61,8 @@
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 },
                 {
-                    "icon": {
+                    "grafik": {
+                        "is_icon": true,
                         "name":"fas fa-charging-station",
                         "color": "orange",
                         "size": "70px"
@@ -103,24 +108,30 @@
         "fontcolor": "white",
         "columns": [
             {
-                "headline": "Spalte 1",
+                "headline": "",
                 "text-align": "center",
                 "links": [
                     {"name":"Impressum"}
                 ]
             },
             {
-                "headline": "Spalte 2",
+                "headline": "",
                 "text-align": "center",
                 "links": [
                     {"name":"Kontakt"}
                 ]
             },
             {
-                "headline": "Spalte 3",
+                "headline": "",
                 "text-align": "center",
                 "links": [
-                    {"name":"Datenschutz"},
+                    {"name":"Datenschutz"}
+                ]
+            },
+            {
+                "headline": "",
+                "text-align": "center",
+                "links": [
                     {"name":"Lizenzen"}
                 ]
             }
