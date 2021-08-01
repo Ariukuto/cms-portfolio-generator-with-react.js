@@ -32,6 +32,10 @@ Weitere werden folgen...
 5. npm start oder npm build
 6. pflegen der Inhalte unter src/config/config.json
 
+## Beispiel Iconpflege
+Am Beispiel Font Awesome:  
+
+
 ## Beispielbild
 ![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/sample.png?raw=true)
 ![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/iconrow.png?raw=true)
