@@ -49,6 +49,3 @@ Es können beliebig viele icons hinzugefügt werden. Die Anzahl ist abhängig vo
 ![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/iconrow.png?raw=true)
 ![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/details.png?raw=true)
 
-## config.json Beispiel
-![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/config.json.png?raw=true)
-
