@@ -17,6 +17,17 @@ export class Footer extends React.Component {
         this.fullwith = footerobj.fullwith;
     }
 
+    renderHeadline(col) {
+        if(!col.headline) {
+            return '';
+        }
+        return (
+            <h6 style={{color:this.headlinecolor}}>
+                {col.headline} 
+            </h6>
+        )
+    }
+
     render() {
         return (
             <div 
@@ -27,10 +38,10 @@ export class Footer extends React.Component {
                     {this.columns.map((col, i) => {
                         return (
                             <div key={i} className="col d-flex flex-column text-center">
-                                <h6 style={{color:this.headlinecolor}}> {col.headline} </h6>
+                               {this.renderHeadline(col)}
                                 {col.links.map((link, j) => {
                                     return(
-                                        <a key={j} href="#" target="_blank" rel="" 
+                                        <a key={j} href="" target="_blank" rel="" 
                                             style={{color:this.fontcolor}} 
                                         > 
                                             {link.name}
