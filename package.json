@@ -1,5 +1,8 @@
 {
-  "name": "felix-pirate-page",
+  "name": "landingpage-cms-generator-with-react.js",
+  "author": {
+    "name": "sven buettner"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
