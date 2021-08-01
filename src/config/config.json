@@ -27,24 +27,40 @@
         "iconrow": {
             "backgroundcolor": "white",
             "headline": "Auf einen Blick",
-            "icons": [
+            "fields": [
                 {
-                    "name": "fas fa-subway",
+                    "icon": {
+                        "name": "fas fa-subway",
+                        "color": "red",
+                        "size": "70px"
+                    },
                     "headline": "Thema 1",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 },
-                {
-                    "name": "fas fa-wifi",
+                {   
+                    "icon": {
+                        "name": "fas fa-wifi",
+                        "color": "lightblue",
+                        "size": "70px"
+                    },
                     "headline": "Thema 2",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 },
                 {
-                    "name": "fas fa-leaf",
+                    "icon": {
+                        "name": "fas fa-leaf",
+                        "color": "lightgreen",
+                        "size": "70px"
+                    },
                     "headline": "Thema 3",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 },
                 {
-                    "name":"fas fa-charging-station",
+                    "icon": {
+                        "name":"fas fa-charging-station",
+                        "color": "orange",
+                        "size": "70px"
+                    },
                     "headline": "Thema 4",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 }

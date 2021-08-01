@@ -18,15 +18,15 @@ export class Iconrow extends React.Component {
                 <Headline text={this.state.config.headline} />
                 <div className='container'>
                     <div className='row'>
-                        {this.state.config.icons.map((icon, index) => {
+                        {this.state.config.fields.map((field, index) => {
                             return(
                                 <div key={index} className='col-md d-flex flex-column text-center'>
-                                    <Icon name={icon.name} />
+                                    <Icon icon={field.icon} />
                                     <div className='headline'>
-                                        <strong>{icon.headline}</strong>
+                                        <strong>{field.headline}</strong>
                                     </div>
                                     <div className='text' >
-                                        {icon.text}
+                                        {field.text}
                                     </div>
                                 </div>
                             );
