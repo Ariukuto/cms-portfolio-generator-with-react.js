@@ -1,16 +1,29 @@
 # landingpage-cms-react
 
 ## Beschreibung
-Mit diesem Programm soll es möglich sein eine Landingpage zu gestalten. Aktuell geht dies aber nur über das pflegen der Inhalte (Bilder, Überschriften, Icons, Texte). Dies lässt sich Momentan nur über eine config.json anpassen. In Zukunft wird es eine Admin Oberfläche geben. Hier soll dann die Seite selbst individuell gestaltet werden können. Das Frontend wird mit React.js entwickelt. 
+Dieses Tool ermöglicht es, eine Landingpage schnell und einfach, automatisch zu generieren. Das Pflegen der Inhalte funktioniert aktuell noch über eine config.json. In Zukunft wird es noch eine Admin Oberfläche geben. Das Frontend wird hauptsächlich mit React.js Komponentenbasiert entwickelt. Dies ermöglich eine schnellere Anpassung und in Zukunft wird es so möglich sein bestehende Komponenten zu erweitern. Durch die Entwicklung mit SASS/SCSS war es möglich, eine leicht wartbare Styling Architektur zu entwickeln. So lässt sich mit wenig Aufwand eigene Templates erstellen.
 
-## Module
+**Technologiestack**  
++ React.js (mit JSX)
++ SASS/SCSS (Precompiler für CSS)
++ node.js
++ npm
++ 
+
+**Module**  
 Aktuell stehen folgende pflegbare Module zur Verfügung:
 + Navigation (Logo, links)
 + Banner (img)
 + Headline (Text)
 + Vorstellung (Bild, Text)
 + Iconrow (Headline, Icons, headlines, text)
-+ Details (Bild, abwechselnd links und rechts)
++ Details (Bild, abwechselnd links und rechts)  
+
+**icons**  
+Momentan werden folgende Icon Anbieter untersützt:
++ Bootstrap Icons
++ Fontawesome Icons Free
+Weitere werden folgen...
 
 
 ## Get Started
