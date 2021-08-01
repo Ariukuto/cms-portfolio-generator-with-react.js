@@ -38,6 +38,7 @@ Weitere werden folgen...
 
 ## Beispiel Iconpflege
 Am Beispiel Font Awesome:  
+Screenshot von der Seite: https://fontawesome.com/v5.15/icons/subway?style=solid
 ![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/fa.png?raw=true)  
 Gesamten CSS Klassennamen des `<i>` Tags: `fas fa-subway` kopieren und in config.json einfügen
 ![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/configicon.png?raw=true)  
