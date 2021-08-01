@@ -3,6 +3,10 @@
 ## Beschreibung
 Dieses Tool ermöglicht es, eine responsive Landingpage schnell und einfach, automatisch zu generieren. Das Pflegen der Inhalte funktioniert aktuell noch über eine config.json. In Zukunft wird es noch eine Admin Oberfläche geben. Das Frontend wird hauptsächlich mit React.js Komponenten entwickelt. Dies ermöglich eine schnellere Anpassung und bessere Wartbarkeit. In Zukunft wird es so möglich sein bestehende Komponenten zu erweitern um es an eigene Bedürfnisse anzupassen. Durch die Entwicklung mit SASS/SCSS war es möglich, eine leicht wartbare Styling Architektur zu entwickeln. So lassen sich mit wenig Aufwand eigene Templates erstellen.
 
+**Einschränkungen**  
+Aktuell lässt sich die Hintergrundfarbe noch nicht anpassen. In der config.json gibt es nur schon ein Feld dafür.
+
+
 **Technologiestack**  
 + React.js (mit JSX)
 + SASS/SCSS (Precompiler für CSS)
