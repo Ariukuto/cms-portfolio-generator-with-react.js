@@ -43,7 +43,7 @@ Screenshot von der Seite: https://fontawesome.com/v5.15/icons/subway?style=solid
 Gesamten CSS Klassennamen des `<i>` Tags: `fas fa-subway` kopieren und in config.json einfügen  
 <br/><br/>
 ![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/configicon.png?raw=true)  
-Es können beliebig viele icons hinzugefügt werden. Die Anzahl ist abhängig von Objekten `{}` innerhalb des `icons: []` Arrays.
+Es können beliebig viele icons hinzugefügt werden. Die Anzahl ist abhängig von Objekten `{}` innerhalb des `fields: []` Arrays.
 
 ## Beispielbild
 ![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/sample.png?raw=true)
