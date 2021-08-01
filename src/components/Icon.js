@@ -16,7 +16,6 @@ export class Icon extends React.Component {
             
             if(is_icon === false) {
                 import(`../imgs/${this.name}`).then(img => {
-                    console.log(img);
                     this.setState({image: img.default})
                 });
             }
