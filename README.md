@@ -7,7 +7,6 @@ Dieses Tool ermöglicht es, eine Landingpage schnell und einfach, automatisch zu
 + React.js (mit JSX)
 + SASS/SCSS (Precompiler für CSS)
 + Bootstrap (UI- und Grid Framework)
-+ 
 
 **Module**  
 Aktuell stehen folgende pflegbare Module zur Verfügung:
