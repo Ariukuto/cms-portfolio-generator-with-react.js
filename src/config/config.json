@@ -12,6 +12,7 @@
     "content": {
         
         "banner": {
+            "fullwith": "true",
             "backgroundcolor": "white",
             "mobile": "placeholder.png",
             "desktop": "placeholder.png"

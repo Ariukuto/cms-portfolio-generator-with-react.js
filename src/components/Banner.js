@@ -21,8 +21,9 @@ export class Banner extends React.Component {
     };
 
     render() {
+
         return (
-            <div className='Banner'>
+            <div className={`Banner + ${this.props.data.fullwith ==! 'true' ? 'container' : ''}`}>
                  <picture>
                      <source media="(orientation:portrait)" srcSet={this.state.mobile} />
                      <Image img={this.props.data.desktop} />
