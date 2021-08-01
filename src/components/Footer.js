@@ -30,7 +30,9 @@ export class Footer extends React.Component {
                                 <h6 style={{color:this.headlinecolor}}> {col.headline} </h6>
                                 {col.links.map((link, j) => {
                                     return(
-                                        <a key={j} href="#" target="_blank" rel="" style={{color:this.fontcolor, paddingBottom:"1rem"}}> 
+                                        <a key={j} href="#" target="_blank" rel="" 
+                                            style={{color:this.fontcolor}} 
+                                        > 
                                             {link.name}
                                         </a>
                                     );
