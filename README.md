@@ -28,13 +28,14 @@ Weitere werden folgen...
 1. git installieren
 2. npm installieren 
 3. git clone [URL]
-4. npm install
-5. npm start oder npm build
-6. pflegen der Inhalte unter src/config/config.json
+4. `npm install` im Terminal des Projektverzeichnises ausführen
+5. `npm start` oder `npm build`
+6. pflegen der Inhalte unter `src/config/config.json`
 
 ## Beispiel Iconpflege
 Am Beispiel Font Awesome:  
-![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/fa.png?raw=true)
+![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/fa.png?raw=true)  
+Gesamten CSS Klassennamen des `<i>` Tags: `fas fa-subway` kopieren und in config.json einfügen
 
 ## Beispielbild
 ![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/sample.png?raw=true)
