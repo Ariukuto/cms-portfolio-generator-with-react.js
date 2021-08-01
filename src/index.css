@@ -89,10 +89,12 @@
 
 .Footer {
   padding: 1rem;
-  text-decoration: none;
 }
 .Footer h6 {
   font-size: 20px;
+}
+.Footer a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=index.css.map */
