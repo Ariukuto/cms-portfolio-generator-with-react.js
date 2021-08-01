@@ -36,6 +36,7 @@ Weitere werden folgen...
 Am Beispiel Font Awesome:  
 ![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/fa.png?raw=true)  
 Gesamten CSS Klassennamen des `<i>` Tags: `fas fa-subway` kopieren und in config.json einfügen
+![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/configicon.png?raw=true)  
 
 ## Beispielbild
 ![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/sample.png?raw=true)
