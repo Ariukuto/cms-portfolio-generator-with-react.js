@@ -6,8 +6,7 @@ Dieses Tool ermöglicht es, eine Landingpage schnell und einfach, automatisch zu
 **Technologiestack**  
 + React.js (mit JSX)
 + SASS/SCSS (Precompiler für CSS)
-+ node.js
-+ npm
++ Bootstrap (UI- und Grid Framework)
 + 
 
 **Module**  
@@ -20,7 +19,7 @@ Aktuell stehen folgende pflegbare Module zur Verfügung:
 + Details (Bild, abwechselnd links und rechts)  
 
 **icons**  
-Momentan werden folgende Icon Anbieter untersützt:
+Momentan werden folgende Icon Anbieter unterstützt:
 + Bootstrap Icons
 + Fontawesome Icons Free
 Weitere werden folgen...
