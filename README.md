@@ -34,7 +34,7 @@ Weitere werden folgen...
 
 ## Beispiel Iconpflege
 Am Beispiel Font Awesome:  
-![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/fa.png?raw=true)
+![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/?raw=true)
 
 ## Beispielbild
 ![alt text](https://github.com/Ariukuto/landingpage-cms-react/blob/main/.githubres/sample.png?raw=true)
