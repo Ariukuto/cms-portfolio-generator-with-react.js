@@ -13,13 +13,12 @@
         
         "banner": {
             "fullwith": "true",
-            "backgroundcolor": "white",
             "mobile": "placeholder.png",
             "desktop": "placeholder.png"
         },
 
         "vorstellung": {
-            "backgroundcolor": "white",
+            "backgroundcolor": "#f8f9fa",
             "headline": "Vorstellung",
             "imgbox": {
                 "img": "placeholder.png",
@@ -32,14 +31,14 @@
         },
 
         "iconrow": {
-            "backgroundcolor": "white",
+            "backgroundcolor": "#f8f9fa",
             "headline": "Auf einen Blick",
             "fields": [
                 {
                     "grafik": {
                         "is_icon": false,
                         "name": "placeholder.png",
-                        "color": "red",
+                        "color": "black",
                         "size": "130px",
                         "abstand_unten": "4px"
                     },
@@ -50,7 +49,7 @@
                     "grafik": {
                         "is_icon": true,
                         "name": "fas fa-wifi",
-                        "color": "lightblue",
+                        "color": "black",
                         "size": "70px"
                     },
                     "headline": "Thema 2",
@@ -60,7 +59,7 @@
                     "grafik": {
                         "is_icon": true,
                         "name": "fas fa-leaf",
-                        "color": "lightgreen",
+                        "color": "black",
                         "size": "70px"
                     },
                     "headline": "Thema 3",
@@ -70,7 +69,7 @@
                     "grafik": {
                         "is_icon": true,
                         "name":"fas fa-charging-station",
-                        "color": "orange",
+                        "color": "black",
                         "size": "70px"
                     },
                     "headline": "Thema 4",
