@@ -9,20 +9,23 @@ export class Navigation extends React.Component {
 
     constructor(props) {
         super(props);
+        let config = props.config;
         this.state = {
-            config: props.config
+            fullwith: config.fullwith,
+            logo: config.logo,
+            backgroundcolor: config.backgroundcolor,
+            links: config.links,
         }
     }
 
     render() {
         return(
-            <div className='container Navigation'>
-                <div className="navbar navbar-expand-lg navbar-light">
-                    <div className="container-fluid">
+            <div className='Navigation' style={{backgroundColor:this.state.backgroundcolor}}>
+                <div className={`navbar navbar-expand-lg navbar-light ${this.state.fullwith === true ? 'container-fluid': 'container' }`}> 
     
                         {/* logo */}
                         <a className="navbar-brand" href="#">
-                            {this.state.config.logo !== "" ? <Image img={this.state.config.logo}/> : 'LOGO' }
+                            {this.state.logo !== "" ? <Image img={this.state.config.logo}/> : 'LOGO' }
                         </a>
     
                         {/* mobile burger menu */}
@@ -34,7 +37,7 @@ export class Navigation extends React.Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <div className="navbar-nav">
                                 {/* Loop */}
-                                {this.state.config.links.map((link, index) => {
+                                {this.state.links.map((link, index) => {
                                     return (
                                         <div key={index} className="nav-item">
                                             <a  className="nav-link" aria-current="page" title={link.title || ''} href={link.url} target="_blank">
@@ -46,7 +49,7 @@ export class Navigation extends React.Component {
                             </div>
                         </div>
     
-                    </div>
+                    
                 </div>
             </div> 
         )
