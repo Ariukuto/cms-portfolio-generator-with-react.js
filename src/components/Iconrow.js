@@ -11,7 +11,7 @@ export class Iconrow extends React.Component {
 
     render() {
         return(
-            <div className='Iconrow' style={{background: this.config.backgroundcolor}}>
+            <div className='Iconrow pb-5' style={{background: this.config.backgroundcolor}}>
                 <Headline text={this.config.headline} />
                 <div className='container'>
                     <div className='row'>
