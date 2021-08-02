@@ -1,13 +1,24 @@
 {
+
+    "page": {
+        "background": {
+            "img": {
+                "render": false,
+                "name": ""
+            },
+            "backgroundcolor": ""
+        } 
+    },
+
     "navigation": {
         "logo": "",
+        "backgroundcolor": "orange",
         "links": [
             {"name": "Link 1", "url": "#"},
             {"name": "Link 2", "url": "#"},
             {"name": "Link 3", "url": "#"}
         ]
     },
-
 
     "content": {
         
