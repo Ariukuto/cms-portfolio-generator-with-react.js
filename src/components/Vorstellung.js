@@ -22,7 +22,7 @@ export class Vorstellung extends React.Component {
         return(
             <div className={`Vorstellung pb-5
                 ${this.state.fullwith === true ? 'container-fluid' : 'container'}
-                ${this.state.shadow === true ? 'shadow-lg' : ''}
+                ${this.state.shadow === true ? 'shadow' : ''}
             `}
                 style={{background:this.state.backgroundcolor}}
             >

@@ -6,13 +6,14 @@
                 "render": false,
                 "name": ""
             },
-            "backgroundcolor": "#f8f9fa"
+            "backgroundcolor": "white"
         } 
     },
 
     "navigation": {
+        "fullwith": false,
         "logo": "",
-        "backgroundcolor": "",
+        "backgroundcolor": "white",
         "links": [
             {"name": "Link 1", "url": "#"},
             {"name": "Link 2", "url": "#"},
@@ -44,7 +45,7 @@
         },
 
         "iconrow": {
-            "backgroundcolor": "white",
+            "backgroundcolor": "",
             "headline": "Auf einen Blick",
             "fields": [
                 {
