@@ -1,6 +1,7 @@
 import React from 'react';
 import {Headline} from './Headline.js';
-import {Image} from './Image';
+import {Imagebox} from './Imagebox';
+import {Textbox} from './Textbox';
 
 
 export class Vorstellung extends React.Component {
@@ -20,12 +21,8 @@ export class Vorstellung extends React.Component {
                 <Headline text={this.state.headline}/>
                 <div className='d-flex justify-content-center'>
                     <div className='d-flex flex-wrap'>
-                        <div className='imagebox' style={{height: this.state.imgbox.height}}>
-                            <Image img={this.state.imgbox.img} />
-                        </div>
-                        <div className='text' style={{maxWidth: this.state.textbox.width}}>
-                            {this.state.textbox.content}
-                        </div>
+                        <Imagebox imgbox={this.state.imgbox} />
+                        <Textbox textbox={this.state.textbox} />
                     </div>
                 </div>
             </div>
