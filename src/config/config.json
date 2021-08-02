@@ -6,13 +6,13 @@
                 "render": false,
                 "name": ""
             },
-            "backgroundcolor": ""
+            "backgroundcolor": "#f8f9fa"
         } 
     },
 
     "navigation": {
         "logo": "",
-        "backgroundcolor": "orange",
+        "backgroundcolor": "",
         "links": [
             {"name": "Link 1", "url": "#"},
             {"name": "Link 2", "url": "#"},
@@ -29,7 +29,9 @@
         },
 
         "vorstellung": {
-            "backgroundcolor": "#f8f9fa",
+            "backgroundcolor": "white",
+            "shadow": true,
+            "fullwith": false,
             "headline": "Vorstellung",
             "imgbox": {
                 "img": "placeholder.png",
@@ -42,7 +44,7 @@
         },
 
         "iconrow": {
-            "backgroundcolor": "#f8f9fa",
+            "backgroundcolor": "white",
             "headline": "Auf einen Blick",
             "fields": [
                 {
@@ -51,7 +53,8 @@
                         "name": "placeholder.png",
                         "color": "black",
                         "size": "130px",
-                        "abstand_unten": "4px"
+                        "abstand_unten": "4px",
+                        "url": ""
                     },
                     "headline": "Thema 1",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
@@ -61,7 +64,8 @@
                         "is_icon": true,
                         "name": "fas fa-wifi",
                         "color": "black",
-                        "size": "70px"
+                        "size": "70px",
+                        "url": ""
                     },
                     "headline": "Thema 2",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
@@ -71,7 +75,8 @@
                         "is_icon": true,
                         "name": "fas fa-leaf",
                         "color": "black",
-                        "size": "70px"
+                        "size": "70px",
+                        "url": ""
                     },
                     "headline": "Thema 3",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
@@ -81,7 +86,8 @@
                         "is_icon": true,
                         "name":"fas fa-charging-station",
                         "color": "black",
-                        "size": "70px"
+                        "size": "70px",
+                        "url": ""
                     },
                     "headline": "Thema 4",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"

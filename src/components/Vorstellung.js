@@ -7,19 +7,27 @@ export class Vorstellung extends React.Component {
 
     constructor(props) {
         super(props);
-        this.backgroundcolor = props.data.backgroundcolor;
-        this.headline = props.data.headline;
-        this.textbox = props.data.textbox;
-        this.imgbox = props.data.imgbox;
+        this.state = {
+            backgroundcolor: props.data.backgroundcolor,
+            headline: props.data.headline,
+            shadow: props.data.shadow,
+            fullwith: props.data.fullwith,
+            textbox: props.data.textbox,
+            imgbox:props.data.imgbox,
+        }
+
     }
 
     render() {
         return(
-            <div className="Vorstellung container pb-5" 
-                style={{background:this.backgroundcolor}}
+            <div className={`Vorstellung pb-5
+                ${this.state.fullwith === true ? 'container-fluid' : 'container'}
+                ${this.state.shadow === true ? 'shadow-lg' : ''}
+            `}
+                style={{background:this.state.backgroundcolor}}
             >
-                <Headline text={this.headline}/>
-                <ImgTextRow  imgbox={this.imgbox} textbox={this.textbox} />
+                <Headline text={this.state.headline}/>
+                <ImgTextRow  imgbox={this.state.imgbox} textbox={this.state.textbox} />
             </div>
         );
     }
