@@ -47,12 +47,12 @@
     height: unset;
   }
 }
-.Content .Vorstellung .text {
+.Content .Vorstellung .Textbox {
   text-align: justify;
   padding-left: 1rem;
 }
 @media (orientation: portrait) {
-  .Content .Vorstellung .text {
+  .Content .Vorstellung .Textbox {
     padding-left: unset;
   }
 }
