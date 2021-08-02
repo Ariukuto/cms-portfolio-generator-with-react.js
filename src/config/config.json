@@ -80,7 +80,7 @@
         },
 
         "details": {
-            "fullwith": "true",
+            "fullwith": "false",
             "backgroundcolor": "white",
             "headline": "Details",
             "rows": [
