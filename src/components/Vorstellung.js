@@ -7,6 +7,7 @@ export class Vorstellung extends React.Component {
 
     constructor(props) {
         super(props);
+        this.backgroundcolor = props.data.backgroundcolor;
         this.headline = props.data.headline;
         this.textbox = props.data.textbox;
         this.imgbox = props.data.imgbox;
@@ -14,7 +15,9 @@ export class Vorstellung extends React.Component {
 
     render() {
         return(
-            <div className="Vorstellung container-fluid">
+            <div className="Vorstellung container pb-5" 
+                style={{background:this.backgroundcolor}}
+            >
                 <Headline text={this.headline}/>
                 <ImgTextRow  imgbox={this.imgbox} textbox={this.textbox} />
             </div>
