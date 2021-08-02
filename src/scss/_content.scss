@@ -23,15 +23,26 @@
         margin-top: 50px;
         margin-bottom: 50px;
         line-height: 2;
-        text-align: justify;
-        img {
-            width: 100%;
-            object-fit: scale-down;
-            object-position: top;
-            height: 447px;
+        .imagebox {
             @media (orientation: portrait) {
+                height: unset !important;
+            }
+        }
+        img {
+            // object-fit: scale-down;
+            // object-position: top;
+            height: 100%;
+            @media (orientation: portrait) {
+                width: 100%;
                 margin-bottom: 20px;
                 height: unset;
+            }
+        }
+        .text {
+            text-align: justify;
+            padding-left: 1rem;
+            @media (orientation: portrait) {
+                padding-left: unset;  
             }
         }
     }

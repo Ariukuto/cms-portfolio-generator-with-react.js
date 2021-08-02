@@ -9,21 +9,23 @@ export class Vorstellung extends React.Component {
         super(props);
         this.state = {
             headline: this.props.data.headline,
-            img: '',
-            text: this.props.data.text,
+            textbox: this.props.data.textbox,
+            imgbox: this.props.data.imgbox,
         }
     }
 
     render() {
         return(
-            <div className="Vorstellung">
+            <div className="Vorstellung container">
                 <Headline text={this.state.headline}/>
-                <div className='row'>
-                    <div className='col-md d-flex justify-content-center'>
-                        <Image img={this.props.data.img} />
-                    </div>
-                    <div className='col-md d-flex'>
-                        {this.state.text}
+                <div className='d-flex justify-content-center'>
+                    <div className='d-flex flex-wrap'>
+                        <div className='imagebox' style={{height: this.state.imgbox.height}}>
+                            <Image img={this.state.imgbox.img} />
+                        </div>
+                        <div className='text' style={{maxWidth: this.state.textbox.width}}>
+                            {this.state.textbox.content}
+                        </div>
                     </div>
                 </div>
             </div>

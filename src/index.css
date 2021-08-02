@@ -31,18 +31,29 @@
   margin-top: 50px;
   margin-bottom: 50px;
   line-height: 2;
-  text-align: justify;
+}
+@media (orientation: portrait) {
+  .Content .Vorstellung .imagebox {
+    height: unset !important;
+  }
 }
 .Content .Vorstellung img {
-  width: 100%;
-  object-fit: scale-down;
-  object-position: top;
-  height: 447px;
+  height: 100%;
 }
 @media (orientation: portrait) {
   .Content .Vorstellung img {
+    width: 100%;
     margin-bottom: 20px;
     height: unset;
+  }
+}
+.Content .Vorstellung .text {
+  text-align: justify;
+  padding-left: 1rem;
+}
+@media (orientation: portrait) {
+  .Content .Vorstellung .text {
+    padding-left: unset;
   }
 }
 .Content .Iconrow {

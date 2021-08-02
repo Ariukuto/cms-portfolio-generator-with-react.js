@@ -25,11 +25,7 @@ export class Content extends React.Component {
             <div className='Content'>
                 
                 <Banner data={this.state.config.banner} />
-
-                <div class='container'>
-                    <Vorstellung data={this.state.config.vorstellung} />
-                </div>
-
+                <Vorstellung data={this.state.config.vorstellung} />
                 <Iconrow data={this.state.config.iconrow} />
 
                 <div className='container'>
