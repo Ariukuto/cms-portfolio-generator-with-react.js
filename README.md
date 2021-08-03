@@ -19,7 +19,13 @@ Aktuell stehen folgende pflegbare Module zur Verfügung:
 + Headline (Text)
 + Vorstellung (Bild, Text)
 + Iconrow (Headline, Icons, headlines, text)
-+ Details (Bild, abwechselnd links und rechts)  
++ Details (Bild, abwechselnd links und rechts)
+
+## Aktuelle Features
++ Fullwith der Module (true, false)
++ Schatten aktivieren (true, false)
++ Bilder als Icon nutzen (img:true)
++ Größe der Bilder einstellen
 
 **icons**  
 Momentan werden folgende Icon Anbieter unterstützt:
