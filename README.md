@@ -12,14 +12,6 @@ Aktuell lässt sich die Hintergrundfarbe noch nicht anpassen. In der config.json
 + SASS/SCSS (Precompiler für CSS)
 + Bootstrap (UI- und Grid Framework)
 
-**Module**  
-Aktuell stehen folgende pflegbare Module zur Verfügung:
-+ Navigation (Logo, links)
-+ Banner (img)
-+ Headline (Text)
-+ Vorstellung (Bild, Text)
-+ Iconrow (Headline, Icons, headlines, text)
-+ Details (Bild, abwechselnd links und rechts)
 
 ## Aktuelle Features
 + Fullwith der Module (true, false)
@@ -27,10 +19,29 @@ Aktuell stehen folgende pflegbare Module zur Verfügung:
 + Bilder als Icon nutzen (img:true)
 + Größe der Bilder einstellen
 
-**icons**  
+## Module  
+Aktuell stehen folgende pflegbare Module zur Verfügung:
++ Navigation (Logo, links)
++ Banner (img)
++ Headline (Text)**icons**  
+33
+Momentan werden folgende Icon Anbieter unterstützt:
+34
++ Bootstrap Icons
+35
++ Font Awesome Icons Free
+36
+Weitere werden folgen...
++ Vorstellung (Bild, Text)
++ Iconrow (Headline, Icons, headlines, text)
++ Details (Bild, abwechselnd links und rechts)
+
+
+## icons  
 Momentan werden folgende Icon Anbieter unterstützt:
 + Bootstrap Icons
 + Font Awesome Icons Free
++ Bilder ("img" auf "true" setzen)
 Weitere werden folgen...
 
 
