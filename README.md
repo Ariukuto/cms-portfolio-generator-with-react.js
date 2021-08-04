@@ -1,16 +1,20 @@
 # landingpage cms generator with React.js
 
-## Beschreibung
+
 Dieses Tool ermöglicht es, eine responsive Landingpage schnell und einfach, automatisch zu generieren. Das Pflegen der Inhalte funktioniert aktuell noch über eine config.json. In Zukunft wird es noch eine Admin Oberfläche geben. Das Frontend wird hauptsächlich mit React.js Komponenten entwickelt. Dies ermöglich eine schnellere Anpassung und bessere Wartbarkeit. In Zukunft wird es so möglich sein bestehende Komponenten zu erweitern um es an eigene Bedürfnisse anzupassen. Durch die Entwicklung mit SASS/SCSS war es möglich, eine leicht wartbare Styling Architektur zu entwickeln. So lassen sich mit wenig Aufwand eigene Templates erstellen.
 
-**Einschränkungen**  
-Aktuell lässt sich die Hintergrundfarbe noch nicht anpassen. In der config.json gibt es nur schon ein Feld dafür.
-
-
-**Technologiestack**  
+## Technologiestack
 + React.js (mit JSX)
 + SASS/SCSS (Precompiler für CSS)
 + Bootstrap (UI- und Grid Framework)
+
+## Get Started
+1. git installieren
+2. npm installieren 
+3. git clone [URL]
+4. `npm install` im Terminal des Projektverzeichnises ausführen
+5. `npm start` oder `npm build`
+6. pflegen der Inhalte unter `src/config/config.json`
 
 
 ## Aktuelle Features
@@ -21,20 +25,12 @@ Aktuell lässt sich die Hintergrundfarbe noch nicht anpassen. In der config.json
 
 ## Module  
 Aktuell stehen folgende pflegbare Module zur Verfügung:
-+ Navigation (Logo, links)
-+ Banner (img)
-+ Headline (Text)**icons**  
-33
-Momentan werden folgende Icon Anbieter unterstützt:
-34
-+ Bootstrap Icons
-35
-+ Font Awesome Icons Free
-36
-Weitere werden folgen...
-+ Vorstellung (Bild, Text)
-+ Iconrow (Headline, Icons, headlines, text)
-+ Details (Bild, abwechselnd links und rechts)
++ Page
++ Navigation
++ Banner
++ Vorstellung
++ Iconrow
++ Details
 
 
 ## icons  
@@ -45,13 +41,7 @@ Momentan werden folgende Icon Anbieter unterstützt:
 Weitere werden folgen...
 
 
-## Get Started
-1. git installieren
-2. npm installieren 
-3. git clone [URL]
-4. `npm install` im Terminal des Projektverzeichnises ausführen
-5. `npm start` oder `npm build`
-6. pflegen der Inhalte unter `src/config/config.json`
+
 
 ## Beispiel Iconpflege
 Am Beispiel Font Awesome:  
