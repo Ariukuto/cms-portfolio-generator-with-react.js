@@ -11,22 +11,20 @@ export class Content extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            config: {
-                banner: props.config.banner,
-                vorstellung: props.config.vorstellung,
-                iconrow: props.config.iconrow,
-                details: props.config.details,
-            }
+            'banner': props.config.banner,
+            'vorstellung': props.config.vorstellung,
+            'iconrow': props.config.iconrow,
+            'details': props.config.details,
         }
     }
 
     render() {
         return (
             <div className='Content'>
-                <Banner data={this.state.config.banner} />
-                <Vorstellung data={this.state.config.vorstellung} />
-                <Iconrow data={this.state.config.iconrow} />
-                <Details data={this.state.config.details} />
+                <Banner data={this.state.banner} />
+                <Vorstellung data={this.state.vorstellung} />
+                <Iconrow data={this.state.iconrow} />
+                <Details data={this.state.details} />
             </div>
         );
     }

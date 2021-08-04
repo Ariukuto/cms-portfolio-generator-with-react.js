@@ -5,19 +5,22 @@ export class Image extends React.Component
     constructor(props) {
         super(props);
         this.state = {
-            img: '',
+            'name': this.props.img,
+            'src': '',
         }
         if(props.img !== "") {
             import(`../imgs/${this.props.img}`).then(image => {
                 this.setState({
-                    img:image.default
+                    src: image.default
                  });
             });
         }
     }
 
     render() {
-        return <img src={this.state.img} alt={this.props.img} />
+        let src = this.state.src;
+        let imgName = this.state.name;
+        return <img src={src} alt={imgName} />
     }
 
 

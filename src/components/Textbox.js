@@ -4,14 +4,18 @@ export class Textbox extends React.Component
 {
     constructor(props) {
         super(props);
-        this.text = props.textbox.text;
-        this.maxwidth = props.textbox.maxwidth;
+        this.state = {
+            'text': props.textbox.text,
+            'maxwidth': props.textbox.maxwidth,
+        }
     }
 
     render() {
+        let style = {maxWidth: this.state.maxwidth}
+        let text = this.state.text;
         return (
-            <div className='Textbox' style={{maxWidth:this.maxwidth}}>
-                {this.text}
+            <div className='Textbox' style={style}>
+                {text}
             </div>
         )
     }

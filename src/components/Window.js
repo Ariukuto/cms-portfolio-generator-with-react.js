@@ -14,7 +14,7 @@ export class Window extends React.Component {
       super(props);
       // State = data Objekt bei Vue.js oder Ractive.js
       this.state = {
-        task: {}
+        'task': {}
       }
   }
 

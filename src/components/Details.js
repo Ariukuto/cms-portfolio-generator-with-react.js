@@ -6,14 +6,25 @@ export class Details extends React.Component
 {
     constructor(props) {
         super(props);
-        this.config = this.props.data;
+
+        this.state = {
+            'fullwith': props.data.fullwith,
+            'headline': props.data.headline,
+            'rows': props.data.rows,
+        }
+        
     }
 
     render() {
+
+        let layout = this.state.fullwith === "true" ? 'container-fluid' : 'container';
+
         return(
-            <div className={`Details ${this.config.fullwith === "true" ? 'container-fluid' : 'container'}`}>
-                <Headline text={this.config.headline} />
-                {this.config.rows.map((row, index) => {
+            <div className={`Details ${layout}`}>
+
+                <Headline text={this.state.headline} />
+
+                {this.state.rows.map((row, index) => {
                     let rest = index % 2;
                     if(rest === 0) {
                         return(
@@ -22,7 +33,7 @@ export class Details extends React.Component
                                     <Image img={row.imgbox.img} />
                                 </div>
                                 <div className='col-sm column-text'>
-                                    <h4>{row.headline}</h4>
+                                    <h4>{row.hconfigeadline}</h4>
                                     {row.text}
                                 </div>
                             </div>

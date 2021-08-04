@@ -11,21 +11,25 @@ export class Navigation extends React.Component {
         super(props);
         let config = props.config;
         this.state = {
-            fullwith: config.fullwith,
-            logo: config.logo,
-            backgroundcolor: config.backgroundcolor,
-            links: config.links,
+            'fullwith': config.fullwith,
+            'logo': config.logo,
+            'backgroundcolor': config.backgroundcolor,
+            'links': config.links,
         }
     }
 
     render() {
+        let style = {backgroundColor: this.state.backgroundcolor};
+        let layout = this.state.fullwith === true ? 'container-fluid': 'container';
+        let links = this.state.links;
+        let imgname = this.state.logo;
         return(
-            <div className='Navigation' style={{backgroundColor:this.state.backgroundcolor}}>
-                <div className={`navbar navbar-expand-lg navbar-light ${this.state.fullwith === true ? 'container-fluid': 'container' }`}> 
+            <div className='Navigation' style={style}>
+                <div className={`navbar navbar-expand-lg navbar-light ${layout}`}> 
     
                         {/* logo */}
                         <a className="navbar-brand" href="#">
-                            {this.state.logo !== "" ? <Image img={this.state.config.logo}/> : 'LOGO' }
+                            {this.state.logo !== "" ? <Image img={imgname}/> : 'LOGO' }
                         </a>
     
                         {/* mobile burger menu */}
@@ -37,7 +41,7 @@ export class Navigation extends React.Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <div className="navbar-nav">
                                 {/* Loop */}
-                                {this.state.links.map((link, index) => {
+                                {links.map((link, index) => {
                                     return (
                                         <div key={index} className="nav-item">
                                             <a  className="nav-link" aria-current="page" title={link.title || ''} href={link.url} target="_blank">

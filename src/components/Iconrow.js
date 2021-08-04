@@ -6,16 +6,25 @@ export class Iconrow extends React.Component {
 
     constructor(props) {
         super(props);
-        this.config = this.props.data;
+        this.state = {
+            'headline': this.props.data.headline,
+            'backgroundcolor': this.props.data.backgroundcolor,
+            'fields': this.props.data.fields,
+        }
     }
 
     render() {
+
+        let headlineText = this.state.headline;
+        let style = {backgroundColor: this.state.backgroundcolor};
+        let fields = this.state.fields;
+
         return(
-            <div className='Iconrow pb-5' style={{background: this.config.backgroundcolor}}>
-                <Headline text={this.config.headline} />
+            <div className='Iconrow pb-5' style={style}>
+                <Headline text={headlineText} />
                 <div className='container'>
                     <div className='row'>
-                        {this.config.fields.map((field, index) => {
+                        {fields.map((field, index) => {
                             return(
                                 <div key={index} className='col-md d-flex flex-column text-center'>
                                     <Icon icon={field.grafik} />

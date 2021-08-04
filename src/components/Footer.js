@@ -9,33 +9,36 @@ export class Footer extends React.Component {
 
     constructor(props) {
         super(props);
-        let footerobj = props.config;
-        this.backgroundcolor = footerobj.backgroundcolor
-        this.headlinecolor = footerobj.headlinecolor;
-        this.fontcolor = footerobj.fontcolor;
-        this.columns = footerobj.columns;
-        this.fullwith = footerobj.fullwith;
+        this.state = {
+            'backgroundcolor': props.config.backgroundcolor,
+            'headlinecolor': props.config.headlinecolor,
+            'fontcolor': props.config.fontcolor,
+            'columns': props.config.columns,
+            'fullwith': props.config.fullwith,
+        }
     }
 
     renderHeadline(col) {
-        if(!col.headline) {
+        if(!col.headline) 
             return '';
-        }
+        
         return (
-            <h6 style={{color:this.headlinecolor}}>
+            <h6 style={{color:this.state.headlinecolor}}>
                 {col.headline} 
             </h6>
         )
     }
 
     render() {
+
+        let layout = this.fullwith !== "true" ? 'container': '';
+        let style = {backgroundColor: this.state.backgroundColor};
+
         return (
             <div 
-                className={`Footer ${this.fullwith !== "true" ? 'container': ''}`} 
-                style={{backgroundColor:this.backgroundcolor}}
-            >
+                className={`Footer ${layout}`} style={style}>
                 <div className='row'>
-                    {this.columns.map((col, i) => {
+                    {this.state.columns.map((col, i) => {
                         return (
                             <div key={i} className="col d-flex flex-column text-center">
                                {this.renderHeadline(col)}
