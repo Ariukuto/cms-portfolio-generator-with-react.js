@@ -5,25 +5,29 @@ export class Banner extends React.Component {
 
     constructor(props) {
         super(props);
+
         this.state = {
             mobile: '',
             desktop: '',
         }
-        this.loadMobileImg(this.props.data.mobile);
-    }
 
-    loadMobileImg(imageName) {
-        import(`../imgs/${imageName}`).then(image => {
+        import(`../imgs/${this.props.data.mobile}`).then(image => {
             this.setState({
                 mobile:image.default
              });
         });
-    };
+
+        let layout = this.props.data.fullwith !== 'true' ? 'container' : '';
+        this.class = `Banner ${layout}`;
+    }
+
+
+
 
     render() {
 
         return (
-            <div className={`Banner + ${this.props.data.fullwith !== 'true' ? 'container' : ''}`}>
+            <div className={this.class}>
                  <picture>
                      <source media="(orientation:portrait)" srcSet={this.state.mobile} />
                      <Image img={this.props.data.desktop} />
