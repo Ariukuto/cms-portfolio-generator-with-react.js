@@ -22,31 +22,29 @@ export class Footer extends React.Component {
         if(!col.headline) 
             return '';
         
+        let headlinestyle = {color:this.state.headlinecolor}
         return (
-            <h6 style={{color:this.state.headlinecolor}}>
+            <h6 style={headlinestyle} >
                 {col.headline} 
             </h6>
         )
     }
 
     render() {
-
-        let layout = this.fullwith !== "true" ? 'container': '';
-        let style = {backgroundColor: this.state.backgroundColor};
-
+        let layout = this.fullwith !== "true" ? 'container-fluid': 'container';
+        let footerstyle = {backgroundColor: this.state.backgroundcolor};
+        let linkstyle = {color: this.state.fontcolor};
         return (
-            <div 
-                className={`Footer ${layout}`} style={style}>
+            <div className={`Footer ${layout}`} style={footerstyle}>
                 <div className='row'>
                     {this.state.columns.map((col, i) => {
                         return (
                             <div key={i} className="col d-flex flex-column text-center">
                                {this.renderHeadline(col)}
                                 {col.links.map((link, j) => {
+                                    
                                     return(
-                                        <a key={j} href="" target="_blank" rel="" 
-                                            style={{color:this.fontcolor}} 
-                                        > 
+                                        <a key={j} href="" target="_blank" rel="" style={linkstyle}> 
                                             {link.name}
                                         </a>
                                     );
