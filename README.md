@@ -13,7 +13,7 @@ Dieses Tool ermöglicht es, eine responsive Landingpage schnell und einfach, aut
 2. npm installieren 
 3. git clone [URL]
 4. `npm install` im Terminal des Projektverzeichnises ausführen
-5. `npm start` oder `npm build`
+5. `npm start` oder `npm run build`
 6. pflegen der Inhalte unter `src/config/config.json`
 
 
