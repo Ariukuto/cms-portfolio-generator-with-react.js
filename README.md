@@ -38,7 +38,7 @@ Momentan werden folgende Icon Anbieter unterstützt:
 + Bootstrap Icons
 + Font Awesome Icons Free
 + Bilder ("img" auf "true" setzen)
-Weitere werden folgen...
++ Weitere werden folgen...
 
 
 
