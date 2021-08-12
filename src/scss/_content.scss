@@ -9,12 +9,15 @@
     }
 
     .Banner {
+        @media (orientation: portrait) {
+            height: unset !important;
+        }
         img, source {
             width: 100%;
-            height: 400px;
+            height: 100%;
             object-fit: cover;
             @media (orientation: portrait) {
-                height: unset;
+                height: unset !important;
             }
         }
     }
@@ -23,6 +26,9 @@
         margin-top: 50px;
         margin-bottom: 50px;
         line-height: 2;
+        @media (orientation: portrait) {
+            box-shadow: unset !important;
+        }
         .imagebox {
             @media (orientation: portrait) {
                 height: unset !important;
@@ -75,7 +81,6 @@
         }
         img {
             width: 100%;
-            margin-bottom: 20px;
         }
         // Sorgt dafür, dass in der mobilen Ansicht, zuerst das Bild und dann der Text angezeigt wird
         .column-picture {

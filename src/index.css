@@ -4,8 +4,8 @@
   background-position: center;
 }
 
-.Navigation .logo {
-  width: 200px;
+.Navigation .logo img {
+  object-fit: cover;
 }
 .Navigation .navbar-collapse {
   justify-content: flex-end;
@@ -23,20 +23,30 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+@media (orientation: portrait) {
+  .Content .Banner {
+    height: unset !important;
+  }
+}
 .Content .Banner img, .Content .Banner source {
   width: 100%;
-  height: 400px;
+  height: 100%;
   object-fit: cover;
 }
 @media (orientation: portrait) {
   .Content .Banner img, .Content .Banner source {
-    height: unset;
+    height: unset !important;
   }
 }
 .Content .Vorstellung {
   margin-top: 50px;
   margin-bottom: 50px;
   line-height: 2;
+}
+@media (orientation: portrait) {
+  .Content .Vorstellung {
+    box-shadow: unset !important;
+  }
 }
 @media (orientation: portrait) {
   .Content .Vorstellung .imagebox {
@@ -91,7 +101,6 @@
 }
 .Content .Details img {
   width: 100%;
-  margin-bottom: 20px;
 }
 @media (orientation: portrait) {
   .Content .Details .column-picture {

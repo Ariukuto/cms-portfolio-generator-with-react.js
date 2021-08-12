@@ -1,6 +1,8 @@
 import React from 'react';
 import {Headline} from './Headline';
-import {ImgTextRow} from './ImgTextRow';
+
+import {Imagebox} from './Imagebox';
+import {Textbox} from './Textbox';
 
 
 export class Vorstellung extends React.Component {
@@ -23,14 +25,14 @@ export class Vorstellung extends React.Component {
         let style = {backgroundcolor: this.state.backgroundcolor};
         let layout = this.state.fullwith === true ? 'container-fluid' : 'container';
         let shadow = this.state.shadow === true ? 'shadow' : '';
-        let headlineText = this.state.headline;
-        let imageboxObj = this.state.imgbox;
-        let textboxObj = this.state.textbox;
 
         return(
             <div className={`Vorstellung pb-5 ${layout} ${shadow}`} style={style}>
-                <Headline text={headlineText}/>
-                <ImgTextRow  imgbox={imageboxObj} textbox={textboxObj} />
+                <Headline text={this.state.headline}/>
+                <div className='d-flex flex-wrap justify-content-center'>
+                    <Imagebox imgbox={this.state.imgbox} />
+                    <Textbox textbox={this.state.textbox} />
+                </div>
             </div>
         );
     }

@@ -1,6 +1,8 @@
 .Navigation {
     .logo {
-        width: 200px;
+        img{
+            object-fit: cover;
+        }
     }
     .navbar-collapse {
         justify-content: flex-end;

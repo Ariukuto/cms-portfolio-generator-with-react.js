@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image } from './Image';
+import {NewImage} from './NewImage.js';
 
 /**
  * @name Navigation
@@ -9,6 +10,7 @@ export class Navigation extends React.Component {
 
     constructor(props) {
         super(props);
+        console.log(props);
         let config = props.config;
         this.state = {
             'fullwith': config.fullwith,
@@ -22,14 +24,13 @@ export class Navigation extends React.Component {
         let style = {backgroundColor: this.state.backgroundcolor};
         let layout = this.state.fullwith === true ? 'container-fluid': 'container';
         let links = this.state.links;
-        let imgname = this.state.logo;
         return(
             <div className='Navigation' style={style}>
                 <div className={`navbar navbar-expand-lg navbar-light ${layout}`}> 
     
                         {/* logo */}
-                        <a className="navbar-brand" href="#">
-                            {this.state.logo !== "" ? <Image img={imgname}/> : 'LOGO' }
+                        <a className="logo" href="#">
+                            {this.state.logo !== "" ? <NewImage data={this.state.logo}/> : 'LOGO' }
                         </a>
     
                         {/* mobile burger menu */}

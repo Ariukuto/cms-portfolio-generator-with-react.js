@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Image} from './Image';
 
 export class Banner extends React.Component {
@@ -10,6 +10,7 @@ export class Banner extends React.Component {
             'fullwith': props.data.fullwith,
             'mobile': '',
             'desktop': '',
+            'height': props.data.height,
         }
 
         import(`../imgs/${this.props.data.mobile}`).then(image => {
@@ -25,7 +26,7 @@ export class Banner extends React.Component {
         let layout = this.state.fullwith !== 'true' ? 'container' : '';
         
         return (
-            <div className={`Banner ${layout}`}>
+            <div className={`Banner ${layout}`} style={{height: this.state.height}}>
                  <picture>
                      <source media="(orientation:portrait)" srcSet={this.state.mobile} />
                      <Image img={this.props.data.desktop} />
