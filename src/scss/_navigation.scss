@@ -6,8 +6,5 @@
     }
     .navbar-collapse {
         justify-content: flex-end;
-        @media (orientation: portrait) {
-            justify-content: left;  
-        }
     }
 }

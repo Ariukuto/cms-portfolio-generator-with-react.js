@@ -1,0 +1,14 @@
+.NewImage {
+    .show_only_on_widescreen {
+        display: block;
+        @media screen and (orientation: portrait) {
+            display: none;
+        }
+    }
+    .show_only_on_mobile {
+        display: none;
+        @media screen and (orientation: portrait) {
+            display: block;
+        }
+    }
+}
