@@ -1,24 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Image} from './Image';
 
 
-export class Imagebox extends React.Component 
-{
-    constructor(props) {
-        super(props);
-        this.state = {
-            'img': props.imgbox.img,
-            'height': props.imgbox.height,
-        }
-    }
+const Imagebox = (props) => {
 
-    render() {
-        let style = {height: this.state.height};
-        let img = this.state.img;
-        return (
-            <div className='imagebox' style={style}>
-                <Image img={img} />
-            </div>
-        )
-    }
+    const [imgname] = useState(props.imgbox.img);
+    const [height] = useState(props.imgbox.height);
+    const [shadow] = useState(props.imgbox.shadow);
+    const [rounded] = useState(props.imgbox.rounded);
+
+
+
+    return(
+        <div className={`
+            imagebox ${shadow === true ? 'shadow' : ''}
+            ${rounded === true ? 'rounded': ''}
+        `} 
+            style={{
+                height:height,
+                overflow: "hidden"
+            }}>
+            <Image img={imgname} />
+        </div>
+    );
 }
+
+export {Imagebox}
