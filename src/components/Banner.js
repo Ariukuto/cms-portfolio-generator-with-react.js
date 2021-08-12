@@ -1,37 +1,18 @@
-import React, { useState } from 'react';
-import {Image} from './Image';
+import { useState } from 'react';
+import {NewImage} from './NewImage';
 
-export class Banner extends React.Component {
+const Banner = (props) => {
 
-    constructor(props) {
-        super(props);
+    const [fullwith] = useState(props.data.fullwith);
+    const [height] = useState(props.data.height);
+    const [image] = useState(props.data.image);
 
-        this.state = {
-            'fullwith': props.data.fullwith,
-            'mobile': '',
-            'desktop': '',
-            'height': props.data.height,
-        }
-
-        import(`../imgs/${this.props.data.mobile}`).then(image => {
-            this.setState({
-                mobile:image.default
-             });
-        });
-    }
-
-
-    render() {
-
-        let layout = this.state.fullwith !== 'true' ? 'container' : '';
-        
-        return (
-            <div className={`Banner ${layout}`} style={{height: this.state.height}}>
-                 <picture>
-                     <source media="(orientation:portrait)" srcSet={this.state.mobile} />
-                     <Image img={this.props.data.desktop} />
-                 </picture>
-            </div> 
-         ); 
-    }
+    return(
+        <div className={`Banner ${fullwith ? '' : 'container'}`} style={{height: height}}>
+            <NewImage data={image} />
+        </div> 
+    );
+    
 }
+
+export {Banner};

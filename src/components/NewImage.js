@@ -70,9 +70,7 @@ export class NewImage extends React.Component
                         borderRadius: this.state.widescreen.borderRadius,
                     }} 
                 />
-            </div>
-                
-            
+            </div>   
         )
     }
 
