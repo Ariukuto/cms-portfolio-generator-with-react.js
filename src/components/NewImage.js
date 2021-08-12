@@ -82,7 +82,7 @@ export class NewImage extends React.Component
                     style={{
                         width: this.state.mobile.width,
                         height:this.state.mobile.height,
-                        borderRadius: this.state.widescreen.borderRadius,
+                        borderRadius: this.state.mobile.borderRadius,
                         marginTop: this.state.mobile.DistanceUp,
                         marginBottom: this.state.mobile.DistanceDown,
                     }} 

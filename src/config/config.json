@@ -12,33 +12,87 @@
 
     "navigation": {
         "fullwith": false,
-        "logo": "",
+        "logo": {   
+            "widescreen": {
+                "imageName": "placeholder.png",
+                "height": "50px",
+                "width": "50px",
+                "borderRadius": "100%",
+                "shadow": false,
+                "DistanceUp": "",
+                "DistanceDown": ""
+            } ,   
+            "mobile": {
+                "imageName": "placeholder.png",
+                "height": "50px",
+                "width": "50px",
+                "borderRadius": "100%",
+                "shadow": false,
+                "DistanceUp": "",
+                "DistanceDown": ""
+            }
+        },
         "backgroundcolor": "white",
+        "color": "",
         "links": [
-            {"name": "Link 1", "url": "#"},
-            {"name": "Link 2", "url": "#"},
-            {"name": "Link 3", "url": "#"}
+            {"name": "link 1", "url": ""}
         ]
     },
 
     "content": {
         
         "banner": {
-            "fullwith": "true",
-            "mobile": "placeholder.png",
-            "desktop": "placeholder.png"
+            "fullwith": true,
+            "height": "500px",
+            "image": {
+                "widescreen": {
+                    "imageName": "banner.jpg",
+                    "height": "",
+                    "width": "",
+                    "borderRadius": "",
+                    "DistanceUp": "",
+                    "DistanceDown": ""
+                } ,   
+                "mobile": {
+                    "imageName": "banner.jpg",
+                    "height": "",
+                    "width": "",
+                    "borderRadius": "",
+                    "DistanceUp": "",
+                    "DistanceDown": ""
+                }
+            }
+
         },
 
         "vorstellung": {
             "backgroundcolor": "white",
             "shadow": true,
             "fullwith": false,
-            "headline": "Vorstellung",
-            "imgbox": {
-                "img": "placeholder.png",
-                "height": "400px"
+            "headline": "Über mich",
+            "image": {
+                "widescreen": {
+                    "imageName": "placeholder.png",
+                    "height": "400px",
+                    "width": "",
+                    "borderRadius": "",
+                    "shadow": true,
+                    "DistanceUp": "",
+                    "DistanceDown": ""
+                } ,   
+                "mobile": {
+                    "imageName": "placeholder.png",
+                    "height": "",
+                    "width": "",
+                    "borderRadius": "",
+                    "shadow": false,
+                    "DistanceUp": "",
+                    "DistanceDown": ""
+                }
             },
             "textbox": {
+                "jobtitle": "",
+                "birthdate": "",
                 "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                 "maxwidth": "600px"    
             }
@@ -46,14 +100,14 @@
 
         "iconrow": {
             "backgroundcolor": "",
-            "headline": "Auf einen Blick",
+            "headline": "Iconrow",
             "fields": [
                 {
                     "grafik": {
                         "is_icon": false,
                         "name": "placeholder.png",
                         "color": "black",
-                        "size": "130px",
+                        "size": "180px",
                         "abstand_unten": "4px",
                         "url": ""
                     },
@@ -62,10 +116,21 @@
                 },
                 {   
                     "grafik": {
-                        "is_icon": true,
-                        "name": "fas fa-wifi",
+                        "is_icon": false,
+                        "name": "placeholder.png",
                         "color": "black",
-                        "size": "70px",
+                        "size": "180px",
+                        "url": ""
+                    },
+                    "headline": "Webentwicklung",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+                },
+                {
+                    "grafik": {
+                        "is_icon": false,
+                        "name": "placeholder.png",
+                        "color": "black",
+                        "size": "180px",
                         "url": ""
                     },
                     "headline": "Thema 2",
@@ -73,24 +138,13 @@
                 },
                 {
                     "grafik": {
-                        "is_icon": true,
-                        "name": "fas fa-leaf",
+                        "is_icon": false,
+                        "name":"placeholder.png",
                         "color": "black",
-                        "size": "70px",
+                        "size": "180px",
                         "url": ""
                     },
                     "headline": "Thema 3",
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
-                },
-                {
-                    "grafik": {
-                        "is_icon": true,
-                        "name":"fas fa-charging-station",
-                        "color": "black",
-                        "size": "70px",
-                        "url": ""
-                    },
-                    "headline": "Thema 4",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 }
             ]
@@ -99,37 +153,105 @@
         "details": {
             "fullwith": "false",
             "backgroundcolor": "white",
-            "headline": "Details",
+            "headline": "Bilder und Text",
             "rows": [
                 {
-                    "headline": "Thema 1", 
-                    "imgbox": {
-                        "img": "placeholder.png",
-                        "height": "400px"
+                    "headline": "Thema 1",
+                    "url": "",
+                    "image": {
+                        "widescreen": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": ""
+                        } ,   
+                        "mobile": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": "20px"
+                        }
                     },
-                    "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                    "text": ""
                 },
                 {
                     "headline": "Thema 2",
-                    "imgbox": {
-                        "img": "placeholder.png",
-                        "height": "400px"
+                    "url": "",
+                    "image": {
+                        "widescreen": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": ""
+                        } ,   
+                        "mobile": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": "20px"
+                        }
                     },
-                    "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                    "text":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
                 },
                 {
                     "headline": "Thema 3",
-                    "imgbox": {
-                        "img": "placeholder.png",
-                        "height": "400px"
+                    "url": "",
+                    "image": {
+                        "widescreen": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": ""
+                        } ,   
+                        "mobile": {
+                            "imageName": "Thema 4",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": "20px"
+                        }
                     },
                     "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
                 },
                 {
-                    "headline": "Thema 4", 
-                    "imgbox": {
-                        "img": "placeholder.png",
-                        "height": "400px"
+                    "headline": "Thema 5", 
+                    "url": "",
+                    "image": {
+                        "widescreen": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": "20px"
+                        } ,   
+                        "mobile": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": "20px"
+                        }
                     },
                     "text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
                 }
