@@ -1,4 +1,5 @@
 .NewImage {
+    height: inherit;
     .show_only_on_widescreen {
         display: block;
         @media screen and (orientation: portrait) {
