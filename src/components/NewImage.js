@@ -4,7 +4,6 @@ export class NewImage extends React.Component
 {
     constructor(props) {
         super(props);
-        console.log(this.props);
         this.state = {
             mobile: {
                 imageName: "",   
