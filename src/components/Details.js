@@ -1,19 +1,17 @@
 import React from 'react';
 import { Headline } from './Headline';
-import { Image } from './Image.js';
+import { NewImage } from './NewImage';
 import { Imagebox } from './Imagebox';
 
 export class Details extends React.Component 
 {
     constructor(props) {
         super(props);
-
         this.state = {
             'fullwith': props.data.fullwith,
             'headline': props.data.headline,
             'rows': props.data.rows,
         }
-        
     }
 
     render() {
@@ -31,7 +29,8 @@ export class Details extends React.Component
                         return(
                             <div key={index} className='row'>
                                 <div className='col-sm column-picture'>
-                                    <Imagebox imgbox={row.imgbox} />
+                                    {/*<Imagebox imgbox={row.imgbox} />*/}
+                                    <NewImage data={row.image} />
                                 </div>
                                 <div className='col-sm column-text'>
                                     <h4>{row.headline}</h4>
@@ -47,7 +46,8 @@ export class Details extends React.Component
                                     {row.text}
                                 </div>
                                 <div className='col-sm column-picture'>
-                                    <Imagebox imgbox={row.imgbox} />
+                                    {/*<Imagebox imgbox={row.imgbox} />*/}
+                                    <NewImage data={row.image} />
                                 </div>
                             </div>
                         ) 
