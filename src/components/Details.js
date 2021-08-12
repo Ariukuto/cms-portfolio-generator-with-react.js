@@ -1,6 +1,7 @@
 import React from 'react';
 import { Headline } from './Headline';
 import { Image } from './Image.js';
+import { Imagebox } from './Imagebox';
 
 export class Details extends React.Component 
 {
@@ -30,7 +31,7 @@ export class Details extends React.Component
                         return(
                             <div key={index} className='row'>
                                 <div className='col-sm column-picture'>
-                                    <Image img={row.imgbox.img} />
+                                    <Imagebox imgbox={row.imgbox} />
                                 </div>
                                 <div className='col-sm column-text'>
                                     <h4>{row.headline}</h4>
@@ -46,7 +47,7 @@ export class Details extends React.Component
                                     {row.text}
                                 </div>
                                 <div className='col-sm column-picture'>
-                                    <Image img={row.imgbox.img} /> 
+                                    <Imagebox imgbox={row.imgbox} />
                                 </div>
                             </div>
                         ) 
