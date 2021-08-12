@@ -33,7 +33,7 @@ export class Details extends React.Component
                                     <Image img={row.imgbox.img} />
                                 </div>
                                 <div className='col-sm column-text'>
-                                    <h4>{row.hconfigeadline}</h4>
+                                    <h4>{row.headline}</h4>
                                     {row.text}
                                 </div>
                             </div>
