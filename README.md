@@ -40,6 +40,7 @@ Aktuell stehen folgende pflegbare Module zur Verfügung:
 Momentan werden folgende Icon Anbieter unterstützt:
 + Bootstrap Icons
 + Font Awesome Icons Free
++ https://www.flaticon.com/
 + Bilder ("img" auf "true" setzen)
 + Weitere werden folgen...
 
