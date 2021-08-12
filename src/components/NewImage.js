@@ -51,31 +51,7 @@ export class NewImage extends React.Component
 
     render() {
         return(
-            /*
-            <picture>
-                <source  
-                    media="(orientation:portrait)"
-                    srcSet={this.state.mobile.src}
-                    style={{
-                        width: this.state.mobile.width,
-                        height:this.state.mobile.height,
-                        borderRadius: this.state.widescreen.borderRadius,
-                    }} 
-                />
-                <img 
-                    src={this.state.widescreen.src} 
-                    alt={this.state.widescreen.imageName}
-                    style={{
-                        width: this.state.widescreen.width,
-                        height:this.state.widescreen.height,
-                        borderRadius: this.state.widescreen.borderRadius,
-                    }} 
-                />
-            </picture>
-            */
-
             <div className="NewImage">
-
                 <img className="show_only_on_widescreen"
                     src={this.state.widescreen.src} 
                     alt={this.state.widescreen.imageName}
@@ -85,7 +61,6 @@ export class NewImage extends React.Component
                         borderRadius: this.state.widescreen.borderRadius,
                     }} 
                 />
-
                 <img className="show_only_on_mobile"
                     src={this.state.mobile.src} 
                     alt={this.state.mobile.imageName}
@@ -95,8 +70,6 @@ export class NewImage extends React.Component
                         borderRadius: this.state.widescreen.borderRadius,
                     }} 
                 />
-            
-                
             </div>
                 
             
