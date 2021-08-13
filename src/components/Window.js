@@ -1,60 +1,69 @@
 import React from 'react';
-import emitter from "./ev"
+import emitter from "../ev";
+import {DynComponent} from './DynComponent';
 
 
-/**
- * @name Window
- * @description React Component 
- * @eventlistener show_window
- * @eventobj task
- */
 export class Window extends React.Component {
 
   constructor(props) {
       super(props);
-      // State = data Objekt bei Vue.js oder Ractive.js
       this.state = {
-        'task': {}
+        MsgObject: {
+          title: '',
+          component: ''
+        }
       }
   }
 
-  // Eventlistener Deklarieren, nachdem das Laden der Komponente abgeschlossen ist
-  // Dies dient nur als Beispiel. 
-  // In Zukunft bekommt Window eine dynamische Komponente als Child Element übergeben
-  // Bedeutet, dass nur ein Window gerendert wird und der Inhalt erst dann wenn benötigt. Dies spart Resourcen
-  componentDidMount(){
-    this.eventEmitter = emitter.addListener("show_window",(task)=>{
-      this.setState({task:task});
+  componentDidMount() {
+    this.eventEmitter = emitter.addListener("show_window",(MsgObject) => {
+      this.setState({MsgObject});
     });
   }
-
   
-  // Eventlistener bei Zerstörung der Komponente entfernen
   componentWillUnmount(){
     emitter.removeListener(this.eventEmitter);
   }
 
   // Template
   render() {
-      let id = 'window' /*+ this.props.taskobj.id*/;
       return (
-          <div class="modal fade" id={id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">  {this.state.task.title} </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                {this.state.task.desc}
+                {this.state.MsgObject.component &&  <DynComponent name="Error" />}
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" className="btn btn-primary">Save changes</button>
               </div>
             </div>
           </div>
         </div>
-      ); 
+      );
   }
 }
+/*
+
+          <div className={`modal fade ${this.state.MsgObject.component ? 'show' : ''}`} id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalLabel">  {this.state.MsgObject.title} </h5>
+                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                {this.state.MsgObject.component && <DynComponent ComponentName={this.state.MsgObject.component} />}
+              </div>
+              <div class="modal-footer">
+
+                </div>
+                </div>
+              </div>
+            </div>
+*/
