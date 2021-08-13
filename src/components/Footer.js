@@ -1,4 +1,5 @@
 import React from 'react';
+import emitter from "../ev"
 
 /**
  * @name Footer
@@ -34,6 +35,18 @@ export class Footer extends React.Component {
         let layout = this.fullwith !== "true" ? 'container-fluid': 'container';
         let footerstyle = {backgroundColor: this.state.backgroundcolor};
         let linkstyle = {color: this.state.fontcolor};
+
+        // Event Callback Funktion
+        const showWindow = (linkname) => {
+            return () => {
+                // show_window Event auslösen
+                emitter.emit("show_window", {
+                    title: linkname,
+                    component: linkname,
+                });
+            }
+        }
+
         return (
             <div className={`Footer ${layout}`} style={footerstyle}>
                 <div className='row'>
@@ -44,9 +57,9 @@ export class Footer extends React.Component {
                                 {col.links.map((link, j) => {
                                     
                                     return(
-                                        <a key={j} href="" target="_blank" rel="" style={linkstyle}> 
+                                        <div key={j} onClick={showWindow(link.name)} style={linkstyle} data-bs-toggle="modal" data-bs-target="#exampleModal"> 
                                             {link.name}
-                                        </a>
+                                        </div>
                                     );
                                 })}
                             </div>
