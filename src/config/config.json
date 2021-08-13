@@ -46,7 +46,7 @@
             "height": "500px",
             "image": {
                 "widescreen": {
-                    "imageName": "banner.jpg",
+                    "imageName": "placeholder.png",
                     "height": "",
                     "width": "",
                     "borderRadius": "",
@@ -54,7 +54,7 @@
                     "DistanceDown": ""
                 } ,   
                 "mobile": {
-                    "imageName": "banner.jpg",
+                    "imageName": "placeholder.png",
                     "height": "",
                     "width": "",
                     "borderRadius": "",
@@ -219,7 +219,7 @@
                             "DistanceDown": ""
                         } ,   
                         "mobile": {
-                            "imageName": "Thema 4",
+                            "imageName": "placeholder.png",
                             "height": "",
                             "width": "",
                             "borderRadius": "",
