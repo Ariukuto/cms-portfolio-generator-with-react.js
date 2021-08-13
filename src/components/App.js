@@ -1,7 +1,11 @@
 import React from 'react';
-import {Navigation} from './Navigation.js';
-import {Content} from './Content.js';
-import {Footer} from './Footer.js';
+import {Window} from './Window';
+import {Navigation} from './Navigation';
+import {Content} from './Content';
+import {Footer} from './Footer';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.js';
 
 
 export class App extends React.Component {
@@ -22,8 +26,7 @@ export class App extends React.Component {
               src:image.default
            });
       });
-    }
-    
+    }  
   }
 
   render() {
@@ -35,6 +38,8 @@ export class App extends React.Component {
 
     return (
       <div className='App' style={style}>
+
+          <Window />
 
           <Navigation config={this.props.config.navigation}/>
           
