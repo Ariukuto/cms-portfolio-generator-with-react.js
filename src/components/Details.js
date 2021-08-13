@@ -1,59 +1,39 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Headline } from './Headline';
 import { NewImage } from './NewImage';
-import { Imagebox } from './Imagebox';
 
-export class Details extends React.Component 
-{
-    constructor(props) {
-        super(props);
-        this.state = {
-            'fullwith': props.data.fullwith,
-            'headline': props.data.headline,
-            'rows': props.data.rows,
-        }
-    }
+const Details = (props) => {
+    const [fullwith] = useState(props.data.fullwith);
+    const [backgroundcolor] = useState(props.data.backgroundcolor);
+    const [headline] = useState(props.data.headline);
+    const [rows] = useState(props.data.rows);
 
-    render() {
+    return(
+        <div style={{backgroundColor:backgroundcolor}}>
+            <div className={`Details ${fullwith ? 'container-fluid' : 'container'}`}>
 
-        let layout = this.state.fullwith === "true" ? 'container-fluid' : 'container';
+                <Headline text={headline} />
 
-        return(
-            <div className={`Details ${layout}`}>
-
-                <Headline text={this.state.headline} />
-
-                {this.state.rows.map((row, index) => {
-                    let rest = index % 2;
-                    if(rest === 0) {
-                        return(
-                            <div key={index} className='row'>
-                                <div className='col-sm column-picture'>
-                                    {/*<Imagebox imgbox={row.imgbox} />*/}
-                                    <NewImage data={row.image} />
-                                </div>
-                                <div className='col-sm column-text'>
-                                    <h4>{row.headline}</h4>
-                                    {row.text}
+                {rows.map((row, index) => {
+                    return(
+                        <div key={index} className='row' style={{backgroundColor:row.backgroundcolor}}>
+                            <div className={`col-sm column-picture order-${row.orderimagebox}`}>
+                                <NewImage data={row.image} />
+                            </div>
+                            <div className={`col-sm column-text order-${row.ordertextbox}`}>
+                                <div className={`${row.textbox.card ? 'card' : ''} ${row.textbox.shadow ? 'shadow' : ''}`}>
+                                    <div class="card-body">
+                                        <h5 class="card-title">{row.headline}</h5>
+                                        <p class="card-text" dangerouslySetInnerHTML={{ __html: row.textbox.text}} />
+                                    </div>
                                 </div>
                             </div>
-                        )
-                    } else {
-                        return(
-                            <div key={index} className='row'>
-                                <div className='col-sm column-text'>
-                                    <h4>{row.headline}</h4>
-                                    {row.text}
-                                </div>
-                                <div className='col-sm column-picture'>
-                                    {/*<Imagebox imgbox={row.imgbox} />*/}
-                                    <NewImage data={row.image} />
-                                </div>
-                            </div>
-                        ) 
-                    }
+                        </div>
+                    )
                 })}
             </div>
-        )
-    }
+        </div>
+    )
 }
+
+export {Details};
