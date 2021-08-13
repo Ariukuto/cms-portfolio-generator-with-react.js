@@ -14,9 +14,11 @@ export class Textbox extends React.Component
         let style = {maxWidth: this.state.maxwidth}
         let text = this.state.text;
         return (
-            <div className='Textbox' style={style}>
-                {text}
-            </div>
+            <div 
+                className='Textbox' 
+                style={style}  
+                dangerouslySetInnerHTML={{ __html: text}} 
+            />
         )
     }
 }
