@@ -108,7 +108,11 @@
   margin-top: 50px;
   margin-bottom: 50px;
   line-height: 2;
-  text-align: justify;
+}
+@media (orientation: portrait) {
+  .Content .Details {
+    line-height: 1.5;
+  }
 }
 .Content .Details .row {
   padding-top: 1rem;
@@ -117,14 +121,32 @@
 .Content .Details img {
   width: 100%;
 }
+.Content .Details .column-picture {
+  height: 100%;
+}
 @media (orientation: portrait) {
   .Content .Details .column-picture {
-    order: 1;
+    order: 1 !important;
   }
+}
+.Content .Details .column-text {
+  text-align: justify;
+}
+.Content .Details .column-text .card {
+  height: 100%;
 }
 @media (orientation: portrait) {
   .Content .Details .column-text {
-    order: 2;
+    order: 2 !important;
+  }
+  .Content .Details .column-text .shadow {
+    box-shadow: none !important;
+  }
+  .Content .Details .column-text .card {
+    border: none;
+  }
+  .Content .Details .column-text .card-body {
+    padding: unset;
   }
 }
 

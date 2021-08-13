@@ -74,7 +74,9 @@
         margin-top: 50px;
         margin-bottom: 50px;
         line-height: 2;
-        text-align: justify;
+        @media (orientation: portrait) {
+            line-height: 1.5;    
+        }
         .row {
             padding-top: 1rem;
             padding-bottom: 1rem;
@@ -84,14 +86,28 @@
         }
         // Sorgt dafür, dass in der mobilen Ansicht, zuerst das Bild und dann der Text angezeigt wird
         .column-picture {
+            height: 100%;
             @media (orientation: portrait) {
-                order: 1;    
+                order: 1 !important;    
             }
         }
         // Sorgt dafür, dass in der mobilen Ansicht, zuerst das Bild und dann der Text angezeigt wird
         .column-text {
+            text-align: justify;
+            .card {
+                height: 100%;
+            }
             @media (orientation: portrait) {
-                order: 2;    
+                order: 2 !important;
+                .shadow {
+                    box-shadow: none !important;
+                }
+                .card {
+                    border: none;
+                }
+                .card-body {
+                    padding: unset;
+                }    
             }
         }
 
