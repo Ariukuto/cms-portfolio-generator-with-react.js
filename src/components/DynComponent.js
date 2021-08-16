@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 
 import Error from './windowComponents/Error';
-
+import {Impressum} from './windowComponents/Impressum';
+ 
 
 
 
@@ -15,7 +16,7 @@ class DynComponent extends React.Component {
     }
 
     components = {
-        Error,
+        Error, Impressum
     };
     
     render() {

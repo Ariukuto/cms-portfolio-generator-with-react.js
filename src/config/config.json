@@ -299,7 +299,22 @@
                 "headline": "",
                 "text-align": "center",
                 "links": [
-                    {"name":"Impressum"}
+                    {
+                        "name":"Impressum",
+                        "componentname": "Impressum",
+                        "data": {
+                            "firstname": "",
+                            "lastnanme": "",
+                            "street": "",
+                            "houseNumber": "",
+                            "plz": "",
+                            "location": "",
+                            "phonenumber": "",
+                            "fax": "",
+                            "email": "",
+                            "umsatzsteuerId": ""
+                        }
+                    }
                 ]
             },
             {
