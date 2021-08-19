@@ -37,9 +37,9 @@ export class Window extends React.Component {
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                {this.state.MsgObject.component ? <DynComponent component={this.state.MsgObject.component} /> : "Error"}
+                {this.state.MsgObject.component ? <DynComponent component={this.state.MsgObject.component} /> : "Kein Inhalt vorhanden. Bitte prüfen Sie ihre Konfiguration" }
               </div>
-            </div>
+            </div>  
           </div>
         </div>
       );

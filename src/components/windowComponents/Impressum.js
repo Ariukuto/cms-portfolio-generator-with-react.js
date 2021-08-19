@@ -32,7 +32,7 @@ const Impressum = (props) => {
             </p>
             <p><strong>Umsatzsteuer-ID</strong> <br /><span style={underline}>Umsatzsteuer-Identifikationsnummer gem. § 27 a Umsatzsteuergesetz:</span></p>
             <p>{umsatzsteuerId}</p>
-            <p 
+            <p style={{textAlign:"justify"}}
                 dangerouslySetInnerHTML={{ __html: haftungsauschlusstext}} 
             />
         </div>
