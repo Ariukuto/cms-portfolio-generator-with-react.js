@@ -10,7 +10,7 @@ export class Window extends React.Component {
       this.state = {
         MsgObject: {
           title: '',
-          component: {}
+          component: ''
         }
       }
   }
@@ -37,7 +37,7 @@ export class Window extends React.Component {
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                {this.state.MsgObject.component.name &&  <DynComponent component={this.state.MsgObject.component} />}
+                {this.state.MsgObject.component ? <DynComponent component={this.state.MsgObject.component} /> : "Error"}
               </div>
             </div>
           </div>
