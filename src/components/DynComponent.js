@@ -11,7 +11,7 @@ class DynComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            componentName: props.name,
+            component: props.component,
         }
     }
 
@@ -20,8 +20,8 @@ class DynComponent extends React.Component {
     };
     
     render() {
-       const TagName = this.components[this.state.componentName || 'Error'];
-       return <TagName />
+       const TagName = this.components[this.state.component.name || 'Error'];
+       return <TagName data={this.state.component}/>
     }
 }
 export {DynComponent};

@@ -37,12 +37,12 @@ export class Footer extends React.Component {
         let linkstyle = {color: this.state.fontcolor};
 
         // Event Callback Funktion
-        const showWindow = (linkname) => {
+        const showWindow = (link) => {
             return () => {
                 // show_window Event auslösen
                 emitter.emit("show_window", {
-                    title: linkname,
-                    component: linkname,
+                    title: link.title,
+                    component: link.component,
                 });
             }
         }
@@ -55,10 +55,9 @@ export class Footer extends React.Component {
                             <div key={i} className="col d-flex flex-column text-center">
                                {this.renderHeadline(col)}
                                 {col.links.map((link, j) => {
-                                    
                                     return(
-                                        <div key={j} onClick={showWindow(link.name)} style={linkstyle} data-bs-toggle="modal" data-bs-target="#exampleModal"> 
-                                            {link.name}
+                                        <div key={j} onClick={showWindow(link)} style={linkstyle} data-bs-toggle="modal" data-bs-target="#exampleModal"> 
+                                            {link.title}
                                         </div>
                                     );
                                 })}

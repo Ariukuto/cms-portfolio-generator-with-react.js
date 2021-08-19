@@ -10,13 +10,14 @@ export class Window extends React.Component {
       this.state = {
         MsgObject: {
           title: '',
-          component: ''
+          component: {}
         }
       }
   }
 
   componentDidMount() {
     this.eventEmitter = emitter.addListener("show_window",(MsgObject) => {
+      console.log("MsgObject", MsgObject);
       this.setState({MsgObject});
     });
   }
@@ -36,7 +37,7 @@ export class Window extends React.Component {
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                {this.state.MsgObject.component &&  <DynComponent name="Impressum" />}
+                {this.state.MsgObject.component.name &&  <DynComponent component={this.state.MsgObject.component} />}
               </div>
             </div>
           </div>
