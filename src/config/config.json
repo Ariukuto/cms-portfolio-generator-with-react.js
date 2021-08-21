@@ -322,14 +322,26 @@
                 "headline": "",
                 "text-align": "center",
                 "links": [
-                    {"title":"Kontakt"}
+                    {
+                        "title":"Kontakt",
+                        "component": {
+                            "name": "Text",
+                            "content": "Kontakt Text ..."
+                        }
+                    }
                 ]
             },
             {
                 "headline": "",
                 "text-align": "center",
                 "links": [
-                    {"title":"Lizenzen"}
+                    {
+                        "title":"Lizenzen",
+                        "component": {
+                            "name": "Text",
+                            "content": "Lizenzen Text ..."
+                        }
+                    }
                 ]
             }
         ]

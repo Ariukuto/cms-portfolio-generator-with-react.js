@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-
+import React from 'react';
 import Error from './windowComponents/Error';
 import {Impressum} from './windowComponents/Impressum';
+import {Text} from './windowComponents/Text.js';
  
 
 
@@ -16,12 +16,13 @@ class DynComponent extends React.Component {
     }
 
     components = {
-        Error, Impressum
+        Error, Impressum, Text
     };
     
     render() {
-       const TagName = this.components[this.state.component.name || 'Error'];
-       return <TagName data={this.state.component}/>
+        let TagName = this.components[this.state.component.name || 'Error'];
+        return <TagName data={this.state.component}/>
     }
 }
+
 export {DynComponent};

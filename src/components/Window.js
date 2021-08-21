@@ -8,6 +8,7 @@ export class Window extends React.Component {
   constructor(props) {
       super(props);
       this.state = {
+        showDynComponent: false,
         MsgObject: {
           title: '',
           component: ''
@@ -17,8 +18,9 @@ export class Window extends React.Component {
 
   componentDidMount() {
     this.eventEmitter = emitter.addListener("show_window",(MsgObject) => {
-      console.log("MsgObject", MsgObject);
+      console.log('MsgObject', MsgObject);
       this.setState({MsgObject});
+      this.setState({showDynComponent: true});
     });
   }
   
@@ -26,10 +28,15 @@ export class Window extends React.Component {
     emitter.removeListener(this.eventEmitter);
   }
 
+  test = () => {
+    this.setState({showDynComponent:false})
+  }
+
   // Template
   render() {
-      return (
-        <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    console.log('Window MsgObject', this.state);
+    return (
+        <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" onClick={this.test}>
           <div className="modal-dialog modal-lg modal-dialog-scrollable">
             <div className="modal-content">
               <div className="modal-header">
@@ -37,7 +44,7 @@ export class Window extends React.Component {
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                {this.state.MsgObject.component ? <DynComponent component={this.state.MsgObject.component} /> : "Kein Inhalt vorhanden. Bitte prüfen Sie ihre Konfiguration" }
+                {this.state.showDynComponent && <DynComponent component={this.state.MsgObject.component} />}
               </div>
             </div>  
           </div>

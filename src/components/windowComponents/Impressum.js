@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 const Impressum = (props) => {
     const data = props.data || {};
-    console.log("props", props);
     const underline = {textDecoration: "underline"};
     const firstname = data.firstname || "<Vorname>";
     const lastname = data.lastname || "<Nachname>";
