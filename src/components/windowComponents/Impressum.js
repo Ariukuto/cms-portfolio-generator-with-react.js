@@ -1,5 +1,8 @@
-import { useState } from 'react';
-
+/**
+ * @name Impressum
+ * @param {*} props 
+ * @returns template
+ */
 const Impressum = (props) => {
     const data = props.data || {};
     const underline = {textDecoration: "underline"};

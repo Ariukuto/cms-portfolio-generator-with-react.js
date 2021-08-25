@@ -4,9 +4,6 @@ import {Navigation} from './Navigation';
 import {Content} from './Content';
 import {Footer} from './Footer';
 
-import 'bootstrap/dist/css/bootstrap.css';
-import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.js';
-
 
 export class App extends React.Component {
 
