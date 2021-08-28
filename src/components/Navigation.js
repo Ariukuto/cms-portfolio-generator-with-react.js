@@ -1,5 +1,6 @@
 import React from 'react';
 import {NewImage} from './NewImage.js';
+import emitter from "../ev";
 
 /**
  * @name Navigation
@@ -23,6 +24,7 @@ export class Navigation extends React.Component {
         let style = {backgroundColor: this.state.backgroundcolor};
         let layout = this.state.fullwith === true ? 'container-fluid': 'container';
         let links = this.state.links;
+        
         return(
             <div className='Navigation' style={style}>
                 <div className={`navbar navbar-expand-lg navbar-light ${layout}`}> 
@@ -44,7 +46,7 @@ export class Navigation extends React.Component {
                                 {links.map((link, index) => {
                                     return (
                                         <div key={index} className="nav-item">
-                                            <a  className="nav-link" aria-current="page" title={link.title || ''} href={link.url} target="_blank">
+                                            <a  className="nav-link" aria-current="page" title={link.title || ''} href={link.url || 'www.googl.de'} target="_blank" rel="noreferrer">
                                                 {link.name}
                                             </a>
                                         </div>

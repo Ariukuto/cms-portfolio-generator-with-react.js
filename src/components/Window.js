@@ -1,54 +1,78 @@
 import React from 'react';
-import emitter from "../ev";
+import emitter from '../ev';
 import {DynComponent} from './DynComponent';
 
 
+/**
+ * @name Window
+ * @state show - if it true, than render the modal
+ * @state close - if it true, than unrender the modal
+ * @state title - The Title of the Modal
+ * @eventlistener show_window - set state show:true, close:false and title
+ * @todo Dafor sorgen, dass der window-content gescrollt werden kann. Body ist schon erledigt
+ */
 export class Window extends React.Component {
 
-  constructor(props) {
-      super(props);
-      this.state = {
-        showDynComponent: false,
-        MsgObject: {
-          title: '',
-          component: ''
+    constructor(props) {
+        super(props);
+        this.state = {
+            show: false,
+            close: false,
+            showDynComponent: false,
+            MsgObject: {
+                title: '',
+                component: ''
+            }
         }
-      }
-  }
+    }
 
-  componentDidMount() {
-    this.eventEmitter = emitter.addListener("show_window",(MsgObject) => {
-      console.log('MsgObject', MsgObject);
-      this.setState({MsgObject});
-      this.setState({showDynComponent: true});
-    });
-  }
-  
-  componentWillUnmount(){
-    emitter.removeListener(this.eventEmitter);
-  }
+    componentDidMount = () => {
+        this.eventEmitter = emitter.addListener("show_window", (MsgObject) => {
+            let body = document.querySelector("body");
+            body.style.overflow = "hidden";
+            body.style.paddingRight = "15px";
+            this.setState({
+              show: true,
+              close: false,
+              showDynComponent: true,
+              MsgObject: MsgObject
+            });
+        });
+    }
 
-  test = () => {
-    this.setState({showDynComponent:false})
-  }
+    componentWillUnmount = () => {
+        emitter.removeListener(this.eventEmitter);
+    }
 
-  // Template
-  render() {
-    console.log('Window MsgObject', this.state);
-    return (
-        <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" onClick={this.test}>
-          <div className="modal-dialog modal-lg modal-dialog-scrollable">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel"> {this.state.MsgObject.title} </h5>
-                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                {this.state.showDynComponent && <DynComponent component={this.state.MsgObject.component} />}
-              </div>
-            </div>  
-          </div>
-        </div>
-      );
-  }
+    close = (event) => {
+        this.setState({
+            show: true,
+            close:true,
+            showDynComponent: false,
+        });
+    }
+
+    render() {
+
+        let show = this.state.show ? 'windowFadeIn' : '';
+        let close = this.state.close ? 'windowFadeOut' : '';
+        let cssClasses = `${show} ${close}`;
+        
+        return (
+            <div id="window-container" className={cssClasses}>
+                <div className="window-background" onClick={this.close}></div>
+                <div className="window-wrapper">
+                    <div className="window">
+                        <div className="window-header">
+                            <h2> {this.state.MsgObject.title} </h2>
+                            <div className="btn-close" onClick={this.close}></div>
+                        </div>
+                        <div className="window-content">
+                            {this.state.showDynComponent && <DynComponent component={this.state.MsgObject.component} />}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
 }

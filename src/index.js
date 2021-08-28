@@ -5,18 +5,13 @@ import {App} from './components/App';
 // import reportWebVitals from './reportWebVitals';
 
 // Bootstrap css, js, icons
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+// import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// import 'bootstrap-icons/font/bootstrap-icons.css';
 import './index.css';
 
 // config
 import configObject from './config/config.json';
-
-
-
-
-
 
 
 ReactDOM.render(

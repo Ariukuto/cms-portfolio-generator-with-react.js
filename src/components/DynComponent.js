@@ -18,6 +18,10 @@ class DynComponent extends React.Component {
     components = {
         Error, Impressum, Text
     };
+
+    componentWillUnmount = () => {
+        this.state.component = {};
+    }
     
     render() {
         let TagName = this.components[this.state.component.name || 'Error'];
