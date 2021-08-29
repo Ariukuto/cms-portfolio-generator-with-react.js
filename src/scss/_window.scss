@@ -28,14 +28,24 @@
         .window-wrapper {
             opacity:0;
             width: 100%;
-            padding: 1rem;
+            padding: 2px;
             max-width: 800px;
-            animation: windowScaleUp 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;       
+            animation: windowScaleUp 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;  
+
+            @media (orientation: portrait) {
+                height: 100%;
+                .window {
+                    height: 100%; 
+                    // padding-right: 0 !important;
+                    .window-content > div {
+                        padding-bottom: 14rem;
+                    }
+                }
+            }     
             
             .window {
-                padding: 1rem;
                 padding-bottom: 0;
-                background:white;
+                background: white;
                 width: 100%;
                 border-radius:3px;
                 font-weight:300;
@@ -47,11 +57,13 @@
                     align-items: center;
                     justify-content: space-between;
                     border-bottom: 1px solid grey;
+                    padding-right: 1rem;
+                    padding-left: 1rem;
 
                     h2 {
                         font-size:25px;
                         line-height:25px;
-                        margin-bottom:15px;
+                        margin-bottom: 0;
                     }
 
                     .btn-close {
@@ -62,12 +74,14 @@
                 }
 
                 .window-content {
-                    padding-top: 1rem;
                     font-size:18px;
                     line-height:22px;
                     > div {
                         max-height: 780px;;
                         overflow: auto;
+                        padding-top: 1rem;
+                        padding-right: 1rem;
+                        padding-left: 1rem;
                     }
                 }
 

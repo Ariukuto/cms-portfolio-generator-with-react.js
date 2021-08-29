@@ -10502,12 +10502,22 @@ textarea.form-control-lg {
 #window-container.windowFadeIn .window-wrapper {
   opacity: 0;
   width: 100%;
-  padding: 1rem;
+  padding: 2px;
   max-width: 800px;
   animation: windowScaleUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
+@media (orientation: portrait) {
+  #window-container.windowFadeIn .window-wrapper {
+    height: 100%;
+  }
+  #window-container.windowFadeIn .window-wrapper .window {
+    height: 100%;
+  }
+  #window-container.windowFadeIn .window-wrapper .window .window-content > div {
+    padding-bottom: 14rem;
+  }
+}
 #window-container.windowFadeIn .window-wrapper .window {
-  padding: 1rem;
   padding-bottom: 0;
   background: white;
   width: 100%;
@@ -10521,11 +10531,13 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid grey;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 #window-container.windowFadeIn .window-wrapper .window .window-header h2, #window-container.windowFadeIn .window-wrapper .window .window-header .h2 {
   font-size: 25px;
   line-height: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 #window-container.windowFadeIn .window-wrapper .window .window-header .btn-close {
   font-size: 30px;
@@ -10533,13 +10545,15 @@ textarea.form-control-lg {
   cursor: pointer;
 }
 #window-container.windowFadeIn .window-wrapper .window .window-content {
-  padding-top: 1rem;
   font-size: 18px;
   line-height: 22px;
 }
 #window-container.windowFadeIn .window-wrapper .window .window-content > div {
   max-height: 780px;
   overflow: auto;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 #window-container.windowFadeIn.windowFadeOut {
   animation: windowQuickScaleDown 0.1s 0.5s linear forwards;
