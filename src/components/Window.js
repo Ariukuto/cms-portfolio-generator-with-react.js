@@ -50,6 +50,9 @@ export class Window extends React.Component {
             close:true,
             showDynComponent: false,
         });
+        let body = document.querySelector("body");
+        body.style.overflow = "unset";
+        body.style.paddingRight = "unset";
     }
 
     render() {
