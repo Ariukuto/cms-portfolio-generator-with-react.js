@@ -39,11 +39,7 @@ export class Window extends React.Component {
             });
         });
     }
-
-    componentWillUnmount = () => {
-        emitter.removeListener(this.eventEmitter);
-    }
-
+    
     close = (event) => {
         this.setState({
             show: true,
