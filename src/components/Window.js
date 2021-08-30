@@ -40,13 +40,36 @@ export class Window extends React.Component {
             });
         });
 
-        if(this.state.pathname.toLocaleLowerCase() === "/impressum") {
-            this.eventEmitter.emit('show_window', {
-                title: 'Impressum',
-                component: {
-                    name: 'Impressum',
-                }
-            });   
+        switch (this.state.pathname.toLocaleLowerCase()) {
+            case "/impressum":
+                this.eventEmitter.emit('show_window', {
+                    title: 'Impressum',
+                    component: {
+                        name: 'Impressum',
+                    }
+                }); 
+                break;
+
+                case "/datenschutz":
+                    this.eventEmitter.emit('show_window', {
+                        title: 'Datenschutz',
+                        component: {
+                            name: 'Datenschutz',
+                        }
+                    }); 
+                    break;
+
+                case "/kontakt":
+                    this.eventEmitter.emit('show_window', {
+                        title: 'Kontakt',
+                        component: {
+                            name: 'Contact',
+                        }
+                    }); 
+                    break;
+        
+            default:
+                break;
         }
     }
     
