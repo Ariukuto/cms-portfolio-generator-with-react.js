@@ -1,10 +1,15 @@
+import config from '../../config/impressum.config.json';
+
+
+
+
 /**
  * @name Impressum
  * @param {*} props 
  * @returns template
  */
 const Impressum = (props) => {
-    const data = props.data || {};
+    const data = config || {};
     const underline = {textDecoration: "underline"};
     const firstname = data.firstname || "<Vorname>";
     const lastname = data.lastname || "<Nachname>";

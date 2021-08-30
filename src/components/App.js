@@ -4,6 +4,8 @@ import {Navigation} from './Navigation';
 import {Content} from './Content';
 import {Footer} from './Footer';
 
+import emitter from "../ev"
+
 
 export class App extends React.Component {
 
@@ -23,7 +25,7 @@ export class App extends React.Component {
               src:image.default
            });
       });
-    }  
+    }
   }
 
   render() {

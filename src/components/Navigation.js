@@ -1,7 +1,7 @@
 
 import React from 'react';
 import {NewImage} from './NewImage.js';
-import emitter from "../ev";
+// import emitter from "../ev";
 
 
 /**

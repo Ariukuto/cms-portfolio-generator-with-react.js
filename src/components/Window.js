@@ -19,6 +19,7 @@ export class Window extends React.Component {
             show: false,
             close: false,
             showDynComponent: false,
+            pathname: window.location.pathname,
             MsgObject: {
                 title: '',
                 component: ''
@@ -38,6 +39,15 @@ export class Window extends React.Component {
               MsgObject: MsgObject
             });
         });
+
+        if(this.state.pathname.toLocaleLowerCase() === "/impressum") {
+            this.eventEmitter.emit('show_window', {
+                title: 'Impressum',
+                component: {
+                    name: 'Impressum',
+                }
+            });   
+        }
     }
     
     close = (event) => {
