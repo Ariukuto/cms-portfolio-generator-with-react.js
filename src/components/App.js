@@ -4,9 +4,6 @@ import {Navigation} from './Navigation';
 import {Content} from './Content';
 import {Footer} from './Footer';
 
-import emitter from "../ev"
-
-
 export class App extends React.Component {
 
   constructor(props) {
