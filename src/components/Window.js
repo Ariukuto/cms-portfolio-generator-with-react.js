@@ -2,7 +2,6 @@ import React from 'react';
 import emitter from '../ev';
 import {DynComponent} from './DynComponent';
 
-
 /**
  * @name Window
  * @state show - if it true, than render the modal
