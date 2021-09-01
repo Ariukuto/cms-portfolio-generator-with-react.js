@@ -22,7 +22,6 @@ class DynComponent extends React.Component {
     }
     
     render() {
-        console.log(this.state.component);
         let TagName = this.components[this.state.component.name || 'Error'] || this.components['Error'];
         return <TagName data={this.state.component}/>
     }
