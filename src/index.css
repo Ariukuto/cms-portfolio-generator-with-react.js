@@ -10779,9 +10779,13 @@ textarea.form-control-lg {
   font-size: 20px;
   margin-bottom: 1rem;
 }
-.Footer a {
-  text-decoration: none;
-  margin-bottom: 1rem;
+.Footer .link-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.Footer .link-title:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=index.css.map */

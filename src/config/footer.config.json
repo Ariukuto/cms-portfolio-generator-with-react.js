@@ -1,0 +1,58 @@
+{
+    "fullwith": "true",
+    "backgroundcolor": "black",
+    "headlinecolor": "orange",
+    "fontcolor": "white",
+    "columns": [
+        {
+            "headline": "",
+            "text-align": "center",
+            "links": [
+                {
+                    "title":"Impressum",
+                    "component": {
+                        "name": "Impressum"
+                    }
+                }
+            ]
+        },
+        {
+            "headline": "",
+            "text-align": "center",
+            "links": [
+                {
+                    "title":"Kontakt",
+                    "component": {
+                        "name": "Contact"
+                    }
+                }
+            ]
+        },
+        {
+            "headline": "",
+            "text-align": "center",
+            "links": [
+                {
+                    "title":"Lizenzen",
+                    "component": {
+                        "name": "Text",
+                        "content": "Lizenzen Text ..."
+                    }
+                }
+            ]
+        },
+        {
+            "headline": "",
+            "text-align": "center",
+            "links": [
+                {
+                    "title":"Datenschutz",
+                    "component": {
+                        "name": "Text",
+                        "content": "Datenschutz Text ..."
+                    }
+                }
+            ]
+        }
+    ]
+}

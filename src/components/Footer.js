@@ -1,5 +1,6 @@
 import React from 'react';
 import emitter from "../ev"
+import config from '../config/footer.config.json';
 
 /**
  * @name Footer
@@ -11,11 +12,11 @@ export class Footer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            'backgroundcolor': props.config.backgroundcolor,
-            'headlinecolor': props.config.headlinecolor,
-            'fontcolor': props.config.fontcolor,
-            'columns': props.config.columns,
-            'fullwith': props.config.fullwith,
+            'backgroundcolor': config.backgroundcolor,
+            'headlinecolor': config.headlinecolor,
+            'fontcolor': config.fontcolor,
+            'columns': config.columns,
+            'fullwith': config.fullwith,
         }
     }
 
@@ -34,7 +35,9 @@ export class Footer extends React.Component {
     render() {
         let layout = this.fullwith !== "true" ? 'container-fluid': 'container';
         let footerstyle = {backgroundColor: this.state.backgroundcolor};
-        let linkstyle = {color: this.state.fontcolor};
+        let linkstyle = {
+            color: this.state.fontcolor, 
+        };
 
         // Event Callback Funktion
         const showWindow = (link) => {
@@ -52,11 +55,11 @@ export class Footer extends React.Component {
                 <div className='row'>
                     {this.state.columns.map((col, i) => {
                         return (
-                            <div key={i} className="col d-flex flex-column text-center">
+                            <div key={i} className="col-sm d-flex justify-content-center">
                                {this.renderHeadline(col)}
                                 {col.links.map((link, j) => {
                                     return(
-                                        <div key={j} onClick={showWindow(link)} style={linkstyle} data-bs-toggle="modal" data-bs-target="#exampleModal"> 
+                                        <div key={j} onClick={showWindow(link)} style={linkstyle} className="link-title"> 
                                             {link.title}
                                         </div>
                                     );
