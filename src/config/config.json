@@ -1,5 +1,4 @@
 {
-
     "page": {
         "background": {
             "img": {
@@ -9,8 +8,6 @@
             "backgroundcolor": "white"
         } 
     },
-
-
 
     "content": {
         
@@ -45,7 +42,7 @@
             "headline": "Picture and text component",
             "image": {
                 "widescreen": {
-                    "imageName": "placeholder.png",
+                    "imageName": "profil.png",
                     "height": "400px",
                     "width": "",
                     "borderRadius": "",
@@ -54,7 +51,7 @@
                     "DistanceDown": ""
                 } ,   
                 "mobile": {
-                    "imageName": "placeholder.png",
+                    "imageName": "",
                     "height": "",
                     "width": "",
                     "borderRadius": "",
@@ -78,7 +75,7 @@
                 {
                     "grafik": {
                         "is_icon": false,
-                        "name": "placeholder.png",
+                        "name": "icon.png",
                         "color": "black",
                         "size": "180px",
                         "abstand_unten": "4px",
@@ -90,18 +87,7 @@
                 {   
                     "grafik": {
                         "is_icon": false,
-                        "name": "placeholder.png",
-                        "color": "black",
-                        "size": "180px",
-                        "url": ""
-                    },
-                    "headline": "Webentwicklung",
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
-                },
-                {
-                    "grafik": {
-                        "is_icon": false,
-                        "name": "placeholder.png",
+                        "name": "icon.png",
                         "color": "black",
                         "size": "180px",
                         "url": ""
@@ -112,7 +98,18 @@
                 {
                     "grafik": {
                         "is_icon": false,
-                        "name":"placeholder.png",
+                        "name": "icon.png",
+                        "color": "black",
+                        "size": "180px",
+                        "url": ""
+                    },
+                    "headline": "Thema 2",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+                },
+                {
+                    "grafik": {
+                        "is_icon": false,
+                        "name":"icon.png",
                         "color": "black",
                         "size": "180px",
                         "url": ""
@@ -157,7 +154,7 @@
                     "textbox": {
                         "card": true,
                         "shadow": true,
-                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/> <br/> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/><br/> <a href=''>Link to other page</a>"
+                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br/><br/> <a href=''>Link to other page</a>"
                     }
                 },
                 {
@@ -189,7 +186,7 @@
                     "textbox": {
                         "card": true,
                         "shadow": true,
-                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/> <br/> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/><br/> <a href=''>Link to other page</a>"
+                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br/><br/> <a href=''>Link to other page</a>"
                     }
                 },
                 {
@@ -221,7 +218,7 @@
                     "textbox": {
                         "card": true,
                         "shadow": true,
-                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/> <br/> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/><br/> <a href=''>Link to other page</a>"
+                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br/><br/> <a href=''>Link to other page</a>"
                     }
                 },
                 {
@@ -252,7 +249,7 @@
                     "textbox": {
                         "card": true,
                         "shadow": true,
-                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/> <br/> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/><br/> <a href=''>Link to other page</a>"
+                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br/><br/> <a href=''>Link to other page</a>"
                     }
                 }
             ]

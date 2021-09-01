@@ -1,12 +1,12 @@
 {
     "fullwith": false,
-    "overBanner": true,
+    "overBanner": false,
     "navbarAlign": "right",
     "backgroundcolor": "#f9fafb59",
     "color": "",
     "logo": {   
         "widescreen": {
-            "imageName": "placeholder.png",
+            "imageName": "profil.png",
             "height": "50px",
             "width": "50px",
             "borderRadius": "100%",
@@ -15,7 +15,7 @@
             "DistanceDown": ""
         } ,   
         "mobile": {
-            "imageName": "placeholder.png",
+            "imageName": "profil.png",
             "height": "50px",
             "width": "50px",
             "borderRadius": "100%",
@@ -25,9 +25,8 @@
         }
     },
     "links": [
-        {"name": "link 1", "url": ""},
-        {"name": "link 2", "url": ""},
-        {"name": "link 3", "url": ""},
-        {"name": "link 4", "url": ""}
+        {"name": "linkeins", "url": ""},
+        {"name": "linkzwei", "url": ""},
+        {"name": "linkdrei", "url": ""}
     ]
 }
