@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { Window } from '../components/Window';
 import emitter from "../ev";
 
-test('renders learn react link', () => {
+test('Window render test', () => {
   render(<Window />);
 
   emitter.emit("show_window", {
