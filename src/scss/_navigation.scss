@@ -1,14 +1,29 @@
 .Ǹavigation {
 
+    .nav-item {
+        color: black !important;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        .navbar-container {
+            display: flex;
+            width: 100%;
+        }
+    }
+
     .logo {
         img{
             object-fit: cover;
         }
     }
 
-    .navbar-collapse {
-        justify-content: flex-end;
-    }
     
     &.absolute {
         position: absolute !important;
@@ -19,8 +34,5 @@
             left: 0;
         }
 
-        .navbar {
-            justify-content: none !important;
-        }
     }
 }
