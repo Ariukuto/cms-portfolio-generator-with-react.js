@@ -35,7 +35,7 @@
                 {
                     "title":"Lizenzen",
                     "component": {
-                        "name": "Text",
+                        "name": "Licenses",
                         "content": "Lizenzen Text ..."
                     }
                 }

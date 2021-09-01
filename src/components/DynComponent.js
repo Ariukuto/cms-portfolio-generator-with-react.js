@@ -1,8 +1,10 @@
 import React from 'react';
+
 import Error from './windowComponents/Error';
 import {Impressum} from './windowComponents/Impressum';
 import {Text} from './windowComponents/Text.js';
 import {Contact} from './windowComponents/Contact';
+import { Licenses } from './windowComponents/Licenses';
 
 class DynComponent extends React.Component {
 
@@ -14,7 +16,7 @@ class DynComponent extends React.Component {
     }   
 
     components = {
-        Error, Impressum, Text, Contact
+        Error, Impressum, Text, Contact, Licenses
     };
 
     componentWillUnmount = () => {
@@ -27,4 +29,6 @@ class DynComponent extends React.Component {
     }
 }
 
-export {DynComponent};
+export {
+    DynComponent
+};
