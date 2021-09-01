@@ -1,10 +1,26 @@
-.Navigation {
+.Ǹavigation {
+
     .logo {
         img{
             object-fit: cover;
         }
     }
+
     .navbar-collapse {
         justify-content: flex-end;
+    }
+    
+    &.absolute {
+        position: absolute !important;
+        width: 100%;
+
+        .logo {
+            position: relative;
+            left: 0;
+        }
+
+        .navbar {
+            justify-content: none !important;
+        }
     }
 }

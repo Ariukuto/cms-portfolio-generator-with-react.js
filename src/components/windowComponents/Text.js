@@ -4,7 +4,7 @@ const Text = (props) => {
     const [content] = useState(props.data.content);  
     
     return (
-        <div>
+        <div className="TextComponent">
             <p 
                 style={{textAlign:"justify"}}
                 dangerouslySetInnerHTML={{ __html: content}} 

@@ -1,4 +1,7 @@
 import React from 'react';
+
+import navigationConfig from '../config/navigation.config.json';
+
 import {Window} from './Window';
 import {Navigation} from './Navigation';
 import {Content} from './Content';
@@ -37,7 +40,7 @@ export class App extends React.Component {
 
           <Window />
 
-          <Navigation config={this.props.config.navigation}/>
+          <Navigation config={navigationConfig}/>
           
           <Content config={this.props.config.content}/>
 

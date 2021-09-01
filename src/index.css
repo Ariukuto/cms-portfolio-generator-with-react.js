@@ -10646,11 +10646,22 @@ textarea.form-control-lg {
   background-position: center;
 }
 
-.Navigation .logo img {
+.Ǹavigation .logo img {
   object-fit: cover;
 }
-.Navigation .navbar-collapse {
+.Ǹavigation .navbar-collapse {
   justify-content: flex-end;
+}
+.Ǹavigation.absolute {
+  position: absolute !important;
+  width: 100%;
+}
+.Ǹavigation.absolute .logo {
+  position: relative;
+  left: 0;
+}
+.Ǹavigation.absolute .navbar {
+  justify-content: none !important;
 }
 
 .Content .Headline {

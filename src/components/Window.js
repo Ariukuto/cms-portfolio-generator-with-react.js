@@ -96,7 +96,9 @@ export class Window extends React.Component {
                 <div className="window-wrapper">
                     <div className="window">
                         <div className="window-header">
-                            <h2> {this.state.MsgObject.title} </h2>
+                            <h2 className="window-title" data={this.state.MsgObject.title}>
+                                {this.state.MsgObject.title}
+                            </h2>
                             <div className="btn-close" onClick={this.close}></div>
                         </div>
                         <div className="window-content">

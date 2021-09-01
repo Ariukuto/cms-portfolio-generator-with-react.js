@@ -10,37 +10,7 @@
         } 
     },
 
-    "navigation": {
-        "fullwith": false,
-        "logo": {   
-            "widescreen": {
-                "imageName": "placeholder.png",
-                "height": "50px",
-                "width": "50px",
-                "borderRadius": "100%",
-                "shadow": false,
-                "DistanceUp": "",
-                "DistanceDown": ""
-            } ,   
-            "mobile": {
-                "imageName": "placeholder.png",
-                "height": "50px",
-                "width": "50px",
-                "borderRadius": "100%",
-                "shadow": false,
-                "DistanceUp": "",
-                "DistanceDown": ""
-            }
-        },
-        "backgroundcolor": "white",
-        "color": "",
-        "links": [
-            {"name": "link 1", "url": ""},
-            {"name": "link 2", "url": ""},
-            {"name": "link 3", "url": ""},
-            {"name": "link 4", "url": ""}
-        ]
-    },
+
 
     "content": {
         
