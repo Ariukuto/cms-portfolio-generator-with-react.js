@@ -58,6 +58,15 @@ export class Window extends React.Component {
                     }); 
                     break;
 
+                case "/lizenzen":
+                    this.eventEmitter.emit('show_window', {
+                        title: 'Lizenzen',
+                        component: {
+                            name: 'Licenses',
+                        }
+                    }); 
+                    break;
+
                 case "/kontakt":
                     this.eventEmitter.emit('show_window', {
                         title: 'Kontakt',
