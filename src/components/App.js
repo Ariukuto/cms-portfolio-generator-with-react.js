@@ -1,21 +1,63 @@
 import React from 'react';
 
-import navigationConfig from '../config/navigation.config.json';
+// config
+//import pageconfig from '../config/page.config.json';
+import content from '../config/content.config.json';
 
-import {Window} from './Window';
-import {Navigation} from './Navigation';
-import {Content} from './Content';
-import {Footer} from './Footer';
+import { Window }       from './Window';
+import { Navigation }   from './Navigation';
+import { Footer }         from './Footer';
+import { Banner }       from './Banner.js';
+import { Vorstellung }  from './Vorstellung.js';
+import { Iconrow }      from './Iconrow.js';
+import { Details }      from './Details.js';
 
+const App = () => {
+  const [documentTitle, setDocumentTitle] = React.useState("");
+  const [backgroundColor, setBackgroundColor] = React.useState("");
+  const [backgroundimgRender, setBackgroundimgRender] = React.useState("");
+  const [imgname, setImgname] = React.useState("");
+  const [src, setSrc] = React.useState(null);
+  const [style, setStyle] = React.useState({});
+
+  React.useEffect(() => {
+    const pageconfig = require("../config/page.config.json");
+    console.log(pageconfig);
+    setDocumentTitle(pageconfig.title);
+    document.title = documentTitle;
+  });
+
+  const components = { Banner, Vorstellung, Iconrow, Details, Navigation, Footer }
+
+  return (
+    <div className='App' style={style}>
+        <Window />
+        <div className='Content'>
+          {content.map((component) => {
+              let TagName = components[component.name];
+              return (
+                  <TagName data={component}/>
+              );
+          })}
+      </div>
+    </div>
+  );
+}
+
+export {
+  App
+}
+
+/*
 export class App extends React.Component {
 
   constructor(props) {
     super(props);
 
     this.state = {
-      'backgroundcolor': props.config.page.background.backgroundcolor,
-      'backgroundimgRender': props.config.page.background.img.render,
-      'imgname': props.config.page.background.img.name,
+      'backgroundcolor': pageconfig.background.backgroundcolor,
+      'backgroundimgRender': pageconfig.background.img.render,
+      'imgname': pageconfig.background.img.name,
       'src': null,
     }
 
@@ -27,28 +69,26 @@ export class App extends React.Component {
       });
     }
   }
+  
 
   render() {
 
-    let style = {
-      backgroundColor: this.state.backgroundcolor,
-      backgroundImage: `url(${this.state.src})`
-    }
+    const components = { Banner, Vorstellung, Iconrow, Details, Navigation, Footer }
 
     return (
       <div className='App' style={style}>
-
           <Window />
-
-          <Navigation config={navigationConfig}/>
-          
-          <Content config={this.props.config.content}/>
-
-          <Footer config={this.props.config.footer}/>
-
+          <div className='Content'>
+            {content.map((component) => {
+                let TagName = components[component.name];
+                return (
+                    <TagName data={component}/>
+                );
+            })}
+        </div>
       </div>
 
     );
   }
 }
-
+*/

@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { NewImage } from './NewImage.js';
+import navigationConfig from '../config/navigation.config.json';
 
 /**
  * @name Navigation
@@ -11,12 +11,12 @@ export class Navigation extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            'fullwith': props.config.fullwith || '',
-            'overBanner': props.config.overBanner || '',
-            "navbarAlign": props.config.navbarAlign || '',
-            'logo': props.config.logo || '',
-            'backgroundcolor': props.config.backgroundcolor || '',
-            'links': props.config.links || ''   ,
+            'fullwith': navigationConfig.fullwith || '',
+            'overBanner': navigationConfig.overBanner || '',
+            "navbarAlign": navigationConfig.navbarAlign || '',
+            'logo': navigationConfig.logo || '',
+            'backgroundcolor': navigationConfig.backgroundcolor || '',
+            'links': navigationConfig.links || ''   ,
         }
     }
 

@@ -3,12 +3,11 @@ import ReactDOM from 'react-dom';
 import {App} from './components/App';
 import './scss/all.scss';
 
-// config
-import configObject from './config/config.json';
+
 
 
 ReactDOM.render(
-    <App config={configObject}/>,
+    <App />,
   document.getElementById('root')
 );
 

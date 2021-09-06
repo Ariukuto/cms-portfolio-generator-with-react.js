@@ -20,7 +20,7 @@ class DynComponent extends React.Component {
     };
 
     componentWillUnmount = () => {
-        this.setState({compponent: {}});
+        this.setState({component: {}});
     }
     
     render() {

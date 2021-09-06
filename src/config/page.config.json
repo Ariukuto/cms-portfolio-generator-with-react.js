@@ -1,0 +1,10 @@
+{
+    "title": "My Website",
+    "background": {
+        "img": {
+            "render": false,
+            "name": ""
+        },
+        "backgroundcolor": "white"
+    } 
+}
