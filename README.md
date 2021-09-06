@@ -1,17 +1,9 @@
 # landingpage cms generator with React.js
 
+## Um was handelt es sich genau?
+Dieses Tool ermöglicht es, eine responsive Landingpage schnell und einfach, automatisch zu generieren. Das Pflegen der Inhalte funktioniert aktuell noch über eine config.json. In Zukunft wird es noch eine Admin Oberfläche geben. Das Frontend wird hauptsächlich mit React.js Komponenten entwickelt. Dies ermöglich eine schnellere Anpassung und bessere Wartbarkeit. In Zukunft wird es so möglich sein, bestehende Komponenten zu erweitern um es an eigene Bedürfnisse anzupassen. Durch die Entwicklung mit SASS/SCSS war es möglich, eine leicht wartbare Styling Architektur zu entwickeln. So lassen sich mit wenig Aufwand eigene Templates erstellen.
 
-Dieses Tool ermöglicht es, eine responsive Landingpage schnell und einfach, automatisch zu generieren. Das Pflegen der Inhalte funktioniert aktuell noch über eine config.json. In Zukunft wird es noch eine Admin Oberfläche geben. Das Frontend wird hauptsächlich mit React.js Komponenten entwickelt. Dies ermöglich eine schnellere Anpassung und bessere Wartbarkeit. In Zukunft wird es so möglich sein bestehende Komponenten zu erweitern um es an eigene Bedürfnisse anzupassen. Durch die Entwicklung mit SASS/SCSS war es möglich, eine leicht wartbare Styling Architektur zu entwickeln. So lassen sich mit wenig Aufwand eigene Templates erstellen.
-
-## Technologiestack
-+ HTML
-+ CSS
-+ javaScript
-+ React.js (mit JSX)
-+ SASS/SCSS (Precompiler für CSS)
-+ Bootstrap (UI- und Grid Framework)
-
-## Get Started
+## Wie kann ich es nutzen? (Getting started)
 1. git installieren
 2. npm installieren 
 3. git clone [URL]
@@ -19,15 +11,22 @@ Dieses Tool ermöglicht es, eine responsive Landingpage schnell und einfach, aut
 5. `npm start` oder `npm run build`
 6. pflegen der Inhalte unter `src/config/config.json`
 
+### Welche Technologien kommen bei der Entwicklung zum Einsatz?
++ HTML
++ CSS
++ javaScript 
++ React.js (mit JSX)
++ SASS/SCSS (Precompiler für CSS)
++ Bootstrap (UI- und Grid Framework)
++ Git (Versionverwaltung)
++ NPM (Node Packet Manager)
++ Jest (für automatische Tests)
 
-## Aktuelle Features
-+ Fullwith der Module (true, false)
-+ Schatten aktivieren (true, false)
-+ Bilder als Icon nutzen (img:true)
-+ Größe der Bilder einstellen
+### Wie funktioniert es?
+Aktuell wird noch der gesamte Inhalt der Seite dynamisch aus verschiedenen config.json files zusammengebaut. Diese config files enthalten die verschiedenen Attribute der unterschiedlichen Componenten. Darüber lässt sich zum Beispiel die Breite, ob fullwith oder nicht bestimmen. Auch die Texte, Farben, Bilder, Links, usw. lassen sich über die config Dateien beliebig anpassen und werden regelmäßig erweitert und verbessert.
 
-## Module  
-Aktuell stehen folgende pflegbare Module zur Verfügung:
+### Welche Module können aktuell genutzt werden?
+Aktuell stehen folgende, pflegbare Module zur Verfügung:
 + Page
 + Navigation
 + Banner
@@ -35,17 +34,13 @@ Aktuell stehen folgende pflegbare Module zur Verfügung:
 + Iconrow
 + Details
 
+### icons  
+Am besten ist es, die Icons als SVG oder PNGs herunterzuladen und diese in den unter src/img Ordner zu legen. Anschließend muss nur noch der exakte Name des Bildes in der config Datei gepflegt werden. Nicht vergessen Bilder ("img" auf "true" setzen).
 
-## icons  
-Momentan werden folgende Icon Anbieter unterstützt:
+Hier sind nur einige mögliche Anbieter von free und Premium Icons
++ https://www.flaticon.com/
 + Bootstrap Icons
 + Font Awesome Icons Free
-+ https://www.flaticon.com/
-+ Bilder ("img" auf "true" setzen)
-+ Weitere werden folgen...
-
-
-
 
 ## Beispiel Iconpflege
 Am Beispiel Font Awesome:  
