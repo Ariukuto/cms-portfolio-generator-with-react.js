@@ -16,11 +16,13 @@ Dieses Tool ermöglicht es, eine responsive Landingpage schnell und einfach, aut
 + CSS
 + javaScript 
 + React.js (mit JSX)
-+ SASS/SCSS (Precompiler für CSS)
-+ Bootstrap (UI- und Grid Framework)
-+ Git (Versionverwaltung)
-+ NPM (Node Packet Manager)
-+ Jest (für automatische Tests)
++ SASS/SCSS
++ Bootstrap
++ Git
++ NPM
++ Jest
++ Visual Studio Code
++ Linux Mint 
 
 ### Wie funktioniert es?
 Aktuell wird noch der gesamte Inhalt der Seite dynamisch aus verschiedenen config.json files zusammengebaut. Diese config files enthalten die verschiedenen Attribute der unterschiedlichen Componenten. Darüber lässt sich zum Beispiel die Breite, ob fullwith oder nicht bestimmen. Auch die Texte, Farben, Bilder, Links, usw. lassen sich über die config Dateien beliebig anpassen und werden regelmäßig erweitert und verbessert.
