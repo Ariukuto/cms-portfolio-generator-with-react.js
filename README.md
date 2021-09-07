@@ -36,6 +36,7 @@ Aktuell stehen folgende, pflegbare Module zur Verfügung:
 + Vorstellung
 + Iconrow
 + Details
++ Footer
 
 ### icons  
 Am besten ist es, die Icons als SVG oder PNGs herunterzuladen und diese in den unter src/img zu findenden Ordner zu legen. Anschließend muss nur noch der exakte Name des Bildes in der config Datei gepflegt werden. Nicht vergessen Bilder ("img" auf "true" setzen).
