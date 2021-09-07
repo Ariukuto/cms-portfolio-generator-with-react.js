@@ -1,7 +1,7 @@
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
-
 import {Navigation} from '../components/Navigation';
+import config from '../config/navigation.config.json';
 
 let container = null;
 
@@ -18,20 +18,17 @@ afterEach(() => {
     container = null;
 });
 
-let testconfig = {
-    links: [
-        {"name": "testlink", "url": "testurl"},
-    ]
-}
-
-test('Navigation link render test', () => {
+test('Render Navigation Links', () => {
 
     act(() => {
-        render(<Navigation config={testconfig} />, container);
+        render(<Navigation data={config} />, container);
     });
-    const navLinkElement = container.querySelector(".nav-link");
-    const navLinkText = navLinkElement.textContent;
-    const navLinkHref = navLinkElement.getAttribute("href");
-    expect(navLinkText).toEqual("testlink");
-    expect(navLinkHref).toEqual("testurl");
+
+    config.links.map((link, index) => {
+        let navLinkElement = container.querySelector("#a"+index);
+        let navLinkText = navLinkElement.textContent;
+        let navLinkHref = navLinkElement.getAttribute("href");
+        expect(navLinkText).toEqual(link.name);
+        expect(navLinkHref).toEqual(link.url);    
+    });
 });

@@ -4,63 +4,68 @@
     },
     {
         "name": "Banner",
-        "fullwith": true,
-        "height": "500px",
-        "image": {
-            "widescreen": {
-                "imageName": "placeholder.png",
-                "height": "",
-                "width": "",
-                "borderRadius": "",
-                "DistanceUp": "",
-                "DistanceDown": ""
-            } ,   
-            "mobile": {
-                "imageName": "placeholder.png",
-                "height": "",
-                "width": "",
-                "borderRadius": "",
-                "DistanceUp": "",
-                "DistanceDown": ""
+        "data": {
+            "fullwith": true,
+            "height": "500px",
+            "image": {
+                "widescreen": {
+                    "imageName": "placeholder.png",
+                    "height": "",
+                    "width": "",
+                    "borderRadius": "",
+                    "DistanceUp": "",
+                    "DistanceDown": ""
+                } ,   
+                "mobile": {
+                    "imageName": "placeholder.png",
+                    "height": "",
+                    "width": "",
+                    "borderRadius": "",
+                    "DistanceUp": "",
+                    "DistanceDown": ""
+                }
             }
         }
     },
     {
         "name": "Vorstellung",
-        "backgroundcolor": "white",
-        "shadow": true,
-        "fullwith": false,
-        "headline": "Picture and text component",
-        "image": {
-            "widescreen": {
-                "imageName": "profil.png",
-                "height": "400px",
-                "width": "",
-                "borderRadius": "",
-                "shadow": true,
-                "DistanceUp": "",
-                "DistanceDown": ""
-            } ,   
-            "mobile": {
-                "imageName": "",
-                "height": "",
-                "width": "",
-                "borderRadius": "",
-                "shadow": false,
-                "DistanceUp": "",
-                "DistanceDown": ""
+        "data": {
+            "backgroundcolor": "white",
+            "shadow": true,
+            "fullwith": false,
+            "headline": "Picture and text component",
+            "image": {
+                "widescreen": {
+                    "imageName": "profil.png",
+                    "height": "400px",
+                    "width": "",
+                    "borderRadius": "",
+                    "shadow": true,
+                    "DistanceUp": "",
+                    "DistanceDown": ""
+                } ,   
+                "mobile": {
+                    "imageName": "",
+                    "height": "",
+                    "width": "",
+                    "borderRadius": "",
+                    "shadow": false,
+                    "DistanceUp": "",
+                    "DistanceDown": ""
+                }
+            },
+            "textbox": {
+                "jobtitle": "",
+                "birthdate": "",
+                "text": "Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/> <br/> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/><br/> <a href=''>Link to other page</a>",
+                "maxwidth": "600px"    
             }
-        },
-        "textbox": {
-            "jobtitle": "",
-            "birthdate": "",
-            "text": "Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/> <br/> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/><br/> <a href=''>Link to other page</a>",
-            "maxwidth": "600px"    
         }
     },
     {
         "name": "Iconrow",
-        "backgroundcolor": "white",
+        "data": {
+            "backgroundcolor": "white",
         "headline": "Iconrow component",
         "fields": [
             {
@@ -109,141 +114,144 @@
                 "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
             }
         ]
+        }
     },
     {   
         "name": "Details",
-        "fullwith": false,
-        "backgroundcolor": "white",
-        "headline": "Details Component",
-        "rows": [
-            {
-                "headline": "Thema 1",
-                "backgroundcolor": "",
-                "url": "",
-                "orderimagebox": "1",
-                "ordertextbox": "2",
-                "image": {
-                    "widescreen": {
-                        "imageName": "placeholder.png",
-                        "height": "",
-                        "width": "",
-                        "borderRadius": "",
+        "data": {
+            "fullwith": false,
+            "backgroundcolor": "white",
+            "headline": "Details Component",
+            "rows": [
+                {
+                    "headline": "Thema 1",
+                    "backgroundcolor": "",
+                    "url": "",
+                    "orderimagebox": "1",
+                    "ordertextbox": "2",
+                    "image": {
+                        "widescreen": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": ""
+                        } ,   
+                        "mobile": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": "20px"
+                        }
+                    },
+                    "textbox": {
+                        "card": true,
                         "shadow": true,
-                        "DistanceUp": "",
-                        "DistanceDown": ""
-                    } ,   
-                    "mobile": {
-                        "imageName": "placeholder.png",
-                        "height": "",
-                        "width": "",
-                        "borderRadius": "",
-                        "shadow": true,
-                        "DistanceUp": "",
-                        "DistanceDown": "20px"
+                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br/><br/> <a href=''>Link to other page</a>"
                     }
                 },
-                "textbox": {
-                    "card": true,
-                    "shadow": true,
-                    "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br/><br/> <a href=''>Link to other page</a>"
-                }
-            },
-            {
-                "headline": "Thema 2",
-                "backgroundcolor": "",
-                "url": "",
-                "orderimagebox": "2",
-                "ordertextbox": "1",
-                "image": {
-                    "widescreen": {
-                        "imageName": "placeholder.png",
-                        "height": "",
-                        "width": "",
-                        "borderRadius": "",
+                {
+                    "headline": "Thema 2",
+                    "backgroundcolor": "",
+                    "url": "",
+                    "orderimagebox": "2",
+                    "ordertextbox": "1",
+                    "image": {
+                        "widescreen": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": ""
+                        } ,   
+                        "mobile": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": "20px"
+                        }
+                    },
+                    "textbox": {
+                        "card": true,
                         "shadow": true,
-                        "DistanceUp": "",
-                        "DistanceDown": ""
-                    } ,   
-                    "mobile": {
-                        "imageName": "placeholder.png",
-                        "height": "",
-                        "width": "",
-                        "borderRadius": "",
-                        "shadow": true,
-                        "DistanceUp": "",
-                        "DistanceDown": "20px"
+                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br/><br/> <a href=''>Link to other page</a>"
                     }
                 },
-                "textbox": {
-                    "card": true,
-                    "shadow": true,
-                    "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br/><br/> <a href=''>Link to other page</a>"
-                }
-            },
-            {
-                "headline": "Thema 3",
-                "backgroundcolor": "",
-                "url": "",
-                "orderimagebox": "1",
-                "ordertextbox": "2",
-                "image": {
-                    "widescreen": {
-                        "imageName": "placeholder.png",
-                        "height": "",
-                        "width": "",
-                        "borderRadius": "",
+                {
+                    "headline": "Thema 3",
+                    "backgroundcolor": "",
+                    "url": "",
+                    "orderimagebox": "1",
+                    "ordertextbox": "2",
+                    "image": {
+                        "widescreen": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": ""
+                        } ,   
+                        "mobile": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": "20px"
+                        }
+                    },
+                    "textbox": {
+                        "card": true,
                         "shadow": true,
-                        "DistanceUp": "",
-                        "DistanceDown": ""
-                    } ,   
-                    "mobile": {
-                        "imageName": "placeholder.png",
-                        "height": "",
-                        "width": "",
-                        "borderRadius": "",
-                        "shadow": true,
-                        "DistanceUp": "",
-                        "DistanceDown": "20px"
+                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br/><br/> <a href=''>Link to other page</a>"
                     }
                 },
-                "textbox": {
-                    "card": true,
-                    "shadow": true,
-                    "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br/><br/> <a href=''>Link to other page</a>"
-                }
-            },
-            {
-                "headline": "Thema 4", 
-                "url": "",
-                "orderimagebox": "2",
-                "ordertextbox": "1",  
-                "image": {
-                    "widescreen": {
-                        "imageName": "placeholder.png",
-                        "height": "",
-                        "width": "",
-                        "borderRadius": "",
+                {
+                    "headline": "Thema 4", 
+                    "url": "",
+                    "orderimagebox": "2",
+                    "ordertextbox": "1",  
+                    "image": {
+                        "widescreen": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": ""
+                        } ,   
+                        "mobile": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": true,
+                            "DistanceUp": "",
+                            "DistanceDown": "20px"
+                        }
+                    },
+                    "textbox": {
+                        "card": true,
                         "shadow": true,
-                        "DistanceUp": "",
-                        "DistanceDown": ""
-                    } ,   
-                    "mobile": {
-                        "imageName": "placeholder.png",
-                        "height": "",
-                        "width": "",
-                        "borderRadius": "",
-                        "shadow": true,
-                        "DistanceUp": "",
-                        "DistanceDown": "20px"
+                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br/><br/> <a href=''>Link to other page</a>"
                     }
-                },
-                "textbox": {
-                    "card": true,
-                    "shadow": true,
-                    "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br/><br/> <a href=''>Link to other page</a>"
                 }
-            }
-        ]
+            ]
+        }
     },
     {
         "name": "Footer"
