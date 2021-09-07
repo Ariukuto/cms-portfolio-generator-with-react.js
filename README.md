@@ -9,7 +9,7 @@ Dieses Tool ermöglicht es, eine responsive Landingpage schnell und einfach, aut
 3. git clone [URL]
 4. `npm install` im Terminal des Projektverzeichnises ausführen
 5. `npm start` oder `npm run build`
-6. pflegen der Inhalte unter `src/config/config.json`
+6. pflegen der Inhalte in den config Dateien unter `src/config`
 
 ### Welche Technologien kommen bei der Entwicklung zum Einsatz?
 + HTML
