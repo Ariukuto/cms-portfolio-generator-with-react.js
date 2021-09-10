@@ -1,7 +1,13 @@
 import React from 'react';
 
+/**
+ * @name Navigation
+ * @description React Komponent
+ * @param - text
+ * @param - maxwidth
+ */
 export class Textbox extends React.Component 
-{
+{   
     constructor(props) {
         super(props);
         this.state = {
