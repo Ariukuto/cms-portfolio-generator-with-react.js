@@ -66,54 +66,54 @@
         "name": "Iconrow",
         "data": {
             "backgroundcolor": "white",
-        "headline": "Iconrow component",
-        "fields": [
-            {
-                "grafik": {
-                    "is_icon": false,
-                    "name": "icon.png",
-                    "color": "black",
-                    "size": "180px",
-                    "abstand_unten": "4px",
-                    "url": ""
+            "headline": "Iconrow component",
+            "fields": [
+                {
+                    "grafik": {
+                        "is_icon": false,
+                        "name": "icon.png",
+                        "color": "black",
+                        "size": "180px",
+                        "abstand_unten": "4px",
+                        "url": ""
+                    },
+                    "headline": "Thema 1",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 },
-                "headline": "Thema 1",
-                "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
-            },
-            {   
-                "grafik": {
-                    "is_icon": false,
-                    "name": "icon.png",
-                    "color": "black",
-                    "size": "180px",
-                    "url": ""
+                {   
+                    "grafik": {
+                        "is_icon": false,
+                        "name": "icon.png",
+                        "color": "black",
+                        "size": "180px",
+                        "url": ""
+                    },
+                    "headline": "Thema 2",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 },
-                "headline": "Thema 2",
-                "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
-            },
-            {
-                "grafik": {
-                    "is_icon": false,
-                    "name": "icon.png",
-                    "color": "black",
-                    "size": "180px",
-                    "url": ""
+                {
+                    "grafik": {
+                        "is_icon": false,
+                        "name": "icon.png",
+                        "color": "black",
+                        "size": "180px",
+                        "url": ""
+                    },
+                    "headline": "Thema 2",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 },
-                "headline": "Thema 2",
-                "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
-            },
-            {
-                "grafik": {
-                    "is_icon": false,
-                    "name":"icon.png",
-                    "color": "black",
-                    "size": "180px",
-                    "url": ""
-                },
-                "headline": "Thema 3",
-                "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
-            }
-        ]
+                {
+                    "grafik": {
+                        "is_icon": false,
+                        "name":"icon.png",
+                        "color": "black",
+                        "size": "180px",
+                        "url": ""
+                    },
+                    "headline": "Thema 3",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+                }
+            ]
         }
     },
     {   
