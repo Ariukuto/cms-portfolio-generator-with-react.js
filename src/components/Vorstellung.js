@@ -1,6 +1,6 @@
 import React from 'react';
 import {Headline} from './Headline';
-import { NewImage } from './NewImage';
+import { Image } from './Image';
 import {Textbox} from './Textbox';
 
 
@@ -30,7 +30,7 @@ export class Vorstellung extends React.Component {
             <div className={`Vorstellung pb-5 ${layout} ${shadow}`} style={style}>
                 <Headline text={this.state.headline}/>
                 <div className='d-flex flex-wrap justify-content-center'>
-                    <NewImage data={this.state.image} />
+                    <Image data={this.state.image} />
                     <Textbox textbox={this.state.textbox} />
                 </div>
             </div>
