@@ -1,6 +1,6 @@
 import React from "react";
 import { Headline } from "./Headline";
-import { Icon } from "./Icon.js";
+import { Icon } from "./Icon";
 
 export class Iconrow extends React.Component {
 
