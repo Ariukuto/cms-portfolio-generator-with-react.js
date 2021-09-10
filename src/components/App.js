@@ -3,6 +3,7 @@ import React from 'react';
 // config
 //import pageconfig from '../config/page.config.json';
 import content from '../config/content.config.json';
+import navigationConfig from '../config/navigation.config.json';
 
 import { Window }       from './Window';
 import { Navigation }   from './Navigation';
@@ -13,19 +14,23 @@ import { Iconrow }      from './Iconrow.js';
 import { Details }      from './Details.js';
 
 const App = () => {
-  const [documentTitle, setDocumentTitle] = React.useState("");
-  const [backgroundColor, setBackgroundColor] = React.useState("");
-  const [backgroundimgRender, setBackgroundimgRender] = React.useState("");
-  const [imgname, setImgname] = React.useState("");
-  const [src, setSrc] = React.useState(null);
+
+  // config
+  const [config, setConfig] = React.useState({});
   const [style, setStyle] = React.useState({});
 
   React.useEffect(() => {
-    const pageconfig = require("../config/page.config.json");
-    console.log(pageconfig);
-    setDocumentTitle(pageconfig.title);
-    document.title = documentTitle;
-  });
+    let pageconfig = require("../config/page.config.json");
+    setConfig(pageconfig);
+    document.title = config.title;
+
+    let style = {
+      backgroundColor: pageconfig.background.backgroundcolor,
+      backgroundImage: `./imgs/${pageconfig.background.img.name}`,
+    }
+    setStyle(style);
+
+  }, [config]);
 
   const components = { Banner, Vorstellung, Iconrow, Details, Navigation, Footer }
 
@@ -33,13 +38,19 @@ const App = () => {
     <div className='App' style={style}>
         <Window />
         <div className='Content'>
-          {content.map((component) => {
-              let TagName = components[component.name];
+          {content.map((component, i) => {
+              let Component = components[component.name];
+              let data = {};
+              if(component.name === "Navigation") { 
+                data = navigationConfig 
+              } else {
+                data = component.data;
+              }
               return (
-                  <TagName data={component}/>
+                  <Component key={i} data={data}/>
               );
           })}
-      </div>
+      </div>  
     </div>
   );
 }

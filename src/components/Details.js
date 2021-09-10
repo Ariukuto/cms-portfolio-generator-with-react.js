@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Headline } from './Headline';
-import { NewImage } from './NewImage';
+import { Image } from './Image';
 
 const Details = (props) => {
     const [fullwith] = useState(props.data.fullwith);
@@ -18,13 +18,13 @@ const Details = (props) => {
                     return(
                         <div key={index} className='row' style={{backgroundColor:row.backgroundcolor}}>
                             <div className={`col-sm column-picture order-${row.orderimagebox}`}>
-                                <NewImage data={row.image} />
+                                <Image data={row.image} />
                             </div>
                             <div className={`col-sm column-text order-${row.ordertextbox}`}>
                                 <div className={`${row.textbox.card ? 'card' : ''} ${row.textbox.shadow ? 'shadow' : ''}`}>
-                                    <div class="card-body">
-                                        <h5 class="card-title">{row.headline}</h5>
-                                        <p class="card-text" dangerouslySetInnerHTML={{ __html: row.textbox.text}} />
+                                    <div className="card-body">
+                                        <h5 className="card-title">{row.headline}</h5>
+                                        <p className="card-text" dangerouslySetInnerHTML={{ __html: row.textbox.text}} />
                                     </div>
                                 </div>
                             </div>

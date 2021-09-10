@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import {NewImage} from './NewImage';
+import React ,{ useState } from 'react';
+import {Image} from './Image';
 
 const Banner = (props) => {
 
@@ -9,7 +9,7 @@ const Banner = (props) => {
 
     return(
         <div className={`Banner ${fullwith ? '' : 'container'}`} style={{height: height}}>
-            <NewImage data={image} />
+            <Image data={image} />
         </div> 
     );
     

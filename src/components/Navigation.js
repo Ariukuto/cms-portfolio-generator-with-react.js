@@ -1,6 +1,5 @@
 import React from 'react';
-import { NewImage } from './NewImage.js';
-import navigationConfig from '../config/navigation.config.json';
+import { Image } from './Image.js';
 
 /**
  * @name Navigation
@@ -11,12 +10,12 @@ export class Navigation extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            'fullwith': navigationConfig.fullwith || '',
-            'overBanner': navigationConfig.overBanner || '',
-            "navbarAlign": navigationConfig.navbarAlign || '',
-            'logo': navigationConfig.logo || '',
-            'backgroundcolor': navigationConfig.backgroundcolor || '',
-            'links': navigationConfig.links || ''   ,
+            'fullwith': props.data.fullwith || '',
+            'overBanner': props.data.overBanner || '',
+            "navbarAlign": props.data.navbarAlign || '',
+            'logo': props.data.logo || '',
+            'backgroundcolor': props.data.backgroundcolor || '',
+            'links': props.data.links || ''   ,
         }
     }
 
@@ -43,7 +42,7 @@ export class Navigation extends React.Component {
 
                     {/* logo */}
                     <a className="logo" href="#">
-                        {this.state.logo !== "" ? <NewImage data={this.state.logo}/> : 'LOGO' }
+                        {this.state.logo !== "" ? <Image data={this.state.logo}/> : 'LOGO' }
                     </a>
     
                     {/* navigation */}
@@ -52,7 +51,7 @@ export class Navigation extends React.Component {
                             {/* Loop */}
                             {links.map((link, index) => {
                                 return (
-                                    <a  className="nav-link" aria-current="page" title={link.title || ''} href={link.url || ""} target="_blank" rel="noreferrer">
+                                    <a  key={index} id={'a'+index} className="nav-link" aria-current="page" title={link.title || ''} href={link.url || ""} target="_blank" rel="noreferrer">
                                         {link.name}
                                     </a>
                                 );

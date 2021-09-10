@@ -1,7 +1,10 @@
 import React from 'react';
-import {NewImage} from './NewImage.js';
+import {Image} from './Image';
 
-export class NewImageBox extends React.Component {
+/**
+ * @deprecated
+ */
+class NewImageBox extends React.Component {
     constructor(props) {
        super(props);
        this.state = {
@@ -27,7 +30,7 @@ export class NewImageBox extends React.Component {
                 height: this.state.height,
                 borderRadius: "100%"
             }}>
-            <NewImage data={this.state.image} />
+            <Image data={this.state.image} />
         </div>
         )
     }
