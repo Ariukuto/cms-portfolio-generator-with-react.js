@@ -1,5 +1,5 @@
 import React from 'react';
-import { NewImage } from './NewImage.js';
+import { Image } from './Image.js';
 
 /**
  * @name Navigation
@@ -42,7 +42,7 @@ export class Navigation extends React.Component {
 
                     {/* logo */}
                     <a className="logo" href="#">
-                        {this.state.logo !== "" ? <NewImage data={this.state.logo}/> : 'LOGO' }
+                        {this.state.logo !== "" ? <Image data={this.state.logo}/> : 'LOGO' }
                     </a>
     
                     {/* navigation */}
