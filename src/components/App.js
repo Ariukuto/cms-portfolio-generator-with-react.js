@@ -24,16 +24,9 @@ const App = () => {
     setConfig(pageconfig);
     document.title = config.title;
 
-    let src = "";
-    if(pageconfig.background.backgroundimgRender === true) {
-      import(`../imgs/${pageconfig.background.img.name}`).then(image => {
-          src = image.default
-      });
-    }
-
     let style = {
       backgroundColor: pageconfig.background.backgroundcolor,
-      backgroundImage: src,
+      backgroundImage: `./imgs/${pageconfig.background.img.name}`,
     }
     setStyle(style);
 
@@ -50,13 +43,9 @@ const App = () => {
               let data = {};
               if(component.name === "Navigation") { 
                 data = navigationConfig 
-                console.log("data", data);
               } else {
                 data = component.data;
               }
-
-              
-              
               return (
                   <Component key={i} data={data}/>
               );
