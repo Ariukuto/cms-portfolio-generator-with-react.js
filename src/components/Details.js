@@ -22,9 +22,9 @@ const Details = (props) => {
                             </div>
                             <div className={`col-sm column-text order-${row.ordertextbox}`}>
                                 <div className={`${row.textbox.card ? 'card' : ''} ${row.textbox.shadow ? 'shadow' : ''}`}>
-                                    <div class="card-body">
-                                        <h5 class="card-title">{row.headline}</h5>
-                                        <p class="card-text" dangerouslySetInnerHTML={{ __html: row.textbox.text}} />
+                                    <div className="card-body">
+                                        <h5 className="card-title">{row.headline}</h5>
+                                        <p className="card-text" dangerouslySetInnerHTML={{ __html: row.textbox.text}} />
                                     </div>
                                 </div>
                             </div>
