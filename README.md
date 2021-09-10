@@ -39,7 +39,7 @@ Aktuell stehen folgende, pflegbare Module zur Verfügung:
 + Footer
 
 ### icons  
-Am besten ist es, die Icons als SVG oder PNGs herunterzuladen und diese in den unter src/img zu findenden Ordner zu legen. Anschließend muss nur noch der exakte Name des Bildes in der config Datei gepflegt werden. Nicht vergessen Bilder ("img" auf "true" setzen).
+Am besten ist es, die Icons als SVG oder PNGs herunterzuladen und diese in den unter public/imgs zu findenden Ordner zu legen. Anschließend muss nur noch der exakte Name des Bildes in der config Datei gepflegt werden. Nicht vergessen Bilder ("img" auf "true" setzen).
 
 Hier sind nur einige mögliche Anbieter von free und Premium Icons
 + https://www.flaticon.com/
