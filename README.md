@@ -16,6 +16,7 @@ Dieses Tool ermöglicht es, eine responsive Landingpage schnell und einfach, aut
 + CSS
 + javaScript 
 + React.js (mit JSX)
++ Typescript
 + SASS/SCSS
 + Bootstrap
 + Git
