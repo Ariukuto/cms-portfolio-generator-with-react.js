@@ -26,6 +26,10 @@ Dieses Tool ermöglicht es, eine responsive Landingpage schnell und einfach, aut
 + Linux Mint 
 + Markdown
 
+### Nachhaltige Entwicklung durch automatische Tests
+Durch den Einsatz von automatischen Komponenten Tests wird eine schnellere und nachhaltigere Entwicklung ermöglicht. 
+Dafür kommt das JavaScript Testframework Jest in Kombination mit der ebenfalls auf Jest basierenden React test-utils zum Einsatz.
+
 ### Wie funktioniert es?
 Aktuell wird noch der gesamte Inhalt der Seite dynamisch aus verschiedenen config.json files zusammengebaut. Diese config files enthalten die verschiedenen Attribute der unterschiedlichen Componenten. Darüber lässt sich zum Beispiel die Breite, ob fullwith oder nicht bestimmen. Auch die Texte, Farben, Bilder, Links, usw. lassen sich über die config Dateien beliebig anpassen und werden regelmäßig erweitert und verbessert.
 
@@ -46,6 +50,8 @@ Hier sind nur einige mögliche Anbieter von free und Premium Icons
 + https://www.flaticon.com/
 + Bootstrap Icons
 + Font Awesome Icons Free
+
+
 
 
 ## Beispielbild
