@@ -28,6 +28,21 @@
         }
     },
     {
+        "name": "Headline",
+        "data": {
+            "headlineType": "h1",
+            "text": "My Portfolio Website",
+            "maxWidth": "1200px",
+            "align": "center",
+            "textAlign": "center",
+            "lineHeight": "2rem",
+            "distanceUp": "1rem",
+            "distanceBottom": "",
+            "distanceRight": "",
+            "distanceLeft": ""
+        }
+    },
+    {
         "name": "Textbox",
         "data": {
             "maxWidth": "1200px",
@@ -42,7 +57,23 @@
         }
     },
     {
-        "name": "Vorstellung",
+        "name": "Headline",
+        "data": {
+            "headlineType": "h2",
+            "fullwith": false,
+            "text": "My Profile",
+            "maxWidth": "1200px",
+            "align": "center",
+            "textAlign": "center",
+            "lineHeight": "2rem",
+            "distanceUp": "1rem",
+            "distanceBottom": "",
+            "distanceRight": "",
+            "distanceLeft": ""
+        }
+    },
+    {
+        "name": "Profile",
         "data": {
             "backgroundcolor": "white",
             "shadow": true,

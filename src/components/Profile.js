@@ -1,10 +1,8 @@
 import React from 'react';
-import {Headline} from './Headline';
 import { Image } from './Image';
-import {Textbox} from './Textbox';
 
 
-export class Vorstellung extends React.Component {
+export class Profile extends React.Component {
 
     constructor(props) {
         super(props);
@@ -15,22 +13,26 @@ export class Vorstellung extends React.Component {
             'fullwith': props.data.fullwith,
             'textbox': props.data.textbox,
             'image': props.data.image,
+            maxWidth: "1000px",
+
         }
     }
 
      
 
     render() {
-        let style = {backgroundColor: this.state.backgroundcolor};
+        let style = {
+            backgroundColor: this.state.backgroundcolor,
+            maxWidth: this.state.maxWidth
+        };
         let layout = this.state.fullwith === true ? 'container-fluid' : 'container';
         let shadow = this.state.shadow === true ? 'shadow' : '';
 
         return(
-            <div className={`Vorstellung pb-5 ${layout} ${shadow}`} style={style}>
-                <Headline text={this.state.headline}/>
-                <div className='d-flex flex-wrap justify-content-center'>
+            <div className={`Profile ${layout}`} >
+                <div className={`wrapper ${shadow}`} style={style}>
                     <Image data={this.state.image} />
-                    <Textbox data={this.state.textbox} />
+                    <div className="text" dangerouslySetInnerHTML={{ __html: this.state.textbox.text}} style={{maxWidth: this.state.textbox.maxWidth}} />
                 </div>
             </div>
         );

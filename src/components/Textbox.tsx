@@ -51,7 +51,7 @@ const Textbox = ({data}:Itextbox) => {
     }, [maxwidth, align, textalign, distance, lineheight])
 
     return (
-        <div  className='Textbox p-1 d-flex' style={style}>
+        <div  className='Textbox container d-flex' style={style}>
             <div className="textbox-text" dangerouslySetInnerHTML={{ __html: text}} style={{maxWidth: data.maxWidth}}/>
         </div>
     )

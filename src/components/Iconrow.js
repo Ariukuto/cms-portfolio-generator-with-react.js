@@ -21,7 +21,7 @@ export class Iconrow extends React.Component {
 
         return(
             <div className='Iconrow pb-5' style={style}>
-                <Headline text={headlineText} />
+                <Headline data={headlineText} />
                 <div className='container'>
                     <div className='row'>
                         {fields.map((field, index) => {

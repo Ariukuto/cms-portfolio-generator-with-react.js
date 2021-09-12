@@ -12,7 +12,7 @@ const Details = (props) => {
         <div style={{backgroundColor:backgroundcolor}}>
             <div className={`Details ${fullwith ? 'container-fluid' : 'container'}`}>
 
-                <Headline text={headline} />
+                <Headline data={headline} />
 
                 {rows.map((row, index) => {
                     return(
