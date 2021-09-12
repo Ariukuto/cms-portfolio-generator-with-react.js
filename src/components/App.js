@@ -12,6 +12,7 @@ import { Banner }       from './Banner.js';
 import { Vorstellung }  from './Vorstellung.js';
 import { Iconrow }      from './Iconrow.js';
 import { Details }      from './Details.js';
+import { Textbox } from './Textbox';
 
 const App = () => {
 
@@ -32,7 +33,7 @@ const App = () => {
 
   }, [config]);
 
-  const components = { Banner, Vorstellung, Iconrow, Details, Navigation, Footer }
+  const components = { Banner, Vorstellung, Iconrow, Details, Navigation, Footer, Textbox }
 
   return (
     <div className='App' style={style}>

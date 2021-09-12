@@ -21,7 +21,7 @@ export class ImgTextRow extends React.Component
             <div className='ImgTextRow d-flex justify-content-center'>
                 <div className='d-flex flex-wrap justify-content-center'>
                     <Imagebox imgbox={imgboxObj} />
-                    <Textbox textbox={textboxObj} />
+                    <Textbox data={textboxObj} />
                 </div>
             </div>
         )

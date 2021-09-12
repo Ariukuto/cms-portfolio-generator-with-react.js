@@ -31,7 +31,7 @@ export class Vorstellung extends React.Component {
                 <Headline text={this.state.headline}/>
                 <div className='d-flex flex-wrap justify-content-center'>
                     <Image data={this.state.image} />
-                    <Textbox textbox={this.state.textbox} />
+                    <Textbox data={this.state.textbox} />
                 </div>
             </div>
         );
