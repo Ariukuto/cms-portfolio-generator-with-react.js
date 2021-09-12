@@ -2,6 +2,9 @@ import React from 'react';
 import {Imagebox} from './Imagebox';
 import {Textbox} from './Textbox';
 
+/**
+ * @deprecated
+ */
 export class ImgTextRow extends React.Component 
 {
     constructor(props) {
