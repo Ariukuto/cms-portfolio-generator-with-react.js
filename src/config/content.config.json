@@ -30,13 +30,15 @@
     {
         "name": "Textbox",
         "data": {
-            "maxwidth": "1200px",
+            "maxWidth": "1200px",
             "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo",
             "align": "center",
             "textAlign": "center",
             "lineHeight": "2rem",
             "distanceUp": "1rem",
-            "distanceBottom": "1rem"
+            "distanceBottom": "1rem",
+            "distanceRight": "",
+            "distanceLeft": ""
         }
     },
     {
@@ -57,7 +59,7 @@
                     "DistanceDown": ""
                 } ,   
                 "mobile": {
-                    "imageName": "",
+                    "imageName": "profil.png",
                     "height": "",
                     "width": "",
                     "borderRadius": "",
@@ -67,10 +69,12 @@
                 }
             },
             "textbox": {
-                "jobtitle": "",
-                "birthdate": "",
                 "text": "Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/> <br/> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/><br/> <a href=''>Link to other page</a>",
-                "maxwidth": "600px"    
+                "maxWidth": "600px",  
+                "distanceUp": "",
+                "distanceBottom": "",
+                "distanceRight": "",
+                "distanceLeft": "1rem"
             }
         }
     },

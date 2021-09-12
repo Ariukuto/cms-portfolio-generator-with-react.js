@@ -2,12 +2,14 @@ import React, {useState, useEffect} from 'react';
 
 type Itextbox  = {
     data: {
-        maxwidth: string,
+        maxWidth: string,
         text: string,
         align: string,
         textAlign: string
         distanceUp: string,
         distanceBottom: string,
+        distanceLeft: string,
+        distanceRight: string,
         lineHeight: string,
     }
 }
@@ -19,11 +21,11 @@ type Itextbox  = {
  */
 const Textbox = ({data}:Itextbox) => {
 
-    const [maxwidth] = useState(data.maxwidth);
+    const [maxwidth] = useState(data.maxWidth);
     const [text] = useState(data.text)
     const [align] = useState(data.align);
     const [textalign] = useState(data.textAlign);
-    const [distance] = useState({top: data.distanceUp, bottom: data.distanceBottom});
+    const [distance] = useState({top: data.distanceUp, bottom: data.distanceBottom, left: data.distanceLeft, right: data.distanceRight})
     const [lineheight] = useState(data.lineHeight);
     const [style, setStyle] = useState({});
 
@@ -46,6 +48,8 @@ const Textbox = ({data}:Itextbox) => {
             textAlign: textalign,
             marginTop: distance.top,
             marginBottom: distance.bottom,
+            marginRight: distance.right,
+            marginLeft: distance.left,
             lineHeight: lineheight,
         }
         setStyle(style);
@@ -53,7 +57,7 @@ const Textbox = ({data}:Itextbox) => {
 
     return (
         <div  className='Textbox p-1 d-flex' style={style}>
-            <div dangerouslySetInnerHTML={{ __html: text}} style={{maxWidth: data.maxwidth}}/>
+            <div dangerouslySetInnerHTML={{ __html: text}} style={{maxWidth: data.maxWidth}}/>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 {
     "fullwith": false,
-    "overBanner": false,
+    "overBanner": true,
     "navbarAlign": "right",
     "backgroundcolor": "#f9fafb59",
     "color": "",

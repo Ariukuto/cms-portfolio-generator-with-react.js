@@ -14,7 +14,6 @@ export class Vorstellung extends React.Component {
             'shadow': props.data.shadow,
             'fullwith': props.data.fullwith,
             'textbox': props.data.textbox,
-            'imgbox':props.data.imgbox,
             'image': props.data.image,
         }
     }
