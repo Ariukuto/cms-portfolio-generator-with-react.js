@@ -1,5 +1,4 @@
 import React from "react";
-import { Headline } from "./Headline";
 import { Icon } from "./Icon";
 
 export class Iconrow extends React.Component {
@@ -15,7 +14,6 @@ export class Iconrow extends React.Component {
 
     render() {
 
-        let headlineText = this.state.headline;
         let style = {backgroundColor: this.state.backgroundcolor};
         let fields = this.state.fields;
 
