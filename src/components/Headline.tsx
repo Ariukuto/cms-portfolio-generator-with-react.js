@@ -1,4 +1,4 @@
-import React, {FC, useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 
 type Iheadline  = {
     data: {
@@ -27,7 +27,6 @@ const Headline = ({data}:Iheadline) :JSX.Element => {
     })
     const [color] = useState(data.color);
     const [lineheight] = useState(data.lineHeight);
-    const [maxwidth] = useState(data.maxWidth);
     const [style, setStyle] = useState({});
 
     const geAlign = () => {
