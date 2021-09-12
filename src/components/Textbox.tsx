@@ -14,11 +14,6 @@ type Itextbox  = {
     }
 }
 
-/**
- * 
- * @param {Itembox} data 
- * @returns 
- */
 const Textbox = ({data}:Itextbox) => {
 
     const [maxwidth] = useState(data.maxWidth);
@@ -57,7 +52,7 @@ const Textbox = ({data}:Itextbox) => {
 
     return (
         <div  className='Textbox p-1 d-flex' style={style}>
-            <div dangerouslySetInnerHTML={{ __html: text}} style={{maxWidth: data.maxWidth}}/>
+            <div className="textbox-text" dangerouslySetInnerHTML={{ __html: text}} style={{maxWidth: data.maxWidth}}/>
         </div>
     )
 }

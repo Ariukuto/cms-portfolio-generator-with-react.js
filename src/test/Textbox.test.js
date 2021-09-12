@@ -19,22 +19,45 @@ afterEach(() => {
 
 const data = {
     text: "Test der Textbox",
-    maxwidth: "400px",
+    maxWidth: "400px",
+    align: "center",
+    textAlign: "center",
+    lineHeight: "2rem",
+    distanceUp: "1rem",
+    distanceBotto: "1rem",
+    distanceRight: "",
+    distanceLeft: ""
 }
 
 
-test('Render Navigation Links', () => {
-
-    act(() => {
-        render(<Textbox textbox={data} />, container);
+describe('Textbox Test', () => {
+    
+    test('render Textbox', () => {
+        render(<Textbox data={data} />, container);
+        let textboxElement = container.querySelector(".Textbox");
+        expect(textboxElement).not.toBeFalsy();
     });
 
-    let textbox = container.querySelector(".Textbox");
-    let text = textbox.textContent;
-    let maxwidth = textbox.style.maxWidth;
+    test("text is 'Test der Textbox'", () => {
+        render(<Textbox data={data} />, container);
+        let textboxElement = container.querySelector(".Textbox");
+        expect(textboxElement.textContent).toBe(data.text);
+    });
 
-    expect(text).toEqual(data.text);
-    expect(maxwidth).toEqual(data.maxwidth);
-  
+    test("maxWidth is 400px", () => {
+        render(<Textbox data={data} />, container);
+        let textboxElement = container.querySelector(".Textbox");
+        setTimeout(() => {
+            console.log(textboxElement.style) 
+        }, 5000);
+        
+        expect(textboxElement).not.toBeFalsy();
+    })
 
-});
+
+
+    
+
+    
+
+})
