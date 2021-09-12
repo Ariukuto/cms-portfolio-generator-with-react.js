@@ -20,8 +20,7 @@ export class Iconrow extends React.Component {
         let fields = this.state.fields;
 
         return(
-            <div className='Iconrow pb-5' style={style}>
-                <Headline data={headlineText} />
+            <div className='Iconrow' style={style}>
                 <div className='container'>
                     <div className='row'>
                         {fields.map((field, index) => {

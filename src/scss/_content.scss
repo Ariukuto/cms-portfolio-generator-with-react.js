@@ -4,8 +4,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
     }
 
     .Banner {
@@ -74,8 +72,6 @@
     }
 
     .Iconrow {
-        margin-top: 50px;
-        margin-bottom: 50px;
         padding-bottom: 1rem;
         .Icon i {
             font-size: 70px;
@@ -91,8 +87,6 @@
     }
 
     .Details {
-        margin-top: 50px;
-        margin-bottom: 50px;
         line-height: 2;
         @media (orientation: portrait) {
             line-height: 1.5;    
