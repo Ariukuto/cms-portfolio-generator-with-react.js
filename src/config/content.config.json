@@ -110,6 +110,22 @@
         }
     },
     {
+        "name": "Headline",
+        "data": {
+            "headlineType": "h2",
+            "fullwith": false,
+            "text": "My Skills",
+            "maxWidth": "1200px",
+            "align": "center",
+            "textAlign": "center",
+            "lineHeight": "2rem",
+            "distanceUp": "1rem",
+            "distanceBottom": "",
+            "distanceRight": "",
+            "distanceLeft": ""
+        }
+    },
+    {
         "name": "Iconrow",
         "data": {
             "backgroundcolor": "white",
@@ -161,6 +177,22 @@
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 }
             ]
+        }
+    },
+    {
+        "name": "Headline",
+        "data": {
+            "headlineType": "h2",
+            "fullwith": false,
+            "text": "My Projects",
+            "maxWidth": "1200px",
+            "align": "center",
+            "textAlign": "center",
+            "lineHeight": "2rem",
+            "distanceUp": "1rem",
+            "distanceBottom": "",
+            "distanceRight": "",
+            "distanceLeft": ""
         }
     },
     {   
