@@ -78,7 +78,6 @@
             "backgroundcolor": "white",
             "shadow": true,
             "fullwith": false,
-            "headline": "Picture and text component",
             "image": {
                 "widescreen": {
                     "imageName": "profil.png",
@@ -114,7 +113,7 @@
         "data": {
             "headlineType": "h2",
             "fullwith": false,
-            "text": "My Skills",
+            "text": "My main focuses",
             "maxWidth": "1200px",
             "align": "center",
             "textAlign": "center",
@@ -129,7 +128,6 @@
         "name": "Iconrow",
         "data": {
             "backgroundcolor": "white",
-            "headline": "Iconrow component",
             "fields": [
                 {
                     "grafik": {
@@ -184,12 +182,28 @@
         "data": {
             "headlineType": "h2",
             "fullwith": false,
+            "text": "My skills",
+            "maxWidth": "1200px",
+            "align": "center",
+            "textAlign": "center",
+            "lineHeight": "2rem",
+            "distanceUp": "6rem",
+            "distanceBottom": "",
+            "distanceRight": "",
+            "distanceLeft": ""
+        }
+    },
+    {
+        "name": "Headline",
+        "data": {
+            "headlineType": "h2",
+            "fullwith": false,
             "text": "My Projects",
             "maxWidth": "1200px",
             "align": "center",
             "textAlign": "center",
             "lineHeight": "2rem",
-            "distanceUp": "1rem",
+            "distanceUp": "6rem",
             "distanceBottom": "",
             "distanceRight": "",
             "distanceLeft": ""
