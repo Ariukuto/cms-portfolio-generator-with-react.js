@@ -131,31 +131,24 @@
             "fields": [
                 {
                     "icon": {
-                        "img": "icon.png",
+                        "img":"icon.png",
+                        "height": "",
                         "color": "black",
-                        "size": "180px",
-                        "abstand_unten": "4px",
-                        "url": ""
+                        "padding": "",
+                        "distanceBottom": "",
+                        "size": "180px"
                     },
                     "headline": "Thema 1",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
                 },
                 {   
                     "icon": {
-                        "img": "icon.png",
+                        "img":"icon.png",
+                        "height": "",
                         "color": "black",
-                        "size": "180px",
-                        "url": ""
-                    },
-                    "headline": "Thema 2",
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
-                },
-                {
-                    "icon": {
-                        "img": "icon.png",
-                        "color": "black",
-                        "size": "180px",
-                        "url": ""
+                        "padding": "",
+                        "distanceBottom": "",
+                        "size": "180px"
                     },
                     "headline": "Thema 2",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
@@ -163,9 +156,23 @@
                 {
                     "icon": {
                         "img":"icon.png",
+                        "height": "",
                         "color": "black",
-                        "size": "180px",
-                        "url": ""
+                        "padding": "",
+                        "distanceBottom": "",
+                        "size": "180px"
+                    },
+                    "headline": "Thema 2",
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+                },
+                {
+                    "icon": {
+                        "img":"icon.png",
+                        "height": "",
+                        "color": "black",
+                        "padding": "",
+                        "distanceBottom": "",
+                        "size": "180px"
                     },
                     "headline": "Thema 3",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
@@ -391,40 +398,51 @@
             "fields": [
                 {
                     "icon": {
-                        "img": "icon.png",
+                        "img":"icon.png",
+                        "height": "",
                         "color": "black",
-                        "size": "180px",
-                        "abstand_unten": "4px",
-                        "url": ""
+                        "padding": "",
+                        "distanceBottom": "",
+                        "size": "180px"
                     },
-                    "headline": "Channel 1"
+                    "headline": "",
+                    "text": ""
                 },
                 {   
                     "icon": {
-                        "img": "icon.png",
+                        "img":"icon.png",
+                        "height": "",
                         "color": "black",
-                        "size": "180px",
-                        "url": ""
+                        "padding": "",
+                        "distanceBottom": "",
+                        "size": "180px"
                     },
-                    "headline": "Channel 2"
-                },
-                {
-                    "icon": {
-                        "img": "icon.png",
-                        "color": "black",
-                        "size": "180px",
-                        "url": ""
-                    },
-                    "headline": "Channel 3"
+                    "headline": "",
+                    "text": ""
                 },
                 {
                     "icon": {
                         "img":"icon.png",
+                        "height": "",
                         "color": "black",
-                        "size": "180px",
-                        "url": ""
+                        "padding": "",
+                        "distanceBottom": "",
+                        "size": "180px"
                     },
-                    "headline": "Channel 4"
+                    "headline": "",
+                    "text": ""
+                },
+                {
+                    "icon": {
+                        "img":"icon.png",
+                        "height": "",
+                        "color": "black",
+                        "padding": "",
+                        "distanceBottom": "",
+                        "size": "180px"
+                    },
+                    "headline": "",
+                    "text": ""
                 }
             ]
         }

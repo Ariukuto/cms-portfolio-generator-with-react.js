@@ -4,7 +4,7 @@ import React from 'react';
     img: string,
     height: string,
     padding: string,
-    abstand_unten: string,
+    distanceBottom: string,
     size: string,
 }
 
@@ -20,7 +20,7 @@ const Icon = ({icon}:IconProps) => {
     let style = {
         height: icon.size,
         padding:"2rem",
-        marginBottom: icon.abstand_unten,
+        marginBottom: icon.distanceBottom,
     }
 
     return (
