@@ -369,6 +369,75 @@
         }
     },
     {
+        "name": "Headline",
+        "data": {
+            "headlineType": "h2",
+            "fullwith": false,
+            "text": "Follow me on these channels",
+            "maxWidth": "1200px",
+            "align": "center",
+            "textAlign": "center",
+            "lineHeight": "2rem",
+            "distanceUp": "6rem",
+            "distanceBottom": "",
+            "distanceRight": "",
+            "distanceLeft": ""
+        }
+    },
+    {
+        "name": "Iconrow",
+        "data": {
+            "distanceUp": "",
+            "distanceBottom": "",
+            "distanceRight": "",
+            "distanceLeft": "",
+            "backgroundcolor": "white",
+            "fields": [
+                {
+                    "grafik": {
+                        "is_icon": false,
+                        "name": "icon.png",
+                        "color": "black",
+                        "size": "180px",
+                        "abstand_unten": "4px",
+                        "url": ""
+                    },
+                    "headline": "Channel 1"
+                },
+                {   
+                    "grafik": {
+                        "is_icon": false,
+                        "name": "icon.png",
+                        "color": "black",
+                        "size": "180px",
+                        "url": ""
+                    },
+                    "headline": "Channel 2"
+                },
+                {
+                    "grafik": {
+                        "is_icon": false,
+                        "name": "icon.png",
+                        "color": "black",
+                        "size": "180px",
+                        "url": ""
+                    },
+                    "headline": "Channel 3"
+                },
+                {
+                    "grafik": {
+                        "is_icon": false,
+                        "name":"icon.png",
+                        "color": "black",
+                        "size": "180px",
+                        "url": ""
+                    },
+                    "headline": "Channel 4"
+                }
+            ]
+        }
+    },
+    {
         "name": "Footer"
     }
 ]
