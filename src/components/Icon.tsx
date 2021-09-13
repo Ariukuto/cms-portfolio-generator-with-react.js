@@ -6,6 +6,7 @@ import React from 'react';
     padding: string,
     distanceBottom: string,
     size: string,
+    url: string,
 }
 
 export type {IconData};
@@ -24,8 +25,10 @@ const Icon = ({icon}:IconProps) => {
     }
 
     return (
-        <div className='Icon'>
-            <img src={`./imgs/${icon.img}`} alt={icon.img} style={style}/>
+        <div className='Icon' style={icon.url ? {cursor:"pointer"} : {}}>
+            <a href={icon.url} target="_blank">
+                <img src={`./imgs/${icon.img}`} alt={icon.img} style={style}/>
+            </a>
         </div>
     )
 }

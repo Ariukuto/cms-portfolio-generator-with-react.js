@@ -7,6 +7,7 @@ type IconRowProps = {
         distanceBottom: string,
         distanceRight: string,
         distanceLeft: string,
+        maxwidth: string,
         backgroundcolor: string,
         fields: [
             {
@@ -21,11 +22,12 @@ type IconRowProps = {
 const Iconrow = ({data}:IconRowProps) => {
     const [distance] = useState({up:data.distanceUp, bottom:data.distanceBottom, right:data.distanceRight, left:data.distanceLeft});
     const [backgroundcolor] = useState(data.backgroundcolor);
+    const [maxwidth] = useState(data.maxwidth)
     const [fields] = useState(data.fields); 
 
     return (
         <div className='Iconrow' style={{backgroundColor:backgroundcolor}}>
-            <div className='container'>
+            <div className='container' style={{maxWidth: maxwidth}}>
                 <div className='row'>
                     {fields.map((field, index) => {
                         return(

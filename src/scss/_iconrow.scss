@@ -1,0 +1,18 @@
+.Iconrow {
+    padding-bottom: 1rem;
+    .Icon {
+        &:hover {
+            img {
+                transform: scale(1.2);
+                transition: all 1s ease-in-out;
+            }
+        }
+    }
+    .text {
+        // text-align: justify;
+        line-height: 2;
+        @media (orientation: portrait) {
+            margin-bottom: 50px;
+        }
+    }
+}

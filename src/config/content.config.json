@@ -127,6 +127,11 @@
     {
         "name": "Iconrow",
         "data": {
+            "distanceUp": "",
+            "distanceBottom": "",
+            "distanceRight": "",
+            "distanceLeft": "",
+            "maxwidth": "",
             "backgroundcolor": "white",
             "fields": [
                 {
@@ -394,52 +399,45 @@
             "distanceBottom": "",
             "distanceRight": "",
             "distanceLeft": "",
+            "maxwidth": "600px",
             "backgroundcolor": "white",
             "fields": [
                 {
                     "icon": {
-                        "img":"icon.png",
+                        "img":"xing.png",
                         "height": "",
                         "color": "black",
                         "padding": "",
                         "distanceBottom": "",
-                        "size": "180px"
+                        "size": "180px",
+                        "url": "https://www.xing.com/profile/Sven_Buettner29/cv"
+
                     },
                     "headline": "",
                     "text": ""
                 },
                 {   
                     "icon": {
-                        "img":"icon.png",
+                        "img":"LinkedIn.png",
                         "height": "",
                         "color": "black",
                         "padding": "",
                         "distanceBottom": "",
-                        "size": "180px"
+                        "size": "180px",
+                        "url": "https://www.linkedin.com/in/sven-b%C3%BCttner-569b64159/"
                     },
                     "headline": "",
                     "text": ""
                 },
                 {
                     "icon": {
-                        "img":"icon.png",
+                        "img":"github.png",
                         "height": "",
                         "color": "black",
                         "padding": "",
                         "distanceBottom": "",
-                        "size": "180px"
-                    },
-                    "headline": "",
-                    "text": ""
-                },
-                {
-                    "icon": {
-                        "img":"icon.png",
-                        "height": "",
-                        "color": "black",
-                        "padding": "",
-                        "distanceBottom": "",
-                        "size": "180px"
+                        "size": "180px",
+                        "url": "https://github.com/Ariukuto"
                     },
                     "headline": "",
                     "text": ""
