@@ -1,15 +1,23 @@
 .Iconrow {
     padding-bottom: 1rem;
+
+    .field {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .Icon {
         &:hover {
             img {
                 transform: scale(1.2);
-                transition: all 1s ease-in-out;
+                transition: all 0.5s ease-in-out;
             }
         }
     }
     .text {
-        // text-align: justify;
+        text-align: center;
         line-height: 2;
         @media (orientation: portrait) {
             margin-bottom: 50px;

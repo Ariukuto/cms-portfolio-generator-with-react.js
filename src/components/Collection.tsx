@@ -20,9 +20,9 @@ const Collection = ({data}:CollectionProps) => {
     return (
         <div className="container">
             <div className="Collection">
-                {items.map(({headline, headlinecolor ,text, textcolor, img, backgroundcolor, hoverbgcolor}) => {
+                {items.map(({headline, headlinecolor ,text, textcolor, img, backgroundcolor, hoverbgcolor}, index) => {
                     return(
-                        <div className={`collection-item shadow`} style={{backgroundColor:backgroundcolor}}>
+                        <div key={index} className={`collection-item shadow`} style={{backgroundColor:backgroundcolor}}>
                             <img src={`./imgs/${img}`} alt={img}/>
                             <div className="text-container" style={{backgroundColor:hoverbgcolor, color:textcolor}}>
                                 <h3 className="headline"> {headline} </h3>

@@ -29,19 +29,6 @@ const Headline = ({data}:Iheadline) :JSX.Element => {
     const [lineheight] = useState(data.lineHeight);
     const [style, setStyle] = useState({});
 
-    const geAlign = () => {
-        switch (align) {
-            case "center":
-                return "center";
-            
-            case "right":
-                return "flex-end"; 
-
-            default:
-                return "flex-start";
-        }
-    }
-
     const renderHeadline = () => {
         switch (headlineType) {
             case "h1":
@@ -60,8 +47,20 @@ const Headline = ({data}:Iheadline) :JSX.Element => {
     }
 
     useEffect(() => {
+        
         let style = {
-            justifyContent: geAlign(),
+            justifyContent: () => {
+                switch (align) {
+                    case "center":
+                        return "center";
+                    
+                    case "right":
+                        return "flex-end"; 
+        
+                    default:
+                        return "flex-start";
+                }
+            },
             textAlign: textalign,
             marginTop: distance.top,
             marginBottom: distance.bottom,

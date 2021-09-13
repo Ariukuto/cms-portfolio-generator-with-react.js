@@ -37,7 +37,7 @@
             "textAlign": "center",
             "lineHeight": "2rem",
             "distanceUp": "3rem",
-            "distanceBottom": "",
+            "distanceBottom": "1rem",
             "distanceRight": "",
             "distanceLeft": ""
         }
@@ -46,7 +46,7 @@
         "name": "Textbox",
         "data": {
             "maxWidth": "1200px",
-            "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo",
+            "text":"Lorem ipsum dolor sit amet, dunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo",
             "align": "center",
             "textAlign": "center",
             "lineHeight": "2rem",
@@ -67,7 +67,7 @@
             "textAlign": "center",
             "lineHeight": "2rem",
             "distanceUp": "6rem",
-            "distanceBottom": "",
+            "distanceBottom": "1rem",
             "distanceRight": "",
             "distanceLeft": ""
         }
@@ -99,7 +99,7 @@
                 }
             },
             "textbox": {
-                "text": "Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/> <br/> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br/><br/> <a href=''>Link to other page</a>",
+                "text": "Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                 "maxWidth": "600px",  
                 "distanceUp": "",
                 "distanceBottom": "",
@@ -119,7 +119,7 @@
             "textAlign": "center",
             "lineHeight": "2rem",
             "distanceUp": "6rem",
-            "distanceBottom": "",
+            "distanceBottom": "1rem",
             "distanceRight": "",
             "distanceLeft": ""
         }
@@ -139,9 +139,8 @@
                         "img":"icon.png",
                         "height": "",
                         "color": "black",
-                        "padding": "",
-                        "distanceBottom": "",
-                        "size": "180px"
+                        "distanceBottom": "1rem",
+                        "size": "100px"
                     },
                     "headline": "Thema 1",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
@@ -151,9 +150,8 @@
                         "img":"icon.png",
                         "height": "",
                         "color": "black",
-                        "padding": "",
-                        "distanceBottom": "",
-                        "size": "180px"
+                        "distanceBottom": "1rem",
+                        "size": "100px"
                     },
                     "headline": "Thema 2",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
@@ -163,9 +161,8 @@
                         "img":"icon.png",
                         "height": "",
                         "color": "black",
-                        "padding": "",
-                        "distanceBottom": "",
-                        "size": "180px"
+                        "distanceBottom": "1rem",
+                        "size": "100px"
                     },
                     "headline": "Thema 2",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
@@ -175,9 +172,8 @@
                         "img":"icon.png",
                         "height": "",
                         "color": "black",
-                        "padding": "",
-                        "distanceBottom": "",
-                        "size": "180px"
+                        "distanceBottom": "1rem",
+                        "size": "100px"
                     },
                     "headline": "Thema 3",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
@@ -196,7 +192,7 @@
             "textAlign": "center",
             "lineHeight": "2rem",
             "distanceUp": "6rem",
-            "distanceBottom": "",
+            "distanceBottom": "1rem",
             "distanceRight": "",
             "distanceLeft": ""
         }
@@ -234,7 +230,7 @@
             "textAlign": "center",
             "lineHeight": "2rem",
             "distanceUp": "6rem",
-            "distanceBottom": "",
+            "distanceBottom": "1rem",
             "distanceRight": "",
             "distanceLeft": ""
         }
@@ -387,7 +383,7 @@
             "textAlign": "center",
             "lineHeight": "2rem",
             "distanceUp": "6rem",
-            "distanceBottom": "",
+            "distanceBottom": "1rem",
             "distanceRight": "",
             "distanceLeft": ""
         }
@@ -396,7 +392,7 @@
         "name": "Iconrow",
         "data": {
             "distanceUp": "",
-            "distanceBottom": "",
+            "distanceBottom": "2rem",
             "distanceRight": "",
             "distanceLeft": "",
             "maxwidth": "600px",
@@ -407,9 +403,8 @@
                         "img":"xing.png",
                         "height": "",
                         "color": "black",
-                        "padding": "",
-                        "distanceBottom": "",
-                        "size": "180px",
+                        "distanceBottom": "1rem",
+                        "size": "100px",
                         "url": "https://www.xing.com/profile/Sven_Buettner29/cv"
 
                     },
@@ -421,9 +416,8 @@
                         "img":"LinkedIn.png",
                         "height": "",
                         "color": "black",
-                        "padding": "",
-                        "distanceBottom": "",
-                        "size": "180px",
+                        "distanceBottom": "1rem",
+                        "size": "100px",
                         "url": "https://www.linkedin.com/in/sven-b%C3%BCttner-569b64159/"
                     },
                     "headline": "",
@@ -434,9 +428,8 @@
                         "img":"github.png",
                         "height": "",
                         "color": "black",
-                        "padding": "",
-                        "distanceBottom": "",
-                        "size": "180px",
+                        "distanceBottom": "1rem",
+                        "size": "100px",
                         "url": "https://github.com/Ariukuto"
                     },
                     "headline": "",

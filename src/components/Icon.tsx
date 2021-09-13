@@ -3,7 +3,6 @@ import React from 'react';
  type IconData = {
     img: string,
     height: string,
-    padding: string,
     distanceBottom: string,
     size: string,
     url: string,
@@ -20,13 +19,13 @@ const Icon = ({icon}:IconProps) => {
     
     let style = {
         height: icon.size,
-        padding:"2rem",
         marginBottom: icon.distanceBottom,
+        cursor: icon.url ? "cursor" : "",
     }
 
     return (
-        <div className='Icon' style={icon.url ? {cursor:"pointer"} : {}}>
-            <a href={icon.url} target="_blank">
+        <div className='Icon' style={{marginBottom: icon.distanceBottom}}>
+            <a href={icon.url} target="_blank" rel="noreferrer">
                 <img src={`./imgs/${icon.img}`} alt={icon.img} style={style}/>
             </a>
         </div>

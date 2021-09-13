@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Icon, IconData } from "./Icon";
 
 type IconRowProps = {
@@ -20,29 +20,41 @@ type IconRowProps = {
 }
 
 const Iconrow = ({data}:IconRowProps) => {
-    const [distance] = useState({up:data.distanceUp, bottom:data.distanceBottom, right:data.distanceRight, left:data.distanceLeft});
+    const [distance, setDistance] = useState({up:data.distanceUp, bottom:data.distanceBottom, right:data.distanceRight, left:data.distanceLeft});
     const [backgroundcolor] = useState(data.backgroundcolor);
     const [maxwidth] = useState(data.maxwidth)
     const [fields] = useState(data.fields); 
+    const [style, setStyle] = useState({});
+
+    useEffect(() => {
+        let style = {   
+            marginTop: distance.up,
+            marginBottom: distance.bottom,
+            marginLeft: distance.left,
+            marginRight: distance.right,
+            backgroundcolor: backgroundcolor,
+            maxWidth: maxwidth
+        }
+        setStyle(style);
+
+    }, [distance, backgroundcolor, maxwidth])
 
     return (
-        <div className='Iconrow' style={{backgroundColor:backgroundcolor}}>
-            <div className='container' style={{maxWidth: maxwidth}}>
-                <div className='row'>
-                    {fields.map((field, index) => {
-                        return(
-                            <div key={index} className='col-md d-flex flex-column text-center'>
-                                <Icon icon={field.icon} />
-                                <div className='headline'>
-                                    <strong>{field.headline}</strong>
-                                </div>
-                                <div className='text' >
-                                    {field.text}
-                                </div>
+        <div className='Iconrow container' style={style}>
+            <div className='row'>
+                {fields.map((field, index) => {
+                    return(
+                        <div key={index} className='field col-md'>
+                            <Icon icon={field.icon} />
+                            <div className='headline'>
+                                <strong>{field.headline}</strong>
                             </div>
-                        );
-                    })}
-                </div>
+                            <div className='text' >
+                                {field.text}
+                            </div>
+                        </div>
+                    );
+                })}
             </div>
         </div>
     )

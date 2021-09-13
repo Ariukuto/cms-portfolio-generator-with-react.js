@@ -4,6 +4,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 1rem;
+    @media (orientation: portrait) {
+        grid-template-columns: repeat(auto-fill, minmax(167px, 1fr));
+    }
 
     .collection-item {
         position: relative;
@@ -13,6 +16,10 @@
         justify-content: center;
         align-items: center;    
         border-radius: 0.25rem;  
+        @media (orientation: portrait) {
+            height: 155px;
+        }
+
         
         &:hover {
             -webkit-transform: translateX(-100%);
@@ -37,7 +44,6 @@
             .headline { font-size: 19px; }
             .text { margin: 0; }
         }
-
         img {
             transition: all 1s;
             position: absolute;
