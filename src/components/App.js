@@ -13,7 +13,8 @@ import { Profile }  from './Profile';
 import { Iconrow }      from './Iconrow';
 import { Details }      from './Details';
 import { Textbox } from './Textbox';
-import {Headline} from './Headline';
+import { Headline } from './Headline';
+import { Collection } from './Collection';
 
 const App = () => {
 
@@ -34,7 +35,7 @@ const App = () => {
 
   }, [config]);
 
-  const components = { Banner, Profile, Iconrow, Details, Navigation, Footer, Textbox, Headline }
+  const components = { Banner, Profile, Iconrow, Details, Navigation, Footer, Textbox, Headline, Collection }
 
   return (
     <div className='App' style={style}>
