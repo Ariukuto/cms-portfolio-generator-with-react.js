@@ -1,17 +1,22 @@
 import React from 'react';
 
-type IconProps = {
-    icon: {
-        name: string,
-        height: string,
-        padding: string,
-        abstand_unten: string,
-        size: string,
-    }
+ type IconData = {
+    img: string,
+    height: string,
+    padding: string,
+    abstand_unten: string,
+    size: string,
 }
 
-const Icon:React.FC<IconProps> = ({icon}) => {
+export type {IconData};
 
+type IconProps = {
+    icon: IconData
+}
+
+
+const Icon = ({icon}:IconProps) => {
+    
     let style = {
         height: icon.size,
         padding:"2rem",
@@ -20,7 +25,7 @@ const Icon:React.FC<IconProps> = ({icon}) => {
 
     return (
         <div className='Icon'>
-            <img src={`./imgs/${icon.name}`} alt={icon.name} style={style}/>
+            <img src={`./imgs/${icon.img}`} alt={icon.img} style={style}/>
         </div>
     )
 }
