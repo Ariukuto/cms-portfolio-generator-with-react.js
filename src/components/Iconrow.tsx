@@ -1,23 +1,28 @@
 import React, {useState, useEffect} from "react";
 import { Icon, IconData } from "./Icon";
 
-type IconRowProps = {
-    data: {
-        distanceUp: string,
-        distanceBottom: string,
-        distanceRight: string,
-        distanceLeft: string,
-        maxwidth: string,
-        backgroundcolor: string,
-        fields: [
-            {
-                icon: IconData,
-                headline?: string
-                text?: string
-            }
-        ]
-    }
+type IconRowStates = {
+    distanceUp: string,
+    distanceBottom: string,
+    distanceRight: string,
+    distanceLeft: string,
+    maxwidth: string,
+    backgroundcolor: string,
+    fields: [
+        {
+            icon: IconData,
+            headline?: string
+            text?: string
+        }
+    ]
 }
+
+export type {IconRowStates};
+
+type IconRowProps = {
+    data: IconRowStates
+}
+
 
 const Iconrow = ({data}:IconRowProps) => {
     const [distance, setDistance] = useState({up:data.distanceUp, bottom:data.distanceBottom, right:data.distanceRight, left:data.distanceLeft});

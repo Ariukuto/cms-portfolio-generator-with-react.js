@@ -5,7 +5,7 @@ import React from 'react';
     height: string,
     distanceBottom: string,
     size: string,
-    url: string,
+    url?: string,
 }
 
 export type {IconData};
