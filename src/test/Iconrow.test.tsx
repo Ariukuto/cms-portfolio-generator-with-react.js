@@ -1,7 +1,6 @@
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
 import {Iconrow, IconRowStates} from '../components/Iconrow';
-import {IconData} from '../components/Icon';
 
 let container = null;
 
