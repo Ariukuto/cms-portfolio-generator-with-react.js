@@ -1,20 +1,23 @@
 import React, {useState, useEffect} from 'react';
 
-type Itextbox  = {
-    data: {
-        maxWidth: string,
-        text: string,
-        align: string,
-        textAlign: string
-        distanceUp: string,
-        distanceBottom: string,
-        distanceLeft: string,
-        distanceRight: string,
-        lineHeight: string,
-    }
+type TextboxData  = {
+    maxWidth: string,
+    text: string,
+    align: string,
+    textAlign: string
+    distanceUp: string,
+    distanceBottom: string,
+    distanceLeft: string,
+    distanceRight: string,
+    lineHeight: string,
+}
+export type {TextboxData}
+
+type TextboxProps = {
+    data: TextboxData
 }
 
-const Textbox = ({data}:Itextbox) => {
+const Textbox = ({data}:TextboxProps) => {
 
     const [maxwidth] = useState(data.maxWidth);
     const [text] = useState(data.text)
