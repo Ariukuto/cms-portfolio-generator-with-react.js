@@ -18,33 +18,33 @@ afterEach(() => {
 });
 
 const config = {
-    "fullwith": true,
-    "overBanner": true,
-    "navbarAlign": "right",
-    "backgroundcolor": "#f9fafb59",
-    "color": "",
-    "logo": {   
-        "widescreen": {
-            "imageName": "profil.png",
-            "height": "50px",
-            "width": "50px",
-            "borderRadius": "100%",
-            "shadow": false,
-            "DistanceUp": "",
-            "DistanceDown": ""
+    fullwith: true,
+    overBanner: true,
+    navbarAlign: "right",
+    backgroundcolor: "#f9fafb59",
+    color: "",
+    logo: {   
+        widescreen: {
+            imageName: "profil.png",
+            height: "50px",
+            width: "50px",
+            borderRadius: "100%",
+            shadow: false,
+            DistanceUp: "",
+            DistanceDown: ""
         } ,   
-        "mobile": {
-            "imageName": "profil.png",
-            "height": "50px",
-            "width": "50px",
-            "borderRadius": "100%",
-            "shadow": false,
-            "DistanceUp": "",
-            "DistanceDown": ""
+        mobile: {
+            imageName: "profil.png",
+            height: "50px",
+            width: "50px",
+            borderRadius: "100%",
+            shadow: false,
+            DistanceUp: "",
+            DistanceDown: ""
         }
     },
-    "links": [
-        {"name": "linkone", "url": "https://test.de/"},
+    links: [
+        {name: "linkone", url: "https://test.de/"},
     ]
 }
 
