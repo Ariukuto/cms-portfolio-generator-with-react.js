@@ -20,7 +20,7 @@ const Details = (props) => {
                             <div className={`col-sm column-picture order-${row.orderimagebox}`}>
                                 <Image data={row.image} />
                             </div>
-                            <div className={`col-sm column-text order-${row.ordertextbox}`}>
+                            <div className={`col-lg column-text order-${row.ordertextbox}`}>
                                 <div className={`${row.textbox.card ? 'card' : ''} ${row.textbox.shadow ? 'shadow' : ''}`}>
                                     <div className="card-body">
                                         <h5 className="card-title">{row.headline}</h5>
