@@ -1,6 +1,5 @@
 import { render, unmountComponentAtNode } from "react-dom";
-import { act } from "react-dom/test-utils";
-import {Textbox} from '../components/Textbox';
+import {Textbox, TextboxData} from '../components/Textbox';
 
 let container = null;
 
@@ -17,14 +16,14 @@ afterEach(() => {
     container = null;
 });
 
-const data = {
+const data:TextboxData = {
     text: "Test der Textbox",
     maxWidth: "400px",
     align: "center",
     textAlign: "center",
     lineHeight: "2rem",
     distanceUp: "1rem",
-    distanceBotto: "1rem",
+    distanceBottom: "1rem",
     distanceRight: "",
     distanceLeft: ""
 }
