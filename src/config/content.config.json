@@ -76,14 +76,14 @@
         "name": "Profile",
         "data": {
             "backgroundcolor": "white",
-            "shadow": true,
+            "shadow": false,
             "fullwith": false,
             "image": {
                 "widescreen": {
                     "imageName": "profil.png",
-                    "height": "400px",
+                    "height": "200px",
                     "width": "",
-                    "borderRadius": "",
+                    "borderRadius": "25px",
                     "shadow": true,
                     "DistanceUp": "",
                     "DistanceDown": ""
@@ -243,11 +243,11 @@
             "headline": "Details Component",
             "rows": [
                 {
-                    "headline": "Thema 1",
+                    "headline": "Thema 2",
                     "backgroundcolor": "",
                     "url": "",
-                    "orderimagebox": "1",
-                    "ordertextbox": "2",
+                    "orderimagebox": "2",
+                    "ordertextbox": "1",
                     "image": {
                         "widescreen": {
                             "imageName": "placeholder.png",
