@@ -19,7 +19,7 @@ const Banner = ({data}:BannerProps) => {
     const image = data.image;
 
     return(
-        <div className={`Banner ${fullwith ? '' : 'container'}`} style={{height: height}}>
+        <div className={`BannerComponent ${fullwith ? '' : 'container'}`} style={{height: height}}>
             <Image data={image} />
         </div> 
     );

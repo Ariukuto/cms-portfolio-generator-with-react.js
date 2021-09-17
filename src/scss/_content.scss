@@ -6,20 +6,6 @@
         align-items: center;
     }
 
-    .Banner {
-        @media (orientation: portrait) {
-            height: unset !important;
-        }
-        img, source {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            @media (orientation: portrait) {
-                height: unset !important;
-            }
-        }
-    }
-
     .Textbox {
         @media (orientation: portrait) {
             text-align: justify !important;
