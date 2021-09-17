@@ -6,50 +6,7 @@
         align-items: center;
     }
 
-    .Textbox {
-        @media (orientation: portrait) {
-            text-align: justify !important;
-        }   
-    }
-
-    .Profile {
-        line-height: 2;
-        display: flex;
-        justify-content: center;
-
-        .wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 1094px;
-            padding: 39px;
-            @media (orientation: portrait) {
-                box-shadow: unset !important;
-                display: unset !important;
-                padding: 0 !important;
-            }
-        }
-        .imagebox {
-            @media (orientation: portrait) {
-                height: unset !important;
-            }
-        }
-        img {
-            height: 100%;
-            @media (orientation: portrait) {
-                width: 100% !important;
-                margin-bottom: 20px;
-                height: unset;
-            }
-        }
-        .text {
-            text-align: justify;
-            padding-left: 1rem;
-            @media (orientation: portrait) {
-                padding-left: unset;  
-            }
-        }
-    }
+    
 
 
 

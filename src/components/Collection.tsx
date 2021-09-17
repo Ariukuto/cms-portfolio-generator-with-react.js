@@ -26,7 +26,7 @@ const Collection = ({data}:CollectionProps) => {
                             <img src={`./imgs/${img}`} alt={img}/>
                             <div className="text-container" style={{backgroundColor:hoverbgcolor, color:textcolor}}>
                                 <h3 className="headline"> {headline} </h3>
-                                <p className="" > {text} </p>
+                                <p className="text" > {text} </p>
                             </div>
                         </div>
                     )

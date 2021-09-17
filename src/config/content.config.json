@@ -75,9 +75,11 @@
     {
         "name": "Profile",
         "data": {
+            "title": "Sven Büttner",
             "backgroundcolor": "white",
-            "shadow": false,
+            "shadow": true,
             "fullwith": false,
+            "maxWidth": "1000px",
             "image": {
                 "widescreen": {
                     "imageName": "profil.png",
@@ -90,17 +92,17 @@
                 } ,   
                 "mobile": {
                     "imageName": "profil.png",
-                    "height": "",
-                    "width": "",
-                    "borderRadius": "",
-                    "shadow": false,
+                    "height": "150px",
+                    "width": "150px",
+                    "borderRadius": "100%",
+                    "shadow": true,
                     "DistanceUp": "",
-                    "DistanceDown": ""
+                    "DistanceDown": "20px"
                 }
             },
             "textbox": {
                 "text": "Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-                "maxWidth": "600px",  
+                "maxWidth": "350px",  
                 "distanceUp": "",
                 "distanceBottom": "",
                 "distanceRight": "",

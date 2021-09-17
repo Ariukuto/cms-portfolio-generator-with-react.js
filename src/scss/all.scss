@@ -1,12 +1,18 @@
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
+body, #root  {
+    overflow-x: hidden !important;
+    width: 100% !important;
+}
+
 // Own
 @import './window';
 @import './Image';
 @import './App';
 @import './navigation';
 @import './content';
+@import './Profile';
 @import './Banner';
 @import './collection';
 @import './iconrow';

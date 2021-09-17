@@ -1,25 +1,20 @@
-import React from 'react';
+import React, {CSSProperties} from 'react';
 
+
+type ImageAttributes = {
+    imageName: string,
+    width: string,
+    height: string,
+    borderRadius: string,
+    DistanceUp: string,
+    DistanceDown: string,
+    shadow: boolean,
+    format: string,
+}
 
 type ImageData = {
-    widescreen: {
-        imageName: string,
-        width: string,
-        height: string,
-        borderRadius: string,
-        DistanceUp: string,
-        DistanceDown: string,
-        shadow: boolean,
-    }
-    mobile: {
-        imageName: string,
-        width: string,
-        height: string,
-        borderRadius: string,
-        DistanceUp: string,
-        DistanceDown: string,
-        shadow: boolean,
-    }
+    widescreen: ImageAttributes,
+    mobile: ImageAttributes,
 }
 export type {ImageData}
 
@@ -31,7 +26,6 @@ export type {ImageProps}
 const imgpath = "./imgs/";
 export {imgpath}
 
-
 /**
  * 
  * @param {ImageProps} data ImageProps
@@ -41,8 +35,6 @@ const Image = ({data} : ImageProps) => {
 
     const widescreen = data.widescreen;
     const mobile = data.mobile;
-    
-
 
     const renderWidescreenImage = () => {
         const classNames= `show_only_on_widescreen ${widescreen.shadow ? 'shadow' : ''}`;
@@ -72,7 +64,7 @@ const Image = ({data} : ImageProps) => {
             height: mobile.height,
             borderRadius: mobile.borderRadius,
             marginTop: mobile.DistanceUp,
-            marginBottom: mobile.DistanceDown,
+            marginBottom: mobile.DistanceDown, 
         }
         if(!mobile.imageName) {
             return <div className={classNames + " placeholder_mobile"} style={cssStyle} />
