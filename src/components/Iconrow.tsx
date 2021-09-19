@@ -2,6 +2,9 @@ import React, {useState, useEffect} from "react";
 import { Icon, IconData } from "./Icon";
 
 type IconRowStates = {
+    fullwith: boolean,
+    shadow: boolean,
+    card: boolean,
     distanceUp: string,
     distanceBottom: string,
     distanceRight: string,
@@ -25,9 +28,10 @@ type IconRowProps = {
 
 
 const Iconrow = ({data}:IconRowProps) => {
-    const [distance, setDistance] = useState({up:data.distanceUp, bottom:data.distanceBottom, right:data.distanceRight, left:data.distanceLeft});
+    const [distance] = useState({up:data.distanceUp, bottom:data.distanceBottom, right:data.distanceRight, left:data.distanceLeft});
     const [backgroundcolor] = useState(data.backgroundcolor);
-    const [maxwidth] = useState(data.maxwidth)
+    const [maxwidth] = useState(data.maxwidth);
+    const [layout, setLayout] = useState(data.fullwith ? 'container-fluid' : 'container');
     const [fields] = useState(data.fields); 
     const [style, setStyle] = useState({});
 
@@ -41,21 +45,24 @@ const Iconrow = ({data}:IconRowProps) => {
             maxWidth: maxwidth
         }
         setStyle(style);
+        setLayout(data.fullwith ? 'container-fluid' : 'container');
 
-    }, [distance, backgroundcolor, maxwidth])
+    }, [distance, backgroundcolor, maxwidth, data.fullwith, layout]);
 
     return (
-        <div className='Iconrow container' style={style}>
+        <div className={`Iconrow `+layout} style={style}>
             <div className='row'>
                 {fields.map((field, index) => {
                     return(
-                        <div key={index} className='field col-md'>
-                            <Icon icon={field.icon} />
-                            <div className='headline'>
-                                <strong>{field.headline}</strong>
-                            </div>
-                            <div className='text' >
-                                {field.text}
+                        <div key={index} className='col-md'>
+                            <div className={`field ${data.card ? 'card shadow p-5' : ''} mb-3`}>
+                                <Icon icon={field.icon} />
+                                <div className='headline'>
+                                    <strong>{field.headline}</strong>
+                                </div>
+                                <div className='text' >
+                                    {field.text}
+                                </div>
                             </div>
                         </div>
                     );

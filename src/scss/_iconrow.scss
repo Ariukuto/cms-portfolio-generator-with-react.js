@@ -19,8 +19,5 @@
     .text {
         text-align: center;
         line-height: 2;
-        @media (orientation: portrait) {
-            margin-bottom: 50px;
-        }
     }
 }
