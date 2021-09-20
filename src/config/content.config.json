@@ -417,6 +417,20 @@
         }
     },
     {
+        "name": "Textbox",
+        "data": {
+            "maxWidth": "string",
+            "text": "This website was developed with the tool <a href='https://github.com/Ariukuto/landingpage-cms-generator-with-react.js'> landingpage-cms-generator-with-react.js </a>",
+            "align": "center",
+            "textAlign": "center",
+            "distanceUp": "1rem",
+            "distanceBottom": "1rem",
+            "distanceLeft": "string",
+            "distanceRight": "string",
+            "lineHeight": "string"
+        }
+    },
+    {
         "name": "Footer"
     }
 ]
