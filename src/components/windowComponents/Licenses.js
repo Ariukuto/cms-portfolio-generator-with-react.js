@@ -6,6 +6,9 @@ const Licenses = (props) => {
     return (
         <div className="licenses-component pb-2">
 
+            <h6> Diese Webseite wurde mit dem Tool <a href="https://github.com/Ariukuto/landingpage-cms-generator-with-react.js"> landingpage-cms-generator-with-react.js </a> entwickelt </h6>
+            <br />
+
             {config.map((obj, i) => {
 
                 const imgobj = {
