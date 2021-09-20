@@ -1,24 +1,24 @@
 {
     "fullwith": false,
-    "overBanner": true,
-    "navbarAlign": "right",
-    "backgroundcolor": "#f9fafb59",
-    "color": "",
+    "overBanner": false,
+    "navbarAlign": "center",
+    "backgroundcolor": "#343a40",
+    "color": "#f8f9fa",
     "logo": {   
         "widescreen": {
-            "imageName": "profil.png",
-            "height": "50px",
-            "width": "50px",
-            "borderRadius": "100%",
+            "imageName": "",
+            "height": "",
+            "width": "",
+            "borderRadius": "",
             "shadow": false,
             "DistanceUp": "",
             "DistanceDown": ""
         } ,   
         "mobile": {
-            "imageName": "profil.png",
-            "height": "50px",
-            "width": "50px",
-            "borderRadius": "100%",
+            "imageName": "",
+            "height": "",
+            "width": "",
+            "borderRadius": "",
             "shadow": false,
             "DistanceUp": "",
             "DistanceDown": ""

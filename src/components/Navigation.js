@@ -15,6 +15,7 @@ export class Navigation extends React.Component {
             "navbarAlign": props.data.navbarAlign || '',
             'logo': props.data.logo || '',
             'backgroundcolor': props.data.backgroundcolor || '',
+            'color': props.data.color || '',
             'links': props.data.links || ''   ,
         }
     }
@@ -42,7 +43,7 @@ export class Navigation extends React.Component {
 
                     {/* logo */}
                     <a className="logo" href="#">
-                        {this.state.logo !== "" ? <Image data={this.state.logo}/> : 'LOGO' }
+                        {this.state.logo !== "" ? <Image data={this.state.logo}/> : '' }
                     </a>
     
                     {/* navigation */}
@@ -51,8 +52,8 @@ export class Navigation extends React.Component {
                             {/* Loop */}
                             {links.map((link, index) => {
                                 return (
-                                    <a  key={index} id={'a'+index} className="nav-link" aria-current="page" title={link.title || ''} href={link.url || ""} target="_blank" rel="noreferrer">
-                                        {link.name}
+                                    <a  key={index} id={'a'+index} className="nav-link" aria-current="page" title={link.title || ''} href={link.url || ""} target="_blank" rel="noreferrer" style={{color: this.state.color}}>
+                                        {link.name} 
                                     </a>
                                 );
                             })}
@@ -65,3 +66,5 @@ export class Navigation extends React.Component {
     }
     
 }
+
+

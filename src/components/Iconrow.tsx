@@ -10,6 +10,7 @@ type IconRowStates = {
     distanceRight: string,
     distanceLeft: string,
     maxwidth: string,
+    wrapAt: string,
     backgroundcolor: string,
     fields: [
         {
@@ -49,12 +50,23 @@ const Iconrow = ({data}:IconRowProps) => {
 
     }, [distance, backgroundcolor, maxwidth, data.fullwith, layout]);
 
+    const getWrapAt = () => {
+        switch (data.wrapAt) {
+            case "":
+                
+                break;
+        
+            default:
+                break;
+        }
+    }
+
     return (
         <div className={`Iconrow `+layout} style={style}>
             <div className='row'>
                 {fields.map((field, index) => {
                     return(
-                        <div key={index} className='col-md'>
+                        <div key={index} className='col-lg'>
                             <div className={`field ${data.card ? 'card shadow p-5' : ''} mb-3`}>
                                 <Icon icon={field.icon} />
                                 <div className='headline'>

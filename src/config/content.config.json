@@ -17,7 +17,7 @@
                     "DistanceDown": ""
                 } ,   
                 "mobile": {
-                    "imageName": "placeholder.png",
+                    "imageName": "",
                     "height": "",
                     "width": "",
                     "borderRadius": "",
@@ -30,35 +30,6 @@
     {
         "name": "Headline",
         "data": {
-            "headlineType": "h1",
-            "text": "My Portfolio Website",
-            "maxWidth": "1200px",
-            "align": "center",
-            "textAlign": "center",
-            "lineHeight": "2rem",
-            "distanceUp": "3rem",
-            "distanceBottom": "1rem",
-            "distanceRight": "",
-            "distanceLeft": ""
-        }
-    },
-    {
-        "name": "Textbox",
-        "data": {
-            "maxWidth": "1200px",
-            "text":"Lorem ipsum dolor sit amet, dunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo",
-            "align": "center",
-            "textAlign": "center",
-            "lineHeight": "2rem",
-            "distanceUp": "",
-            "distanceBottom": "1rem",
-            "distanceRight": "",
-            "distanceLeft": ""
-        }
-    },
-    {
-        "name": "Headline",
-        "data": {
             "headlineType": "h2",
             "fullwith": false,
             "text": "My Profile",
@@ -66,7 +37,7 @@
             "align": "center",
             "textAlign": "center",
             "lineHeight": "2rem",
-            "distanceUp": "6rem",
+            "distanceUp": "2rem",
             "distanceBottom": "1rem",
             "distanceRight": "",
             "distanceLeft": ""
@@ -121,7 +92,7 @@
             "textAlign": "center",
             "lineHeight": "2rem",
             "distanceUp": "6rem",
-            "distanceBottom": "1rem",
+            "distanceBottom": "3rem",
             "distanceRight": "",
             "distanceLeft": ""
         }
@@ -129,20 +100,22 @@
     {
         "name": "Iconrow",
         "data": {
+            "fullwith": false,
+            "card": true,
             "distanceUp": "",
             "distanceBottom": "",
             "distanceRight": "",
             "distanceLeft": "",
             "maxwidth": "",
+            "wrapAt": "",
             "backgroundcolor": "white",
             "fields": [
                 {
                     "icon": {
                         "img":"icon.png",
-                        "height": "",
                         "color": "black",
                         "distanceBottom": "1rem",
-                        "size": "100px"
+                        "size": "50px"
                     },
                     "headline": "Thema 1",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
@@ -150,10 +123,9 @@
                 {   
                     "icon": {
                         "img":"icon.png",
-                        "height": "",
                         "color": "black",
                         "distanceBottom": "1rem",
-                        "size": "100px"
+                        "size": "50px"
                     },
                     "headline": "Thema 2",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
@@ -161,10 +133,9 @@
                 {
                     "icon": {
                         "img":"icon.png",
-                        "height": "",
                         "color": "black",
                         "distanceBottom": "1rem",
-                        "size": "100px"
+                        "size": "50px"
                     },
                     "headline": "Thema 2",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
@@ -172,10 +143,9 @@
                 {
                     "icon": {
                         "img":"icon.png",
-                        "height": "",
                         "color": "black",
                         "distanceBottom": "1rem",
-                        "size": "100px"
+                        "size": "50px"
                     },
                     "headline": "Thema 3",
                     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
@@ -194,7 +164,7 @@
             "textAlign": "center",
             "lineHeight": "2rem",
             "distanceUp": "6rem",
-            "distanceBottom": "1rem",
+            "distanceBottom": "3rem",
             "distanceRight": "",
             "distanceLeft": ""
         }
@@ -202,6 +172,12 @@
     {
         "name": "Collection",
         "data": {
+            "fullwith": false,
+            "background": "",
+            "distanceUp": "string",
+            "distanceBottom": "string",
+            "distanceLeft": "string",
+            "distanceRight": "string",
             "items": [
                 { "headline":"Skill Headline", "headlinecolor":"", "text": "Level", "textcolor":"black", "img": "icon.png", "backgroundcolor":"white", "hoverbgcolor":"white"},
                 { "headline":"Skill Headline", "headlinecolor":"", "text": "Level", "textcolor":"black", "img": "icon.png", "backgroundcolor":"white", "hoverbgcolor":"white"},
@@ -232,7 +208,7 @@
             "textAlign": "center",
             "lineHeight": "2rem",
             "distanceUp": "6rem",
-            "distanceBottom": "1rem",
+            "distanceBottom": "3rem",
             "distanceRight": "",
             "distanceLeft": ""
         }
@@ -241,77 +217,14 @@
         "name": "Details",
         "data": {
             "fullwith": false,
-            "backgroundcolor": "white",
+            "backgroundcolor": "",
+            "card": true,
+            "shadow": true,
             "headline": "Details Component",
             "rows": [
                 {
-                    "headline": "Thema 2",
+                    "headline": "Thema 1",
                     "backgroundcolor": "",
-                    "url": "",
-                    "orderimagebox": "2",
-                    "ordertextbox": "1",
-                    "image": {
-                        "widescreen": {
-                            "imageName": "placeholder.png",
-                            "height": "",
-                            "width": "",
-                            "borderRadius": "",
-                            "shadow": true,
-                            "DistanceUp": "",
-                            "DistanceDown": ""
-                        } ,   
-                        "mobile": {
-                            "imageName": "placeholder.png",
-                            "height": "",
-                            "width": "",
-                            "borderRadius": "",
-                            "shadow": true,
-                            "DistanceUp": "",
-                            "DistanceDown": "20px"
-                        }
-                    },
-                    "textbox": {
-                        "card": true,
-                        "shadow": true,
-                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-                    }
-                },
-                {
-                    "headline": "Thema 2",
-                    "backgroundcolor": "",
-                    "url": "",
-                    "orderimagebox": "2",
-                    "ordertextbox": "1",
-                    "image": {
-                        "widescreen": {
-                            "imageName": "placeholder.png",
-                            "height": "",
-                            "width": "",
-                            "borderRadius": "",
-                            "shadow": true,
-                            "DistanceUp": "",
-                            "DistanceDown": ""
-                        } ,   
-                        "mobile": {
-                            "imageName": "placeholder.png",
-                            "height": "",
-                            "width": "",
-                            "borderRadius": "",
-                            "shadow": true,
-                            "DistanceUp": "",
-                            "DistanceDown": "20px"
-                        }
-                    },
-                    "textbox": {
-                        "card": true,
-                        "shadow": true,
-                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-                    }
-                },
-                {
-                    "headline": "Thema 3",
-                    "backgroundcolor": "",
-                    "url": "",
                     "orderimagebox": "1",
                     "ordertextbox": "2",
                     "image": {
@@ -320,7 +233,7 @@
                             "height": "",
                             "width": "",
                             "borderRadius": "",
-                            "shadow": true,
+                            "shadow": false,
                             "DistanceUp": "",
                             "DistanceDown": ""
                         } ,   
@@ -329,20 +242,81 @@
                             "height": "",
                             "width": "",
                             "borderRadius": "",
-                            "shadow": true,
+                            "shadow": false,
                             "DistanceUp": "",
                             "DistanceDown": "20px"
                         }
                     },
-                    "textbox": {
-                        "card": true,
-                        "shadow": true,
-                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-                    }
+                    "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "button": {
+                        "title": "Buttontitle",
+                        "url": ""
+                    }  
+                },
+                {
+                    "headline": "Thema 2",
+                    "backgroundcolor": "",
+                    "orderimagebox": "2",
+                    "ordertextbox": "1",
+                    "image": {
+                        "widescreen": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": false,
+                            "DistanceUp": "",
+                            "DistanceDown": ""
+                        } ,   
+                        "mobile": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": false,
+                            "DistanceUp": "",
+                            "DistanceDown": "20px"
+                        }
+                    },
+                    "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "button": {
+                        "title": "",
+                        "url": ""
+                    }  
+                },
+                {
+                    "headline": "Thema 3",
+                    "backgroundcolor": "",
+                    "orderimagebox": "1",
+                    "ordertextbox": "2",
+                    "image": {
+                        "widescreen": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": false,
+                            "DistanceUp": "",
+                            "DistanceDown": ""
+                        } ,   
+                        "mobile": {
+                            "imageName": "placeholder.png",
+                            "height": "",
+                            "width": "",
+                            "borderRadius": "",
+                            "shadow": false,
+                            "DistanceUp": "",
+                            "DistanceDown": "20px"
+                        }
+                    },
+                    "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "button": {
+                        "title": "Buttontitle",
+                        "url": ""
+                    }  
                 },
                 {
                     "headline": "Thema 4", 
-                    "url": "",
                     "orderimagebox": "2",
                     "ordertextbox": "1",  
                     "image": {
@@ -351,7 +325,7 @@
                             "height": "",
                             "width": "",
                             "borderRadius": "",
-                            "shadow": true,
+                            "shadow": false,
                             "DistanceUp": "",
                             "DistanceDown": ""
                         } ,   
@@ -360,15 +334,15 @@
                             "height": "",
                             "width": "",
                             "borderRadius": "",
-                            "shadow": true,
+                            "shadow": false,
                             "DistanceUp": "",
                             "DistanceDown": "20px"
                         }
                     },
-                    "textbox": {
-                        "card": true,
-                        "shadow": true,
-                        "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+                    "text":"Lorem ipsum dolor sit amet, <strong>consetetur</strong> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod</u> tempor <i>invidunt ut labore</i> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "button": {
+                        "title": "",
+                        "url": ""
                     }
                 }
             ]
@@ -385,7 +359,7 @@
             "textAlign": "center",
             "lineHeight": "2rem",
             "distanceUp": "6rem",
-            "distanceBottom": "1rem",
+            "distanceBottom": "3rem",
             "distanceRight": "",
             "distanceLeft": ""
         }
@@ -393,6 +367,8 @@
     {
         "name": "Iconrow",
         "data": {
+            "fullwith": false,
+            "card": false,
             "distanceUp": "",
             "distanceBottom": "2rem",
             "distanceRight": "",
@@ -406,7 +382,7 @@
                         "height": "",
                         "color": "black",
                         "distanceBottom": "1rem",
-                        "size": "100px",
+                        "size": "50px",
                         "url": "https://www.xing.com/profile/Sven_Buettner29/cv"
 
                     },
@@ -419,7 +395,7 @@
                         "height": "",
                         "color": "black",
                         "distanceBottom": "1rem",
-                        "size": "100px",
+                        "size": "50px",
                         "url": "https://www.linkedin.com/in/sven-b%C3%BCttner-569b64159/"
                     },
                     "headline": "",
@@ -431,7 +407,7 @@
                         "height": "",
                         "color": "black",
                         "distanceBottom": "1rem",
-                        "size": "100px",
+                        "size": "50px",
                         "url": "https://github.com/Ariukuto"
                     },
                     "headline": "",

@@ -15,39 +15,49 @@
         @media (orientation: portrait) {
             line-height: 1.5;    
         }
-        .row {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-        img {
-            width: 100%;
-        }
-        // Sorgt dafür, dass in der mobilen Ansicht, zuerst das Bild und dann der Text angezeigt wird
-        .column-picture {
-            height: 100%;
-            @media (orientation: portrait) {
-                order: 1 !important;    
-            }
-        }
-        // Sorgt dafür, dass in der mobilen Ansicht, zuerst das Bild und dann der Text angezeigt wird
-        .column-text {
-            text-align: justify;
-            .card {
+
+
+        .card-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+
+            // Sorgt dafür, dass in der mobilen Ansicht, zuerst das Bild und dann der Text angezeigt wird
+            .column-picture {
                 height: 100%;
-            }
-            @media (orientation: portrait) {
-                order: 2 !important;
-                .shadow {
-                    box-shadow: none !important;
+                width: 50%;
+                img {
+                    width: 100%;
                 }
-                .card {
-                    border: none;
-                }
-                .card-body {
-                    padding: unset;
-                }    
             }
+            // Sorgt dafür, dass in der mobilen Ansicht, zuerst das Bild und dann der Text angezeigt wird
+            .column-text {
+                width: 50%;
+                text-align: justify;
+            }
+
+            @media (max-width: "1199px") {
+                flex-direction: column;
+                .column-picture {
+                    width: 100%;
+                    order: 1 !important;  
+                    .card-body {
+                        padding: 0 ;
+                    }
+                }
+                .column-text {
+                    width: 100%;
+                    order: 2 !important;  
+                }
+            }
+
         }
+
+
+
+
 
     }
 }
