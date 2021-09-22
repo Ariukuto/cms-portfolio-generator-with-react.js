@@ -1,22 +1,24 @@
 import React, {useState, useEffect} from 'react';
 
-type Iheadline  = {
-    data: {
-        headlineType: string,
-        maxWidth: string,
-        text: string,
-        align: string,
-        textAlign: string
-        distanceUp: string,
-        distanceBottom: string,
-        distanceLeft: string,
-        distanceRight: string,
-        lineHeight: string,
-        color: string,
-    }
+export type HeadlineData  = {
+    headlineType: string,
+    maxWidth: string,
+    text: string,
+    align: string,
+    textAlign: string
+    distanceUp: string,
+    distanceBottom: string,
+    distanceLeft: string,
+    distanceRight: string,
+    lineHeight: string,
+    color: string,
 }
 
-const Headline = ({data}:Iheadline) :JSX.Element => {
+export type HeadlineProps = {
+    data: HeadlineData
+}
+
+const Headline = ({data}:HeadlineProps) :JSX.Element => {
 
     const [headlineType] = useState(data.headlineType)
     const [text] = useState(data.text)
