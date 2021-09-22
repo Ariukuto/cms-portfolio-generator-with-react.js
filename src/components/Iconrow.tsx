@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { Headline, HeadlineData } from "./Headline";
 import { Icon, IconData } from "./Icon";
 
 type IconRowStates = {
@@ -15,8 +16,8 @@ type IconRowStates = {
     fields: [
         {
             icon: IconData,
-            headline?: string
-            text?: string
+            headline: HeadlineData
+            text: string
         }
     ]
 }
@@ -51,14 +52,33 @@ const Iconrow = ({data}:IconRowProps) => {
     }, [distance, backgroundcolor, maxwidth, data.fullwith, layout]);
 
     const getWrapAt = () => {
+        let result = "";
         switch (data.wrapAt) {
-            case "":
-                
+            case "never":
+                result = "";
+                break;
+
+            case "tablet":
+                result = "-lg";
+                break;
+
+            case "smartphone max":
+                result = "-md";
+                break;
+
+            case "smartphone":
+                result = "-sm";
+                break;
+
+            case "smartphone mini":
+                result = "-xs";
                 break;
         
             default:
+                result = "";
                 break;
         }
+        return result;
     }
 
     return (
@@ -66,11 +86,11 @@ const Iconrow = ({data}:IconRowProps) => {
             <div className='row'>
                 {fields.map((field, index) => {
                     return(
-                        <div key={index} className='col-lg'>
+                        <div key={index} className={`col`+getWrapAt()}>
                             <div className={`field ${data.card ? 'card shadow p-5' : ''} mb-3`}>
                                 <Icon icon={field.icon} />
                                 <div className='headline'>
-                                    <strong>{field.headline}</strong>
+                                    <Headline data={field.headline} />
                                 </div>
                                 <div className='text' >
                                     {field.text}

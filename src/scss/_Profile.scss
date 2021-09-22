@@ -1,11 +1,12 @@
 .Profile {
-    line-height: 2;
     display: flex;
     justify-content: center;
 
     .wrapper {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         max-width: 1094px;
         padding: 39px;
         border: 1px solid rgba(0,0,0,.125);

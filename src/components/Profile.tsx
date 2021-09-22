@@ -2,6 +2,20 @@ import React,{useState} from 'react';
 import { Image, ImageData } from './Image';
 import { TextboxData } from './Textbox';
  
+export type ProfileData = {
+    backgroundcolor: string,
+    title: string,
+    shadow: boolean,
+    fullwith: boolean,
+    maxWidth: string,
+    textbox: TextboxData,
+    image: ImageData,
+}
+
+export type ProfileProps = { 
+    data: ProfileData
+ }
+
 
 
 export const Profile = ({data}:ProfileProps) => {
@@ -25,14 +39,3 @@ export const Profile = ({data}:ProfileProps) => {
 }
 
 
-export type ProfileData = {
-    backgroundcolor: string,
-    title: string,
-    shadow: boolean,
-    fullwith: boolean,
-    maxWidth: string,
-    textbox: TextboxData,
-    image: ImageData,
-}
-
-export type ProfileProps = { data: ProfileData }

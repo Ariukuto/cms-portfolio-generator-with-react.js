@@ -11,11 +11,6 @@
 
 
     .Details {
-        line-height: 2;
-        @media (orientation: portrait) {
-            line-height: 1.5;    
-        }
-
 
         .card-row {
             display: flex;
@@ -35,7 +30,7 @@
             // Sorgt dafür, dass in der mobilen Ansicht, zuerst das Bild und dann der Text angezeigt wird
             .column-text {
                 width: 50%;
-                text-align: justify;
+                text-align: left;
             }
 
             @media (max-width: "1199px") {

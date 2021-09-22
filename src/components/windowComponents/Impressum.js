@@ -14,34 +14,34 @@ const Impressum = (props) => {
     const firstname = data.firstname || "<Vorname>";
     const lastname = data.lastname || "<Nachname>";
     const street = data.street || "<Straße>";
-    const housenNumber = data.housenNumber || "<Hausnummer>";
+    const houseNumber = data.houseNumber || "<Hausnummer>";
     const plz = data.plz || "<Plz>";
     const location = data.location || "<Ort>";
     const phonenumber = data.phonenumber || "<Telefonnummer>";
     const fax = data.fax || "<Faxnummer>";
     const email = data.email || "<Email>";
-    const umsatzsteuerId = data.umsatzsteuerId || "<DE XXX XXX XXX>";
+    const umsatzsteuerId = data.umsatzsteuerId || "";
     const haftungsauschlusstext = data.haftungsauschlusstext || "<Haftungsauschlusstext ...>";
 
     return(
         <div>
 
-            <h6> This website was developed with the tool <a href='https://github.com/Ariukuto/landingpage-cms-generator-with-react.js'> landingpage-cms-generator-with-react.js </a> </h6>
+            <h6> This website was developed with the tool <a href='https://github.com/Ariukuto/cms-portfolio-generator-with-react.js'> cms-portfolio-generator-with-react.js </a> </h6>
             <br />
 
             <p><span style={underline}>Angaben gem. § 5 TMG:</span></p>
             <p>     
                 {firstname} {lastname} <br />
-                {street} {housenNumber} <br />
-                {plz} {location}
+                {street} {houseNumber} <br />
+                {plz} {location} {}
             </p>
             <p><span style={underline}> Kontaktaufnahme: </span></p>
             <p>
                 Telefon: {phonenumber} <br />
-                Fax: {fax} <br />
+                { fax ? `Fax: ${fax}` : ''} <br />
                 E-Mail: {email}
             </p>
-            <p><strong>Umsatzsteuer-ID</strong> <br /><span style={underline}>Umsatzsteuer-Identifikationsnummer gem. § 27 a Umsatzsteuergesetz:</span></p>
+            { umsatzsteuerId ? <p><strong>Umsatzsteuer-ID</strong> <br /><span style={underline}>Umsatzsteuer-Identifikationsnummer gem. § 27 a Umsatzsteuergesetz:</span></p> : ""}
             <p>{umsatzsteuerId}</p>
             <p style={{textAlign:"justify"}}
                 dangerouslySetInnerHTML={{ __html: haftungsauschlusstext}} 
