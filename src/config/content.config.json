@@ -107,7 +107,7 @@
             "distanceRight": "",
             "distanceLeft": "",
             "maxwidth": "",
-            "wrapAt": "",
+            "wrapAt": "tablet",
             "backgroundcolor": "white",
             "fields": [
                 {
@@ -374,6 +374,7 @@
             "distanceRight": "",
             "distanceLeft": "",
             "maxwidth": "600px",
+            "wrapAt": "never",
             "backgroundcolor": "white",
             "fields": [
                 {
