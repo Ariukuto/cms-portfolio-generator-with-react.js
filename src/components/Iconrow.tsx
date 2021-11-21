@@ -86,7 +86,7 @@ const Iconrow = ({data}:IconRowProps) => {
             <div className='row'>
                 {fields.map((field, index) => {
                     return(
-                        <div key={index} className={`col`+getWrapAt()}>
+                        <div key={index} className={`col ${getWrapAt()} mb-3`}>
                             <div className={`field ${data.card ? 'card shadow p-5' : ''} mb-3`}>
                                 <Icon icon={field.icon} />
                                 <div className='headline'>
