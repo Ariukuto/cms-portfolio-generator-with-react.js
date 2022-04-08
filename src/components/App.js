@@ -1,22 +1,16 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// config
-//import pageconfig from '../config/page.config.json';
-import content from '../config/content.config.json';
-import navigationConfig from '../config/navigation.config.json';
+import routesConfig from '../config/pages.config.json';
 
 import { Window }       from './Window';
 import { Navigation }   from './Navigation';
 import { Footer }         from './Footer';
-import { Banner }       from './Banner';
-import { Profile }  from './Profile';
-import { Iconrow }      from './Iconrow';
-import { Details }      from './Details';
-import { Textbox } from './Textbox';
-import { Headline } from './Headline';
-import { Collection } from './Collection';
+import { PageComponent } from './PageComponent';
 
-const App = () => {
+
+
+export const App = () => {
 
   // config
   const [config, setConfig] = React.useState({});
@@ -31,35 +25,36 @@ const App = () => {
       backgroundColor: pageconfig.background.backgroundcolor,
       backgroundImage: `./imgs/${pageconfig.background.img.name}`,
     }
+
     setStyle(style);
 
   }, [config]);
 
-  const components = { Banner, Profile, Iconrow, Details, Navigation, Footer, Textbox, Headline, Collection }
 
-  return (
+  return(
     <div className='App' style={style}>
-        <Window />
-        <div className='Content'>
-          {content.map((component, i) => {
-              let Component = components[component.name];
-              let data = {};
-              if(component.name === "Navigation") { 
-                data = navigationConfig 
-              } else {
-                data = component.data;
-              }
-              return (
-                  <Component key={i} data={data}/>
-              );
-          })}
-      </div>  
+      <Window />
+      <div className='Content'>
+        <BrowserRouter>
+          <Navigation />
+          <Routes>
+            {routesConfig.map((route, i) => {
+              const content = route.config ? require(`../config/pages/${route.config}`) : [];
+              return(
+                <Route 
+                  path={route.path} 
+                  element={<PageComponent content={content} />} 
+                  key={i}
+                />
+              )
+            })}
+          </Routes>
+        </BrowserRouter>
+      </div>
+      <Footer />
     </div>
-  );
-}
+  )
 
-export {
-  App
 }
 
 
