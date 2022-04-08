@@ -1,5 +1,7 @@
 import React from 'react';
+import { Outlet, Link } from "react-router-dom";
 import { Image } from './Image';
+import config from '../config/navigation.config.json'; 
 
 /**
  * @name Navigation
@@ -7,16 +9,16 @@ import { Image } from './Image';
  */
 export class Navigation extends React.Component {
 
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
-            'fullwith': props.data.fullwith || '',
-            'overBanner': props.data.overBanner || '',
-            "navbarAlign": props.data.navbarAlign || '',
-            'logo': props.data.logo || '',
-            'backgroundcolor': props.data.backgroundcolor || '',
-            'color': props.data.color || '',
-            'links': props.data.links || ''   ,
+        'fullwith':             config.fullwith || '',
+            'overBanner':       config.overBanner || '',
+            "navbarAlign":      config.navbarAlign || '',
+            'logo':             config.logo || '',
+            'backgroundcolor':  config.backgroundcolor || '',
+            'color':            config.color || '',
+            'links':            config.links || '',
         }
     }
 
@@ -51,12 +53,17 @@ export class Navigation extends React.Component {
                         <div className="d-flex flex-row flex-nowrap">
                             {/* Loop */}
                             {links.map((link, index) => {
-                                return (
-                                    <a  key={index} id={'a'+index} className="nav-link" aria-current="page" title={link.title || ''} href={link.url || ""} target="_blank" rel="noreferrer" style={{color: this.state.color}}>
-                                        {link.name} 
-                                    </a>
-                                );
+                                if(link.outside) {
+                                    return (
+                                        <a  key={index} id={'a'+index} className="nav-link" aria-current="page" title={link.title || ''} href={link.url || ""} target="_blank" rel="noreferrer" style={{color: this.state.color}}>
+                                            {link.name} 
+                                        </a>
+                                    );
+                                } else {
+                                    return <Link key={index} className="nav-link" to={link.url}> {link.name} </Link>
+                                }
                             })}
+                            <Outlet />
                         </div>
                     </div>
 
