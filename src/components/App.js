@@ -22,7 +22,6 @@ export const App = () => {
     document.title = config.title;
 
     let style = {
-      backgroundColor: pageconfig.background.backgroundcolor,
       backgroundImage: `./imgs/${pageconfig.background.img.name}`,
     }
 
