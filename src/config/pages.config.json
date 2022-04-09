@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Seite 1",
+        "path": "/",
+        "config": "seite1.config.json"
+    },
+    {
+        "name": "Seite 2",
+        "path": "/page-2",
+        "config": "seite2.config.json"
+    }
+]
