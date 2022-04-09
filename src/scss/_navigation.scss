@@ -1,7 +1,20 @@
 .Ǹavigation {
+    padding: 1rem;
 
     .nav-item {
-        color: black !important;
+        color: unset;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    a {
+        color: unset;
         padding: 0.5rem 1rem;
         text-decoration: none;
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -21,6 +34,12 @@
     .logo {
         img{
             object-fit: cover;
+        }
+    }
+
+    .link-container {
+        @media (max-width: 991px) {
+        justify-content: center !important;
         }
     }
 
