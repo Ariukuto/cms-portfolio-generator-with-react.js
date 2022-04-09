@@ -1,11 +1,11 @@
 
 {
-    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed dia.",      
+    "text": "",      
     "list" : [
         {
             "text": "Email",
             "type": "email",
-            "data": "mail@example.com"
+            "data": "kontaktATbuettner-sven.de"
         },
         {
             "text": "Telefon/Mobile",
@@ -13,14 +13,19 @@
             "data": "+49 086463555565"       
         },
         {
-            "text": "Twitter",
-            "type": "link",
-            "data": "https://twitter.com?user=example"
+            "text": "Xing",
+            "type": "",
+            "data": "https://www.xing.com/profile/Sven_Buettner29/cv"       
         },
         {
-            "text": "Fax",
-            "type": "fax",
-            "data": "03030234234342342"       
+            "text": "LinkedIn",
+            "type": "",
+            "data": "https://www.linkedin.com/in/sven-b%C3%BCttner-569b64159/"       
+        },
+        {
+            "text": "GitHub",
+            "type": "",
+            "data": "https://github.com/Ariukuto"       
         }
     ]
 }

@@ -1,32 +1,32 @@
 {
     "fullwith": false,
     "overBanner": false,
-    "navbarAlign": "center",
+    "navbarAlign": "right",
     "backgroundcolor": "#343a40",
     "color": "#f8f9fa",
     "logo": {   
         "widescreen": {
             "imageName": "",
-            "height": "",
-            "width": "",
-            "borderRadius": "",
+            "height": "0",
+            "width": "0",
+            "borderRadius": "100%",
             "shadow": false,
             "DistanceUp": "",
             "DistanceDown": ""
         } ,   
         "mobile": {
             "imageName": "",
-            "height": "",
-            "width": "",
+            "height": "0",
+            "width": "0",
             "borderRadius": "",
             "shadow": false,
             "DistanceUp": "",
             "DistanceDown": ""
-        }
+        },
+        "text": "buettner-sven.de"
     },
     "links": [
-        {"name": "linkone", "url": ""},
-        {"name": "linktwo", "url": ""},
-        {"name": "linkthree", "url": ""}
+        {"name": "Home", "outside":false, "url": "/"},
+        {"name": "Lebenslauf", "outside":false, "url": "/lebenslauf"}
     ]
 }

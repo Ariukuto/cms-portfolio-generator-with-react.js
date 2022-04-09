@@ -1,19 +1,107 @@
 [
     {
-        "imageName": "profil.png",
-        "text": "Bild von <a href='https://pixabay.com/de/users/wanderercreative-855399/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=973460'>Stephanie Edwards</a> auf <a href='https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=973460'>Pixabay</a>"
+        "imageName": "banner.png",
+        "text": "Bild von <a href='https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1209008'>Free-Photos</a> auf <a href='https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1209008'>Pixabay</a>"
     },
     {
-        "imageName": "placeholder.png",
-        "text": "Bild von <a href='https://pixabay.com/de/users/k-images-3402423/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1923545'>Katherine Gomez</a> auf <a href='https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1923545'>Pixabay</a>"
+        "imageName": "concept.png",
+        "text": "Icon made by <a href='https://www.flaticon.com/free-icon/concept_4213136?term=concept&page=1&position=29&page=1&position=29&related_id=4213136' title='Freepi'>Freepik</a> from <a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a>"
     },
     {
-        "imageName": "icon.png",
-        "text": "<div>Icons erstellt von <a href='https://www.freepik.com' title='Freepik'>Freepik</a> from <a href='https://www.flaticon.com/de/' title='Flaticon'>www.flaticon.com</a></div>"
+        "imageName": "coding.png",
+        "text": "Icons made by <a href='https://www.flaticon.com/premium-icon/coding_2010957?term=coding&page=1&position=21&page=1&position=21&related_id=2010957&origin=search' title='Freepik'>Freepik</a> from <a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a>"
     },
     {
-        "imageName": "xing.png",
-        "text": "<div>Icons made by <a href='https://www.flaticon.com/authors/pixel-perfect' title='Pixel perfect'>Pixel perfect</a> from <a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a></div>'"
+        "imageName": "user-experience.png",
+        "text": "Icon made by <a href='https://www.flaticon.com/free-icon/responsive-design_1838065?term=responsive&page=1&position=17&page=1&position=17&related_id=1838065&origin=search' title='Freepi'>Freepik</a> from <a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a>"
+    },
+    {
+        "imageName": "architecture.png",
+        "text": "Icon made by <a href='https://www.flaticon.com/free-icon/uml_5332088?term=uml&page=1&position=5&page=1&position=5&related_id=5332088&origin=search' title='Freepi'>Freepik</a> from <a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a>"
+    },
+    {
+        "imageName": "html.png",
+        "text": "Icon by <a href='https://www.iconfinder.com/icons/317755/badge_html_html5_achievement_award_reward_trophy_icon'> www.iconfinder.com </a>"
+    },
+    {
+        "imageName": "css.png",
+        "text": "Icon by <a href='https://www.iconfinder.com/icons/317756/badge_css_css3_achievement_award_reward_trophy_icon'> www.iconfinder.com </a>"
+    },
+    {
+        "imageName": "sass.png",
+        "text": "Icon by <a href='https://www.iconfinder.com/icons/4375066/logo_sass_icon'> www.iconfinder.com </a>"
+    },
+    {
+        "imageName": "bootstrap.svg",
+        "text": "Icon by <a href='https://getbootstrap.com/docs/5.0/about/brand/'> getbootstrap.com </a>"
+    },
+    {
+        "imageName": "javascript.png",
+        "text": "Icon by <a href='https://seeklogo.com/vector-logo/330541/javascript'> seeklogo.com </a>"
+    },
+    {
+        "imageName": "typescript.png",
+        "text": "Icon by <a href='https://www.typescriptlang.org/branding/'> www.typescriptlang.org </a>"
+    },
+    {
+        "imageName": "react.js.png",
+        "text": "Icon by <a href='https://www.iconfinder.com/icons/7423887/react_react_native_icon'> www.iconfinder.com </a>"
+    },
+    {
+        "imageName": "vue.js.svg",
+        "text": "Icon by <a href='https://github.com/vuejs/art'> Evan You from github </a>"
+    },
+    {
+        "imageName": "node.js.svg",
+        "text": "Icon by <a href='https://nodejs.org/en/about/resources/'> nodejs.org </a>"
+    },
+    {
+        "imageName": "jest.js.svg",
+        "text": "Icon by <a href='https://github.com/facebook/jest/blob/main/website/static/img/jest.svg'> jest github </a>"
+    },
+    {
+        "imageName": "php.png",
+        "text": "Icon by <a href='https://www.php.net/download-logos.php'> php.net </a>"
+    },
+    {
+        "imageName": "sql.png",
+        "text": "Icon by <a href='https://www.cleanpng.com/png-microsoft-azure-sql-database-microsoft-sql-server-749286/'> www.cleanpng.com </a>"
+    },
+    {
+        "imageName": "json.png",
+        "text": "Icon by <a href='https://www.json.org/img/json160.gif'> json.org </a>"
+    },
+    {
+        "imageName": "csharp.png",
+        "text": "Icon by <a href='https://seeklogo.com/vector-logo/363285/c-sharp-c'> seeklogo.com </a>"
+    },
+    {
+        "imageName": "git.png",
+        "text": "Icon by <a href='https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png'> git-scm.com </a>"
+    },
+    {
+        "imageName": "github.png",
+        "text": "Icon by <a href='https://github.com/logos'> github.com </a>"
+    },
+    {
+        "imageName": "shopware5.svg",
+        "text": "Icon by <a href='https://docs.shopware.com/de/shopware-5-de'> Shopware 5 website </a>"
+    },
+    {
+        "imageName": "shopware6.svg",
+        "text": "Icon by <a href='https://www.shopware.com/de/presse/pressematerial/'> Shopware 6 Starter Kit </a>"
+    },
+    {
+        "imageName": "linuxmint.png",
+        "text": "Icon by <a href='https://logos.fandom.com/wiki/Linux_Mint?file=C5xybm9y_400x400.png'> logos.fandom.com </a>"
+    },
+    {
+        "imageName": "windows10.png",
+        "text": "Icon made by <a href='https://www.flaticon.com/free-icon/windows_882702?term=windows%2010&page=1&position=9&page=1&position=9&related_id=882702&origin=search' title='Freepi'>Freepik</a> from <a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a>"
+    },
+    {
+        "imageName": "vsc.png",
+        "text": "Icon by <a href='https://code.visualstudio.com/brand'>  code.visualstudio.com </a>"
     }
 ]
 

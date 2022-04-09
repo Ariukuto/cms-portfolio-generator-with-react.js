@@ -27,10 +27,16 @@ yarn-error.log*
 !/public/**/
 !/foo/**/.gitkeep
 
-#src/configs
+#src/config
 /src/config/**
 !/src/config/**/
 !/src/config/**/.gitkeep
+
+/src/config/pages/**
+!/src/config/pages/**/
+!/src/config/pages/**/.gitkeep
+
+
 
 
 

@@ -49,7 +49,7 @@
                     "title":"Datenschutz",
                     "component": {
                         "name": "Text",
-                        "content": "Datenschutz Text ..."
+                        "content": "Es werden keine personenbezogenen Daten erfasst"
                     }
                 }
             ]
