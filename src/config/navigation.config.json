@@ -23,10 +23,10 @@
             "DistanceUp": "",
             "DistanceDown": ""
         },
-        "text": "buettner-sven.de"
+        "text": "Hier könnte ihr Logo stehen"
     },
     "links": [
-        {"name": "Home", "outside":false, "url": "/"},
-        {"name": "Lebenslauf", "outside":false, "url": "/lebenslauf"}
+        {"name": "Seite 1", "outside":false, "url": "/"},
+        {"name": "Seite 2", "outside":false, "url": "/page-2"}
     ]
 }
