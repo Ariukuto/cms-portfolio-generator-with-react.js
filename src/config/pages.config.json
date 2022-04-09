@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Startseite",
+        "path": "/",
+        "pageComponent": "Startseite",
+        "config": "startseite.config.json"
+    },
+    {
+        "name": "Lebenslauf",
+        "path": "/lebenslauf",
+        "pageComponent": "Lebenslauf",
+        "config": "lebenslauf.config.json"
+    }
+]
