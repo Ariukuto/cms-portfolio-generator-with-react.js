@@ -12,7 +12,7 @@ export class Navigation extends React.Component {
     constructor() {
         super();
         this.state = {
-        'fullwith':             config.fullwith || '',
+            'fullwith':         config.fullwith || '',
             'overBanner':       config.overBanner || '',
             "navbarAlign":      config.navbarAlign || '',
             'logo':             config.logo || '',
@@ -26,8 +26,10 @@ export class Navigation extends React.Component {
         switch (this.state.navbarAlign) {
             case "center":
                 return "center";
-            case "right": 
+            case "right" || "end": 
                 return "flex-end";
+            case "left" || "start":
+                    return "flex-start"
             default:
                 return "flex-start"; 
         }
@@ -39,39 +41,63 @@ export class Navigation extends React.Component {
         let layout = this.state.fullwith === true ? 'container-fluid': 'container';
         let links = this.state.links;
         
-        return(
+
+
+        return (
             <div className={`Ǹavigation ${overBanner}`} style={style}>
-                <div className={`navbar ${layout}`}> 
 
-                    {/* logo */}
-                    <a className="logo" href="#">
-                        {this.state.logo !== "" ? <Image data={this.state.logo}/> : '' }
-                    </a>
-    
-                    {/* navigation */}
-                    <div className="navbar-container" id="navbarSupportedContent" style={{justifyContent: this.getNavbarAlign()}}>
-                        <div className="d-flex flex-row flex-nowrap">
-                            {/* Loop */}
-                            {links.map((link, index) => {
-                                if(link.outside) {
-                                    return (
-                                        <a  key={index} id={'a'+index} className="nav-link" aria-current="page" title={link.title || ''} href={link.url || ""} target="_blank" rel="noreferrer" style={{color: this.state.color}}>
-                                            {link.name} 
-                                        </a>
-                                    );
-                                } else {
-                                    return <Link key={index} className="nav-link" to={link.url}> {link.name} </Link>
-                                }
-                            })}
-                            <Outlet />
+                <div className={`${layout}`}>     
+                    <div className={`row align-items-center`} >
+
+                        <div className='col-sm-auto'>
+                            {/* logo */}
+                            {
+                                this.state.logo.text 
+                                ? <h1 className='text-center text-light'> {this.state.logo.text} </h1> 
+                                : (this.state.logo ? <Image data={this.state.logo}/> : '')
+                            }
                         </div>
-                    </div>
+                            
+                        <div className='col-sm'>
+                            {/* navigation */}
+                            <div className="navbar-container" id="navbarSupportedContent" >
+                                <div className="link-container d-flex flex-row flex-nowrap" style={{justifyContent: this.getNavbarAlign()}}>
+                                    {links.map((link, index) => {
+                                        if(link.outside) {
+                                            return (
+                                                <a  key={index} id={'a'+index} className="nav-link" aria-current="page" title={link.title || ''} href={link.url || ""} target="_blank" rel="noreferrer" style={{color: this.state.color}}>
+                                                    {link.name} 
+                                                </a>
+                                            );
+                                        } else {
+                                            return <Link key={index} className="nav-link" to={link.url} style={{color: this.state.color}}> {link.name} </Link>
+                                        }
+                                    })}
+                                    <Outlet />
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>               
                 </div>
-            </div> 
+            </div>
         )
+
+
     }
     
 }
 
 
+/**
+ * 
+ *         
+        return(
+            <div className={`Ǹavigation ${overBanner}`} style={style}>
+                <div className={`navbar`}> 
+                    
+                </div>
+            </div> 
+        )
+ * 
+ */
