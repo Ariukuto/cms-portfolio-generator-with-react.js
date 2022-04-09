@@ -5,27 +5,27 @@
         {
             "text": "Email",
             "type": "email",
-            "data": "kontaktATbuettner-sven.de"
+            "data": ""
         },
         {
             "text": "Telefon/Mobile",
             "type": "phone",
-            "data": "+49 086463555565"       
+            "data": ""       
         },
         {
             "text": "Xing",
             "type": "",
-            "data": "https://www.xing.com/profile/Sven_Buettner29/cv"       
+            "data": ""       
         },
         {
             "text": "LinkedIn",
             "type": "",
-            "data": "https://www.linkedin.com/in/sven-b%C3%BCttner-569b64159/"       
+            "data": ""       
         },
         {
             "text": "GitHub",
             "type": "",
-            "data": "https://github.com/Ariukuto"       
+            "data": ""       
         }
     ]
 }
