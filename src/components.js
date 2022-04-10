@@ -4,7 +4,7 @@ import { Iconrow }      from './components/Iconrow';
 import { Details }      from './components/Details';
 import { Textbox } from './components/Textbox';
 import { Headline } from './components/Headline';
-import { Collection } from './components/Collection';
+import { Collection, FlipCardCollection } from './components/Collection';
 
 export const components = {
     Banner,
@@ -13,5 +13,5 @@ export const components = {
     Details,
     Textbox,
     Headline,
-    Collection,
+    Collection, FlipCardCollection,
 }
