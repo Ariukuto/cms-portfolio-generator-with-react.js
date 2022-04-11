@@ -18,7 +18,7 @@ const Impressum = (props) => {
     const plz = data.plz || "<Plz>";
     const location = data.location || "<Ort>";
     const phonenumber = data.phonenumber || "<Telefonnummer>";
-    const fax = data.fax || "<Faxnummer>";
+    const fax = data.fax || "";
     const email = data.email || "<Email>";
     const umsatzsteuerId = data.umsatzsteuerId || "";
     const haftungsauschlusstext = data.haftungsauschlusstext || "<Haftungsauschlusstext ...>";
@@ -38,8 +38,8 @@ const Impressum = (props) => {
             <p><span style={underline}> Kontaktaufnahme: </span></p>
             <p>
                 Telefon: {phonenumber} <br />
-                { fax ? `Fax: ${fax}` : ''} <br />
-                E-Mail: {email}
+                E-Mail: {email} <br />
+                { fax ? `Fax: ${fax}` : ''} 
             </p>
             { umsatzsteuerId ? <p><strong>Umsatzsteuer-ID</strong> <br /><span style={underline}>Umsatzsteuer-Identifikationsnummer gem. § 27 a Umsatzsteuergesetz:</span></p> : ""}
             <p>{umsatzsteuerId}</p>
