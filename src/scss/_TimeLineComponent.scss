@@ -1,0 +1,107 @@
+//-Timeline Specific Mixins
+
+//- Indicator style
+@mixin timeline-indicator {
+	content: "";
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	position: absolute;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+
+// - Timeline entry
+// - Produces the following:
+/* - &:nth-child(1) {
+			 grid-area: entry1;
+		 }
+   - useful timesaver if there is a lengthy list
+*/ 
+@mixin timeline-entry {
+	@for $i from 1 through 10 {
+		&:nth-child(#{$i}) {
+			grid-area: entry#{$i};
+		}
+	}
+}
+
+//- Variables
+$timeline-indicator-color: $seagull;
+$timeline-indicator-border:  1px solid $gondola;
+$timeline-title-background-color: $dark-pink;
+
+
+//- Mobile First Timeline - stacked for small viewports and browsers that don't support grid
+
+.timeline--entry {
+	position: relative;
+	background-color: $panel-background-color;
+
+	&__title {
+		color: white;
+		background-color: $timeline-title-background-color;
+		font-family: $subheading-font-family;
+		font-weight: $font-weight-light;
+		font-size: 1rem;
+		padding: 1em;
+		&:before {
+			@include timeline-indicator;
+			left: -1em;
+			border-right: 10px solid RGB(92, 163, 70); 
+		}
+	}
+	
+	&__detail {
+		background-color: $alto;
+		padding: 1em;
+		margin: 0;
+	}
+			
+
+}
+
+
+//- Tablet Up Screens Layout if CSS Grid is supported
+@supports (display: grid) {
+	@include tablet-up {
+		.timeline {
+			//- Timeline line
+			&:before {
+				left: 49.5%;
+			}
+		}
+		
+		.timeline--entry {
+				@include timeline-entry;
+			
+				//- odd timeline entry
+				&:nth-of-type(odd){
+					//- Default position the number indicator mobile
+					&:before {
+						left: -48px;
+    					top: 15px;
+					}
+				}
+				
+			 //- even timeline entry	
+				&:nth-of-type(even){
+					&:not(:nth-of-type(odd)) {
+						//-right pointing arrow indicator
+						.timeline--entry__title {
+							&:before {
+								left: 100% ;
+								border-left: 10px solid RGB(92, 163, 70);
+								border-right: 0;
+							}
+						}
+					}
+					//- Position the number indicator
+					&:before {
+						left: 406px;
+						top: 15px;
+					}
+				}	
+			}
+		}
+	}

@@ -5,6 +5,7 @@ import { Details }      from './components/Details';
 import { Textbox } from './components/Textbox';
 import { Headline } from './components/Headline';
 import { Collection, FlipCardCollection } from './components/Collection';
+import { TimeLineComponent } from './components/TimeLineComonent';
 
 export const components = {
     Banner,
@@ -14,4 +15,5 @@ export const components = {
     Textbox,
     Headline,
     Collection, FlipCardCollection,
+    TimeLineComponent,
 }
