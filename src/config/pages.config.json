@@ -1,14 +1,12 @@
 [
     {
-        "name": "Startseite",
+        "name": "first page",
         "path": "/",
-        "pageComponent": "Startseite",
-        "config": "startseite.config.json"
+        "config": "page1.config.json"
     },
     {
-        "name": "Lebenslauf",
-        "path": "/lebenslauf",
-        "pageComponent": "Lebenslauf",
-        "config": "lebenslauf.config.json"
+        "name": "second page",
+        "path": "/page-2",
+        "config": "page2.config.json"
     }
 ]
