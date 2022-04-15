@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import { Image } from './Image';
 import config from '../config/navigation.config.json'; 
 
@@ -45,7 +45,6 @@ export class Navigation extends React.Component {
 
         return (
             <div className={`Ǹavigation ${overBanner}`} style={style}>
-
                 <div className={`${layout}`}>     
                     <div className={`row align-items-center`} >
 
@@ -61,6 +60,13 @@ export class Navigation extends React.Component {
                         <div className='col-sm'>
                             {/* navigation */}
                             <div className="navbar-container" id="navbarSupportedContent" >
+                                <style>
+                                    {`
+                                        .Ǹavigation a.nav-link {
+                                            color: ${this.state.color};
+                                        }
+                                    `}
+                                </style>
                                 <div className="link-container d-flex flex-row flex-nowrap" style={{justifyContent: this.getNavbarAlign()}}>
                                     {links.map((link, index) => {
                                         if(link.outside) {
@@ -70,10 +76,18 @@ export class Navigation extends React.Component {
                                                 </a>
                                             );
                                         } else {
-                                            return <Link key={index} className="nav-link" to={link.url} style={{color: this.state.color}}> {link.name} </Link>
+                                            return (
+                                                <NavLink 
+                                                    key={index} 
+                                                    className="nav-link"
+                                                    activeClassName="active" 
+                                                    to={link.url}>
+                                                    {link.name} 
+                                                </NavLink>
+                                            )
                                         }
                                     })}
-                                    <Outlet />
+                                    
                                 </div>
                             </div>
                         </div>
