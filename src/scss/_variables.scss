@@ -1,0 +1,102 @@
+//- Just a base Sass file I can add to my pens to style them faster.
+
+//- Icon Fonts
+$font-awesome: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+
+//- Google Fonts
+$font-google-primary: 'https://fonts.googleapis.com/css?family=Open+Sans';
+$font-google-secondary: 'https://fonts.googleapis.com/css?family=Oswald';
+
+/*- Screen Sizes*/
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+//- @type List
+$open-sans: 'Open Sans';
+$oswald:'Oswald';
+$lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+$georgia: Georgia, Cambria, "Times New Roman", Times, serif;
+
+//- Typography
+$base-font-family: $open-sans, $lucida-grande;
+$secondary-font-family: $oswald, $georgia;
+$heading-font-family: $base-font-family;
+$subheading-font-family: $secondary-font-family;
+
+$font-size-small: 0.875em;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 600;
+
+//- Colors
+$tundora: #444444;
+$alto: #dddddd;
+$eclipse: #3d3d3d;
+$nero: #212121;
+$charcoal: #424242;
+$gondola: #363636;
+$seagull: #87ceeb;
+$gallery: #eeeeee;
+$white: #ffffff;
+$dark-pink: #ec407a;
+
+$body-background-color: $tundora;
+$body-text-color: $nero;
+
+//- Panels 
+$panel-background-color: $gallery;
+$panel-border: 1px solid rgba(0, 0, 0, .25);
+
+//- Global Functions
+
+/*import fonts*/
+@if variable-exists(font-awesome) {
+  @import url($font-awesome);
+}
+@if variable-exists(font-google-primary) {
+  @import url($font-google-primary);
+}
+@if variable-exists(font-google-secondary) {
+  @import url($font-google-secondary);
+}
+
+//- Global Mixins
+
+/*media queries*/
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+    margin: 3.125em auto;
+	padding: 1em 5em 1em;
+    max-width: 1000px;
+}
+
+h1 {
+	color: white;
+	font-family: $heading-font-family;
+	text-align: center;
+}
