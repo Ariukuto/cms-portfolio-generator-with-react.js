@@ -9,6 +9,10 @@
         align-items: center;
         max-width: 1094px;
         padding: 39px;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
         border: 1px solid rgba(0,0,0,.125);
         @media (orientation: portrait) {
             flex-direction: column;
