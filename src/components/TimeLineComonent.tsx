@@ -25,7 +25,6 @@ export const TimeLineComponent = ({data}:TimeLineProp) => {
         let str = '';
         data.forEach((entry, i) => {
             i = i + 1;
-            console.log("modulo",i % 2);
             str = i % 2 !== 1 ? str + `"entry${i} ."` : str + `". entry${i}"`;
             str = str + `\n`;
         })
@@ -184,4 +183,4 @@ export const TimeLineComponent = ({data}:TimeLineProp) => {
 }
 
 
-// onst {company, job_title, start_date, end_date, more} = props;
+// const {company, job_title, start_date, end_date, more} = props;
