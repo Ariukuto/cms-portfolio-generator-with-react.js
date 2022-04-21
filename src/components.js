@@ -1,3 +1,4 @@
+import { Navigation } from './components/Navigation';
 import { Banner }       from './components/Banner';
 import { Profile }  from './components/Profile';
 import { Iconrow }      from './components/Iconrow';
@@ -7,7 +8,9 @@ import { Headline } from './components/Headline';
 import { Collection, FlipCardCollection } from './components/Collection';
 import { TimeLineComponent } from './components/TimeLineComonent';
 
+
 export const components = {
+    Navigation,
     Banner,
     Profile,
     Iconrow,
@@ -16,4 +19,8 @@ export const components = {
     Headline,
     Collection, FlipCardCollection,
     TimeLineComponent,
+}
+
+export const getComponent = (name="") => {
+    return components[name] || null
 }
