@@ -1,6 +1,8 @@
 import React from 'react';
 import emitter from "../ev"
 import config from '../config/footer.config.json';
+import { openWindow } from './Window';
+
 
 /**
  * @name Footer
@@ -20,7 +22,7 @@ export class Footer extends React.Component {
         }
     }
 
-    renderHeadline(col) {
+    FooterHeadline(col) {
         if(!col.headline) 
             return '';
         
@@ -39,27 +41,16 @@ export class Footer extends React.Component {
             color: this.state.fontcolor, 
         };
 
-        // Event Callback Funktion
-        const showWindow = (link) => {
-            return () => {
-                // show_window Event auslösen
-                emitter.emit("show_window", {
-                    title: link.title,
-                    component: link.component,
-                });
-            }
-        }
-
         return (
             <div className={`Footer ${layout}`} style={footerstyle}>
                 <div className='row'>
                     {this.state.columns.map((col, i) => {
                         return (
                             <div key={i} className="col-sm d-flex justify-content-center">
-                               {this.renderHeadline(col)}
+                               {this.FooterHeadline(col)}
                                 {col.links.map((link, j) => {
                                     return(
-                                        <div key={j} onClick={showWindow(link)} style={linkstyle} className="link-title"> 
+                                        <div key={j} onClick={openWindow(link)} style={linkstyle} className="link-title"> 
                                             {link.title}
                                         </div>
                                     );
@@ -71,5 +62,4 @@ export class Footer extends React.Component {
             </div>
         );
     }
-
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-type ImageAttributes = {
+export type ImageAttributes = {
     imageName: string,
     width?: string,
     height?: string,
@@ -16,19 +16,17 @@ type ImageAttributes = {
     format?: string,
 }
 
-type ImageData = {
+export type ImageData = {
     widescreen: ImageAttributes,
     mobile: ImageAttributes,
 }
-export type {ImageData}
 
-type ImageProps = {
+export type ImageProps = {
     data: ImageData
 }
-export type {ImageProps}
 
-const imgpath = "./imgs/";
-export {imgpath}
+
+export const imgpath = "./imgs/";
 
 /**
  * 
