@@ -27,35 +27,40 @@ const Textbox = ({data}:TextboxProps) => {
     const [lineheight] = useState(data.lineHeight);
     const [style, setStyle] = useState({});
 
-    const geAlign = () => {
-        switch (align) {
-            case "center":
-                return "center";
-            
-            case "right":
-                return "flex-end"; 
 
-            default:
-                return "flex-start";
-        }
-    }
 
     useEffect(() => {
-        let style = {
-            justifyContent: geAlign(),
-            textAlign: textalign,
-            marginTop: distance.top,
-            marginBottom: distance.bottom,
-            marginRight: distance.right,
-            marginLeft: distance.left,
-            lineHeight: lineheight,
+        const getJustifyContentValue = () => {
+            switch (align) {
+                case "center":
+                    return "center";
+                
+                case "right":
+                    return "flex-end"; 
+    
+                default:
+                    return "flex-start";
+            }
         }
-        setStyle(style);
+    
+        setStyle({
+            'justifyContent': getJustifyContentValue(),
+            'textAlign': textalign,
+            'marginTop': distance.top,
+            'marginBottom': distance.bottom,
+            'marginRight': distance.right,
+            'marginLeft': distance.left,
+            'lineHeight': lineheight,
+        });
     }, [maxwidth, align, textalign, distance, lineheight])
 
     return (
         <div  className='Textbox container d-flex' style={style}>
-            <div className="textbox-text" dangerouslySetInnerHTML={{ __html: text}} style={{maxWidth: data.maxWidth}}/>
+            <div 
+                className="textbox-text" 
+                dangerouslySetInnerHTML={{ __html: text}} 
+                style={{maxWidth: data.maxWidth}}>
+            </div>
         </div>
     )
 }
