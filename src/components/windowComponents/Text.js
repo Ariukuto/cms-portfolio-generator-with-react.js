@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 
-const Text = (props) => {
-    const [content] = useState(props.data.content);  
+export const Text = (props) => {
+    const [content] = useState(props.data.content); 
+    console.log("props",props);
     
     return (
         <div className="TextComponent">
@@ -12,7 +13,5 @@ const Text = (props) => {
             <br/>
         </div>
     )   
-} 
-
-export {Text}   
+}  
 
