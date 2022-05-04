@@ -1,6 +1,6 @@
 import React from 'react';
 import config from '../../config/lizenzen.config.json';
-import {Image, imgpath} from '../Image';
+import {imgpath} from '../Image';
 
 const Licenses = (props) => {
     return (
@@ -10,25 +10,11 @@ const Licenses = (props) => {
             <br />
 
             {config.map((obj, i) => {
-
-                const imgobj = {
-                    mobile: {
-                        imageName: obj.imageName,
-                        height: "50px",
-                        width: "50px",
-                    },
-                    widescreen: {
-                        imageName: obj.imageName,
-                        height: "50px",
-                        width: "50px",
-                    }
-                }
-
                 return (
                     <div key={i} className="row d-flex justify-content-center align-items-center mb-2 mt-2">
                         <hr></hr>
                         <div className="col-4 d-flex justify-content-center">
-                            <img src={imgpath+obj.imageName} style={{width:"50%", maxWidth:"100px"}}/>
+                            <img src={imgpath+obj.imageName} style={{width:"50%", maxWidth:"100px"}} alt={obj.imageName} />
                         </div>
                         <div className="col d-flex justify-content-start">
                             <p 
