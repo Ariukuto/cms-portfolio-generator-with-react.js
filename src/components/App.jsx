@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Window }       from './Window';
-import { Navigation }   from './Navigation';
+import { Header }   from './Navigation';
 import { Footer }         from './Footer';
 import { Outlet } from 'react-router-dom';
 
@@ -27,12 +27,12 @@ export const App = () => {
 
   return(
     <div className='App' style={style}>
-      <Window />
-        <Navigation />
+        <Header />
         <div className='Content'>
           <Outlet />
         </div>
       <Footer />
+      <Window />
     </div>
   )
 }

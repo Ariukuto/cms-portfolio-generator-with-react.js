@@ -1,9 +1,26 @@
 .App {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "navigation"
+        "main"
+        "footer";
     background-repeat: no-repeat; 
     background-size: contain; // Resize the background image to cover the entire container */
-    background-position: center; // Center the image 
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: space-between;
+    background-position: center; // Center the image
 }
+
+.Ǹavigation {
+    grid-area: navigation;
+}
+
+.Content {
+    grid-area: main;
+}
+
+.Footer {
+    grid-area: footer;
+}
+
