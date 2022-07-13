@@ -92,6 +92,7 @@
                 transition: all 1s;
                 z-index: -1;
                 filter: opacity(0.1);
+                transform: rotateY(180deg);
             }
         }
 

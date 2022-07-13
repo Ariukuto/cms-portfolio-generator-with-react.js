@@ -1,30 +1,32 @@
 import React from 'react';
 
 
-type ImageAttributes = {
+export type ImageAttributes = {
     imageName: string,
-    width: string,
-    height: string,
-    borderRadius: string,
-    DistanceUp: string,
-    DistanceDown: string,
-    shadow: boolean,
-    format: string,
+    width?: string,
+    height?: string,
+    borderRadius?: string,
+    DistanceUp?: string,
+    DistanceDown?: string,
+    top?: string,
+    bottom?: string,
+    right?: string,
+    left?: string,
+    shadow?: boolean,
+    format?: string,
 }
 
-type ImageData = {
+export type ImageData = {
     widescreen: ImageAttributes,
     mobile: ImageAttributes,
 }
-export type {ImageData}
 
-type ImageProps = {
+export type ImageProps = {
     data: ImageData
 }
-export type {ImageProps}
 
-const imgpath = "./imgs/";
-export {imgpath}
+
+export const imgpath = "./imgs/";
 
 /**
  * 
@@ -44,6 +46,10 @@ const Image = ({data} : ImageProps) => {
             borderRadius: widescreen.borderRadius,
             marginTop: widescreen.DistanceUp,
             marginBottom: widescreen.DistanceDown,
+            top: widescreen.top,
+            bottom: widescreen.bottom,
+            left: widescreen.left,
+            right: widescreen.right,
         }
         if(!widescreen.imageName) {
             return <div className={classNames + " placeholder_widescreen"} style={cssStyle} />
@@ -64,7 +70,11 @@ const Image = ({data} : ImageProps) => {
             height: mobile.height,
             borderRadius: mobile.borderRadius,
             marginTop: mobile.DistanceUp,
-            marginBottom: mobile.DistanceDown, 
+            marginBottom: mobile.DistanceDown,
+            top: mobile.top,
+            bottom: mobile.bottom,
+            left: mobile.left,
+            right: mobile.right,
         }
         if(!mobile.imageName) {
             return <div className={classNames + " placeholder_mobile"} style={cssStyle} />

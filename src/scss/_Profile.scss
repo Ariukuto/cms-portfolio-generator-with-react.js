@@ -3,21 +3,28 @@
     justify-content: center;
 
     .wrapper {
+        position: relative;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         max-width: 1094px;
         padding: 39px;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
         border: 1px solid rgba(0,0,0,.125);
         @media (orientation: portrait) {
-            display: unset !important;
+            flex-direction: column;
             padding: 18px;
+            border: unset;
+            box-shadow: none !important;
         }
     }
 
     img {
         height: 100%;
+        object-fit: cover;
     }
 
     .show_only_on_mobile {

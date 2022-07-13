@@ -11,7 +11,7 @@ import {DynComponent} from './DynComponent';
  * @todo Dafor sorgen, dass der window-content gescrollt werden kann. Body ist schon erledigt
  */
 export class Window extends React.Component {
-
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -117,4 +117,24 @@ export class Window extends React.Component {
             </div>
         )
     }
+}
+
+export const openWindow = (link) => {
+    return () => {
+        // show_window Event auslösen
+        emitter.emit("show_window", {
+            title: link.title,
+            component: link.component,
+        });
+    }
+}
+
+export const showPdf= (pdfname) => {
+    return openWindow({
+        title: pdfname,
+        component: {
+            name:"IframeComponent",
+            url: `./pdfs/${pdfname}`
+        }
+    })    
 }

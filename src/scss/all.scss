@@ -1,5 +1,6 @@
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './variables';
 
 body, #root  {
     overflow-x: hidden !important;
@@ -18,4 +19,7 @@ body, #root  {
 @import './iconrow';
 @import './Footer';
 @import './flipcard';
+
+@import './_flipcard';
+@import './TimeLineComponent';
 
