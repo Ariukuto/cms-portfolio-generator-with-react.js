@@ -1,31 +1,32 @@
 
 {
+    "$schema": "./schema/contact-schema.json",
     "text": "",      
-    "list" : [
+    "contactItems" : [
         {
-            "text": "Email",
-            "type": "email",
+            "text": "E-Mail",
+            "type": "EMAIL",
             "data": ""
         },
         {
             "text": "Telefon/Mobile",
-            "type": "phone",
+            "type": "PHONE",
             "data": ""       
         },
         {
             "text": "Xing",
-            "type": "",
+            "type": "URL",
             "data": ""       
         },
         {
             "text": "LinkedIn",
-            "type": "",
+            "type": "URL",
             "data": ""       
         },
         {
             "text": "GitHub",
-            "type": "",
-            "data": ""       
+            "type": "URL",
+            "data": ""      
         }
     ]
 }

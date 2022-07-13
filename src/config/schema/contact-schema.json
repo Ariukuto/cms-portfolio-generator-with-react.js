@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "type": "object",
+    "properties": {
+
+        "text":{
+            "description": "Text which can be placed on the top",
+            "type": "string",
+            "example": "Sie können mich jederzeit unter folgenden Kanälen erreichen"
+        },
+
+        "contactItems": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text":{
+                        "description": "The key name for the contact item on the page",
+                        "type": "string"
+                    },
+                    "type" : {
+                        "description": "type of the contact item. Is important for linking",
+                        "type":  "string",
+                        "enum": ["EMAIL", "PHONE", "URL"]
+                    },
+                    "data": {
+                        "description": "The value of the contact item",
+                        "type": "string"
+                    }
+                },
+                "required": ["text", "type", "data"]
+            }
+        }
+
+    }
+}
