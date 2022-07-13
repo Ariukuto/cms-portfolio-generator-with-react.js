@@ -2,6 +2,10 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import './variables';
 
+h1, h2, h3, h4, h5, h6 {
+    color:unset;
+}
+
 body, #root  {
     overflow-x: hidden !important;
     width: 100% !important;
@@ -22,4 +26,7 @@ body, #root  {
 
 @import './_flipcard';
 @import './TimeLineComponent';
+
+// Pages
+@import './Lebenslauf';
 
